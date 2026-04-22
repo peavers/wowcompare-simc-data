@@ -727,8 +727,8 @@ Reduces the range at which enemies detect your pet.</description>
     </effects>
     <description>A ghostly soul haunts a single target, dealing $s1 Shadow damage and increasing your damage dealt to the target by $s2% for $d.
 
-If the target dies, Haunt's cooldown is reset.</description>
-    <tooltip>Taking $s2% increased damage from the Warlock. Haunt's cooldown will be reset on death.</tooltip>
+$?a1261984[While active, Haunt deals ${$1262710s1*($48181d/$48181t5)} Shadow damage to its host and ${$1262710x1-1} enemies within $1278047a1 yards suffering from your Corruption or Wither.][] If the target dies, Haunt's cooldown is reset.</description>
+    <tooltip>Taking $s2% increased damage from the Warlock. $?e4[Suffering ${$1262710s1*($48181d/$48181t5)} Shadow damage.][] Haunt's cooldown will be reset on death.</tooltip>
   </spell>
   <spell id="54049" name="Shadow Bite" level="16" range="5" gcd="1">
     <class id="warlock" name="Warlock" />
@@ -1515,7 +1515,7 @@ Always keep this effect active.
       <effect number="5" id="191030" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="0" scaled_value="0" />
       <effect number="6" id="1300810" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="20" scaled_value="20" misc_value="3" misc_value_2="6343" />
       <effect number="7" id="1300817" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="-66" scaled_value="-66" misc_value_2="5186" />
-      <effect number="8" id="1300819" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="-40" scaled_value="-40" />
+      <effect number="8" id="1300819" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="-40" scaled_value="-40" misc_value_2="6521" />
       <effect number="9" id="1300823" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="200" scaled_value="200" misc_value_2="5185" />
       <effect number="10" id="1300824" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="-36" scaled_value="-36" misc_value="22" misc_value_2="3545" />
       <effect number="11" id="1312933" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="100" scaled_value="100" misc_value="3" misc_value_2="6534" />
@@ -4913,25 +4913,17 @@ Damage dealt by Soul Rot heals you for ${$e2*100}% of damage done.</description>
     <effects count="1">
       <effect number="1" id="1021683" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
     </effects>
-    <description>Conflagrate and Shadowburn have a $s1% chance to guarantee your next cast of the ability to critically strike, and increase its damage by your critical strike chance.</description>
+    <description>Conflagrate and Shadowburn have a $s1% chance to guarantee your next cast of either ability to critically strike, and increase its damage by your critical strike chance.</description>
   </spell>
   <spell id="387109" name="Conflagration of Chaos" duration="20" stacks_initial="1" stacks_max="1" proc_chance="100">
     <class id="warlock" name="Warlock" />
     <attributes>0000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
+    <effects count="2">
       <effect number="1" id="1021684" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="7" modifier_text="Spell Critical Chance (7)" base_value="100" scaled_value="100" misc_value="7" />
+      <effect number="2" id="1312408" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="7" modifier_text="Spell Critical Chance (7)" base_value="100" scaled_value="100" misc_value="7" />
     </effects>
-    <description>Your next Conflagrate will critically strike and your critical strike chance will increase its critical strike damage.</description>
-    <tooltip>Your next Conflagrate will critically strike and your critical strike chance will increase its critical strike damage.</tooltip>
-  </spell>
-  <spell id="387110" name="Conflagration of Chaos" duration="20" stacks_initial="1" stacks_max="1" proc_chance="100">
-    <class id="warlock" name="Warlock" />
-    <attributes>0000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
-      <effect number="1" id="1021685" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="7" modifier_text="Spell Critical Chance (7)" base_value="100" scaled_value="100" misc_value="7" />
-    </effects>
-    <description>Your next Shadowburn will critically strike and your critical strike chance will increase its critical strike damage.</description>
-    <tooltip>Your next Shadowburn will critically strike and your critical strike chance will increase its critical strike damage.</tooltip>
+    <description>Your next Conflagrate or Shadowburn will critically strike and your critical strike chance will increase its critical strike damage.</description>
+    <tooltip>Your next Conflagrate or Shadowburn will critically strike and your critical strike chance will increase its critical strike damage.</tooltip>
   </spell>
   <spell id="387156" name="Ritual of Ruin" passive="true" proc_chance="101">
     <class id="warlock" name="Warlock" />
@@ -7305,8 +7297,9 @@ $@spelldesc428453</description>
   <spell id="456312" name="Burning Ember" level="22" range="100">
     <class id="warlock" name="Warlock" />
     <attributes>0000100010000000101000000000000000010001000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
+    <effects count="2">
       <effect number="1" id="1160432" type="30" type_text="Energize Power (30)" sub_type="0" base_value="0.5" scaled_value="0.5" misc_value_energize="soul_shard" />
+      <effect number="2" id="1307046" type="3" type_text="Dummy (3)" sub_type="0" base_value="1" scaled_value="1" />
     </effects>
     <description>$@spelldesc264364</description>
     <tooltip>Generates $s1 Soul Shard Fragment.</tooltip>
@@ -8142,17 +8135,20 @@ Damage dealt by Dark Harvest heals you for ${$1257065e1*100}% of damage done.</t
     <class id="warlock" name="Warlock" />
     <resource type="7" cost="1" type_name="Soul Shard (7)" />
     <attributes>0000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000100100000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="3">
+    <effects count="4">
       <effect number="1" id="1269007" type="3" type_text="Dummy (3)" sub_type="0" base_value="5170" scaled_value="5170" />
       <effect number="2" id="1269008" type="6" type_text="Apply Aura (6)" sub_type="3" sub_type_text="Periodic Damage (3)" school="shadow" school_text="shadow" period="2" base_value="0" scaled_value="0" sp_coefficient="0.629917" />
-      <effect number="3" id="1305431" type="3" type_text="Dummy (3)" sub_type="0" base_value="15" scaled_value="15" />
+      <effect number="3" id="1305431" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="15" scaled_value="15" />
+      <effect number="4" id="1305448" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="15" scaled_value="15" />
     </effects>
     <description>Afflicts the target with $o2 Shadow damage over $d. Multiple uses of this ability may overlap.
 
-If dispelled, deals ${$m2*$s1/100} damage to the dispeller and silences them for $196364d.
+If dispelled, deals ${$m2*$s1/100} damage to the dispeller and silences them for $196364d. This damage is increased by $s3% per stack on the target.
 
 |cFFFFFFFFGenerates $231791m1 Soul $LShard:Shards; if the target dies while afflicted.|r</description>
-    <tooltip>Suffering $w2 Shadow damage every $t2 sec. If dispelled, will cause ${$w2*$s1/100} damage to the dispeller and silence them for $196364d.</tooltip>
+    <tooltip>Suffering $w2 Shadow damage every $t2 sec. 
+
+If dispelled, causes ${(($w2*$s1/100)*(1+($w3-$w4)/100))*$w4/$w3} damage to the dispeller and silence them for $196364d.</tooltip>
   </spell>
   <spell id="1259811" name="Practiced Pestilence" passive="true">
     <class id="warlock" name="Warlock" />
@@ -8572,7 +8568,7 @@ If no target is found, a random target suffering from your $?a445465[Wither][Imm
       <effect number="1" id="1277799" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="5" modifier_text="Spell Range (5)" base_value="10" scaled_value="10" misc_value="5" />
       <effect number="2" id="1282213" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="5" scaled_value="5" misc_value="8" misc_value_2="5920" />
     </effects>
-    <description>Increases the range of Mortal Coil by $s1 yds and the amount it heals by $s2%.</description>
+    <description>Increases the range of Mortal Coil by $s1 yds and Mortal Coil now heals for an additional $s2% of maximum health.</description>
   </spell>
   <spell id="1265884" name="Echo of Sargeras" range="100" proc_chance="100">
     <class id="warlock" name="Warlock" />
@@ -8606,7 +8602,7 @@ Damage reduced beyond $s3 targets.</description>
       <effect number="4" id="1281488" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="35" scaled_value="35" />
       <effect number="5" id="1281489" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="6" scaled_value="6" />
     </effects>
-    <description>Increases the damage of $?s1259790[Unstable Affliction by $s1][Chaos Bolt by $s4]% and $?s27243[Seed of Corruption by $s3][Rain of Fire by $s5]%.
+    <description>Increases the damage of $?a137043[Unstable Affliction by $s1][Chaos Bolt by $s4]% and $?a137043[Seed of Corruption by $s3][Rain of Fire by $s5]%.
 
 This effect is doubled while Malevolence is active.</description>
   </spell>
@@ -9021,18 +9017,18 @@ Transforms into Singe Magic while on cooldown.</description>
       <effect number="1" id="1288226" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
       <effect number="2" id="1288227" type="28" type_text="Summon Guardian (28)" sub_type="0" base_value="0" scaled_value="0" misc_value="258587" misc_value_2="6628" />
     </effects>
-    <description>Summons a Fel Ravager to assist you in combat for $d and will interrupt their target when summoned.
+    <description>Summons a Fel Ravager to assist you in combat for $d and will purge 1 beneficial magic effect from an enemy.
 
-Turns into Spell Lock while on cooldown. </description>
+Turns into Devour Magic while on cooldown. </description>
   </spell>
-  <spell id="1276610" name="Spell Lock" duration="120">
+  <spell id="1276610" name="Devour Magic" duration="120">
     <class id="warlock" name="Warlock" />
     <attributes>0000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1288471" type="6" type_text="Apply Aura (6)" sub_type="333" sub_type_text="Override Triggered Action Spell (Misc w/ Base) (333)" base_value="132409" scaled_value="132409" misc_value="1276467" misc_value_2="3" />
+      <effect number="1" id="1288471" type="6" type_text="Apply Aura (6)" sub_type="333" sub_type_text="Override Triggered Action Spell (Misc w/ Base) (333)" base_value="388215" scaled_value="388215" misc_value="1276467" misc_value_2="3" />
     </effects>
     <description>$@spelldesc1276467</description>
-    <tooltip>Grimoire: Fel Ravager is transformed into Spell Lock while on cooldown.</tooltip>
+    <tooltip>Grimoire: Fel Ravager is transformed into Devour Magic while on cooldown.</tooltip>
   </spell>
   <spell id="1276623" name="Singe Magic" duration="120">
     <class id="warlock" name="Warlock" />
@@ -9131,9 +9127,9 @@ $@spelldesc1251989</description>
     <class id="warlock" name="Warlock" />
     <attributes>0000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1289254" type="2" type_text="School Damage (2)" school="magic" school_text="magic" sub_type="0" base_value="0" scaled_value="0" sp_coefficient="0.5082" />
+      <effect number="1" id="1289254" type="2" type_text="School Damage (2)" school="magic" school_text="magic" sub_type="0" base_value="0" scaled_value="0" sp_coefficient="0.924" />
     </effects>
-    <description>The Antoran Inquisitor fires a bolt of fel at their target, inflicting $s1 Chaos damage.</description>
+    <description>$@spelldesc1280307</description>
   </spell>
   <spell id="1277116" name="Greater Felbolt" level="1" range="40" cast_time_else="1.75" gcd="0.5" velocity="30">
     <class id="warlock" name="Warlock" />
@@ -9457,5 +9453,21 @@ Damage reduced beyond $1282534s2 targets.</description>
     </effects>
     <description>Damage done increased by $s1%.
 </description>
+  </spell>
+  <spell id="1292384" name="Soul Barrage" range="40" cast_time_else="2" gcd="1.5">
+    <class id="warlock" name="Warlock" />
+    <attributes>0000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1312414" type="3" type_text="Dummy (3)" sub_type="0" base_value="10" scaled_value="10" />
+    </effects>
+    <description>Releases a volley of Chaos magic that deals $1292391s1 Chaos damage to the target and up to $i additional targets within $a1 yds.</description>
+  </spell>
+  <spell id="1292391" name="Soul Barrage" range="40" gcd="1.5" velocity="20">
+    <class id="warlock" name="Warlock" />
+    <attributes>0000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1312424" type="2" type_text="School Damage (2)" school="chaos" school_text="chaos" sub_type="0" base_value="0" scaled_value="0" sp_coefficient="1.848" />
+    </effects>
+    <description>$@spelldesc1292384</description>
   </spell>
 </spell_query>

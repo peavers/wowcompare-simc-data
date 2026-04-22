@@ -388,20 +388,18 @@ Each time Renewing Mist heals, it has a $s2% chance to increase the healing of y
   </spell>
   <spell id="115175" name="Soothing Mist" range="40" gcd="1" duration="8">
     <class id="monk" name="Monk" />
-    <attributes>0000000000000000100000000000000000100010000000000000000000000100000000001000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100100001000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000100000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000</attributes>
+    <attributes>0000000000000000100000000000000000100010000000000000000000000100000000001000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000100100001000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000100000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000</attributes>
     <effects count="3">
       <effect number="1" id="128871" type="6" type_text="Apply Aura (6)" sub_type="8" sub_type_text="Periodic Heal (8)" base_value="0" scaled_value="0" sp_coefficient="2.1" />
       <effect number="2" id="1149950" type="6" type_text="Apply Aura (6)" sub_type="87" sub_type_text="Modify Damage Taken% (87)" base_value="0" scaled_value="0" misc_value_mod_damage="127" />
-      <effect number="3" id="1280567" type="6" type_text="Apply Aura (6)" sub_type="330" sub_type_text="Cast while Moving (Whitelist) (330)" base_value="0" scaled_value="0" misc_value="7" />
+      <effect number="3" id="1319104" type="6" type_text="Apply Aura (6)" sub_type="330" sub_type_text="Cast while Moving (Whitelist) (330)" base_value="1" scaled_value="1" misc_value="7" />
     </effects>
     <description>Heals the target for $o1 over $d. While channeling, Enveloping Mist$?s227344[, Surging Mist,][]$?s124081[, Zen Pulse,][] and Vivify may be cast instantly on the target.$?a440008[
 
 Follows the target of your Enveloping Mist and Vivify.][]</description>
     <tooltip>Healing for $w1 every $t1 sec.$?a388681[
 
-Damage taken reduced by $w2%.][]$?a1243155[
-
-Movement speed reduced by $w4%.][]</tooltip>
+Damage taken reduced by $w2%.][]</tooltip>
   </spell>
   <spell id="115181" name="Breath of Fire" level="29" gcd="1" cooldown="15" proc_chance="101">
     <class id="monk" name="Monk" />
@@ -496,7 +494,7 @@ You may cast Provoke on the statue to taunt all enemies near the statue.</descri
     <effects count="1">
       <effect number="1" id="129191" type="30" type_text="Energize Power (30)" sub_type="0" base_value="200" scaled_value="200" misc_value_energize="energy" />
     </effects>
-    <description>Chug some Black Ox Brew, which instantly refills your Energy, Purifying Brew charges, and resets the cooldown of Celestial Brew.</description>
+    <description>Chug some Black Ox Brew, which instantly refills your Energy, Purifying Brew charges, and grants one charge of Celestial Brew or Celestial Infusion.</description>
   </spell>
   <spell id="115450" name="Detox" level="10" range="40" gcd="1.5">
     <spec id="Mistweaver Monk" name="mistweaver" />
@@ -788,11 +786,10 @@ Also increases your attack power by ${$s2}.1%.</description>
     <resource type="3" cost="20" type_name="Energy (3)" cost_aura_id="137025" cost_aura_name="Windwalker Monk" />
     <resource type="3" cost="20" type_name="Energy (3)" cost_aura_id="137023" cost_aura_name="Brewmaster Monk" />
     <attributes>0000000000000000100000000000000000100000000000100000000000010100000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100010000000000000100000000000010000000000000010000000000000000000000000000000000000000000000000100100001000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000010000000000000000000100010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="4">
+    <effects count="3">
       <effect number="1" id="134063" type="6" type_text="Apply Aura (6)" sub_type="3" sub_type_text="Periodic Damage (3)" school="nature" school_text="nature" period="1" base_value="0" scaled_value="0" ap_coefficient="0.056" />
       <effect number="2" id="225417" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="200" scaled_value="200" />
       <effect number="3" id="1166995" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="200" scaled_value="200" />
-      <effect number="4" id="1244426" type="6" type_text="Apply Aura (6)" sub_type="33" sub_type_text="Decrease Movement Speed% (33)" base_value="-20" scaled_value="-20" />
     </effects>
     <description>Channel Jade lightning, causing $o1 Nature damage over $117952d to the target$?a154436[, generating 1 Chi each time it deals damage,][] and sometimes knocking back melee attackers.</description>
     <tooltip>Taking $w1 damage every $t1 sec.</tooltip>
@@ -1552,9 +1549,9 @@ Damage taken increased by $w2.][]</tooltip>
     <spec id="Mistweaver Monk" name="mistweaver" />
     <class id="monk" name="Monk" />
     <attributes>0000101110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="16">
-      <effect number="1" id="179708" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="-5" scaled_value="-5" />
-      <effect number="2" id="191104" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="-5" scaled_value="-5" misc_value="22" />
+    <effects count="17">
+      <effect number="1" id="179708" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="-10" scaled_value="-10" />
+      <effect number="2" id="191104" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="-10" scaled_value="-10" misc_value="22" />
       <effect number="3" id="191105" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="0" scaled_value="90" points_per_level="1" />
       <effect number="4" id="191106" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="0" scaled_value="90" points_per_level="1" misc_value="22" />
       <effect number="5" id="191107" type="6" type_text="Apply Aura (6)" sub_type="531" sub_type_text="Modify Guardian Damage Done% (531)" base_value="0" scaled_value="0" />
@@ -1569,6 +1566,7 @@ Damage taken increased by $w2.][]</tooltip>
       <effect number="14" id="260835" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="213" scaled_value="213" />
       <effect number="15" id="741702" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="242" scaled_value="242" misc_value="22" />
       <effect number="16" id="1266574" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="-40" scaled_value="-40" misc_value_2="3441" />
+      <effect number="17" id="1313361" type="6" type_text="Apply Aura (6)" sub_type="330" sub_type_text="Cast while Moving (Whitelist) (330)" base_value="0" scaled_value="0" misc_value="7" />
     </effects>
     <description>Mistweaver Monk core passive</description>
   </spell>
@@ -3526,7 +3524,7 @@ Combines with other Fortifying Brew effects.</description>
       <effect number="1" id="815148" type="6" type_text="Apply Aura (6)" sub_type="454" sub_type_text="Modify Recharge Time% (Category) (454)" base_value="-20" scaled_value="-20" misc_value="1562" />
       <effect number="2" id="815149" type="6" type_text="Apply Aura (6)" sub_type="454" sub_type_text="Modify Recharge Time% (Category) (454)" base_value="-20" scaled_value="-20" misc_value="2293" />
     </effects>
-    <description>Reduces the cooldown of Purifying Brew and Celestial Brew by $s1%.</description>
+    <description>Reduces the cooldown of Purifying Brew, Celestial Brew, and Celestial Infusion by $s1%.</description>
   </spell>
   <spell id="325095" name="Touch of Death" passive="true" level="52" proc_chance="101">
     <spec id="Brewmaster Monk" name="brewmaster" />
@@ -5760,12 +5758,16 @@ Tiger Palm also applies an effect which increases your critical strike chance by
   <spell id="392993" name="Xuen's Battlegear" passive="true" proc_chance="101">
     <class id="monk" name="Monk" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000010000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="3">
+    <effects count="5">
       <effect number="1" id="1031618" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="7" modifier_text="Spell Critical Chance (7)" base_value="20" scaled_value="20" misc_value="7" />
       <effect number="2" id="1031619" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="4000" scaled_value="4000" misc_value="5" />
       <effect number="3" id="1031620" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="40" scaled_value="40" misc_value="5" />
+      <effect number="4" id="1310867" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="500" scaled_value="500" misc_value="5" />
+      <effect number="5" id="1310868" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2500" scaled_value="2500" misc_value="5" />
     </effects>
     <description>Rising Sun Kick critical strikes reduce the cooldown of Fists of Fury by ${$m2/1000} sec.
+
+Spinning Crane Kick reduces the cooldown of Fists of Fury by ${$s4/1000}.1 sec for each unique target struck, up to ${$s5/1000}.1 sec.
 
 The critical strike chance of Rising Sun Kick is increased by $s1%.</description>
   </spell>
@@ -6153,7 +6155,7 @@ While active, $s2% of damage delayed by Stagger is instead Staggered by Niuzao.<
       <effect number="2" id="1043548" type="3" type_text="Dummy (3)" sub_type="0" base_value="3" scaled_value="3" />
       <effect number="3" id="1043953" type="3" type_text="Dummy (3)" sub_type="0" base_value="8" scaled_value="8" />
       <effect number="4" id="1046682" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
-      <effect number="5" id="1284187" type="3" type_text="Dummy (3)" sub_type="0" base_value="10" scaled_value="10" />
+      <effect number="5" id="1284187" type="3" type_text="Dummy (3)" sub_type="0" base_value="5" scaled_value="5" />
     </effects>
     <description>Draws in all nearby clouds of mist, healing the friendly target $?a471761[][and up to ${$s2-1} nearby allies ]for $s1 and an additional ${$s1*$s5/100} per cloud absorbed.
 
@@ -6889,13 +6891,13 @@ Haste increased by $w8%.][]</tooltip>
     <description>$@spelldesc443566</description>
     <tooltip>Movement speed increased by $w1%.</tooltip>
   </spell>
-  <spell id="443571" name="Inner Compass" passive="true" proc_chance="100">
+  <spell id="443571" name="Inner Compass" passive="true">
     <class id="monk" name="Monk" />
-    <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1139581" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
+      <effect number="1" id="1139581" type="6" type_text="Apply Aura (6)" sub_type="226" sub_type_text="Periodic Dummy (226)" period="8" base_value="2" scaled_value="2" />
     </effects>
-    <description>You switch between alignments after an August Celestial assists you, increasing a corresponding secondary stat by $443572s1%.
+    <description>You switch between alignments every $t1 sec, increasing a corresponding secondary stat by $443572s1%.
 
 |cFFFFFFFFCrane Stance|r:
 Haste
@@ -7246,7 +7248,7 @@ Can cast while moving.][]</tooltip>
     </effects>
     <description>Store vitality from $?a137023[$s1%][$s2%] of your damage dealt and $?a137023[$s3%][$s4%] of your $?a137023[effective ][]healing.$?a137024[ Vitality stored from overhealing is reduced.][]
 
-For $450711d after casting $?a137023[Celestial Brew][Thunder Focus Tea] your spells and abilities draw upon the stored vitality to deal $s6% additional $?a137023[damage over $450763d][healing over $450769d].</description>
+For $450711d after casting $?a137023[Celestial Brew or Celestial Infusion][Thunder Focus Tea] your spells and abilities draw upon the stored vitality to deal $s6% additional $?a137023[damage over $450763d][healing over $450769d].</description>
   </spell>
   <spell id="450514" name="Wind's Reach" passive="true">
     <class id="monk" name="Monk" />
@@ -7297,7 +7299,9 @@ The duration of Crashing Momentum is increased by ${$s3/1000} sec and its snare 
     </effects>
     <description>When Aspect of Harmony $?a450870[deals damage or heals]?a137023[deals damage][heals], it has a chance to spread to a nearby $?a450870[target]?a137023[enemy][ally]. When you directly $?a450870[attack or heal]?a137023[attack][heal] an affected target, it has a chance to intensify, withdrawing additional vitality to increase its effect by up to $450508s9%.
 
-$?a137023[Keg Smash][Vivify] no longer contributes vitality, instead drawing on available vitality to increase $?a137023[damage][healing] done by up to $s2%. Vitality stored by other abilities is increased by $s3%.</description>
+$?a137023[Keg Smash][Vivify] no longer contributes vitality. While Aspect of Harmony is not active, $?a137023[Keg Smash][Vivify] instead draws on available vitality to deal an additional $s2% $?a137023[damage over $1292919d][healing over $1292922d].
+
+Vitality stored by other abilities is increased by $s3%.</description>
   </spell>
   <spell id="450531" name="Aspect of Harmony" duration="-1">
     <class id="monk" name="Monk" />
@@ -7587,7 +7591,7 @@ Below $s2% health: Healing received increased by $450571s1%. </description>
       <effect number="1" id="1151116" type="6" type_text="Apply Aura (6)" sub_type="411" sub_type_text="Modify Cooldown Charge (Category) (411)" base_value="1" scaled_value="1" misc_value="2294" />
       <effect number="2" id="1153986" type="6" type_text="Apply Aura (6)" sub_type="411" sub_type_text="Modify Cooldown Charge (Category) (411)" base_value="1" scaled_value="1" misc_value="2293" />
     </effects>
-    <description>$?a137023[Celestial Brew][Thunder Focus Tea] has $s1 additional charge.</description>
+    <description>$?a137023[Celestial Brew and Celestial Infusion have][Thunder Focus Tea has] $s1 additional charge.</description>
   </spell>
   <spell id="450912" name="Path of Resurgence" passive="true" proc_chance="101">
     <class id="monk" name="Monk" />
@@ -7648,8 +7652,8 @@ Below $s2% health: Healing received increased by $450571s1%. </description>
     </effects>
     <description>Auto attack critical strikes generate double the amount of Flurry Charges.
 
-Fists of Fury damage increased by $s2%.
-Keg Smash damage increased by $s3%.</description>
+$?c3[Fists of Fury damage increased by $s2%.][
+Keg Smash damage increased by $s3%.]</description>
   </spell>
   <spell id="450989" name="Efficient Training" passive="true">
     <class id="monk" name="Monk" />
@@ -8431,7 +8435,7 @@ Invoking Xuen, the White Tiger activates Flurry of Xuen.</description>
       <effect number="1" id="1163633" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="25" scaled_value="25" />
       <effect number="2" id="1251978" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="5" scaled_value="5" />
     </effects>
-    <description>At the end of your Fists of Fury channel, you release a Jadefire Stomp, dealing $388207s1 damage to $s2 enemies in front of you and increasing your movement speed by $451943s1% for $451943d.</description>
+    <description>At the end of your Fists of Fury channel, you release a Jadefire Stomp, dealing $1248815s1 damage to $s2 $Lenemy:enemies; in front of you and increasing your movement speed by $451943s1% for $451943d.</description>
   </spell>
   <spell id="458431" name="Lotus Infusion" passive="true">
     <class id="monk" name="Monk" />
@@ -8578,6 +8582,7 @@ Your Stamina is increased by $s2%.</description>
   <spell id="467307" name="Rushing Wind Kick" gcd="1.5" cooldown="10">
     <class id="monk" name="Monk" />
     <resource type="0" cost="1.25" type_name="Base Mana (0)" cost_mana_flat="3125" cost_mana_flat_level="90" cost_aura_id="137024" cost_aura_name="Mistweaver Monk" />
+    <resource type="12" cost="2" type_name="Chi (12)" cost_aura_id="137025" cost_aura_name="Windwalker Monk" />
     <attributes>0000000000000000100000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="3">
       <effect number="1" id="1180392" type="64" type_text="Trigger Spell (64)" trigger_spell_name="Rushing Wind Kick" sub_type="0" base_value="6" scaled_value="6" trigger_spell_id="468179" />
@@ -9025,17 +9030,6 @@ The global cooldown of abilities used through the Single-Button Assistant is $s1
     <description>$@spelldesc1231411</description>
     <tooltip>Restoring $s1% health every sec.</tooltip>
   </spell>
-  <spell id="1236377" name="Monk Master of Harmony 11.2 Class Set 2pc" passive="true">
-    <class id="monk" name="Monk" />
-    <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="4">
-      <effect number="1" id="1232295" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="180" scaled_value="180" />
-      <effect number="2" id="1237215" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="20" scaled_value="20" />
-      <effect number="3" id="1237216" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="20" scaled_value="20" />
-      <effect number="4" id="1237217" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="90" scaled_value="90" />
-    </effects>
-    <description>Gaining vitality has an increasing chance to cause your next Tiger Palm to unleash a Harmonic Surge, dealing $?c1[${$s1*$1239442s1/100}][${$s2*$1239442s1/100}] Nature damage split between your target and other nearby enemies, and $?c1[${$s3*$1239443s1/100}][${$s4*$1239443s1/100}] healing to up to $1239443s2 injured allies.</description>
-  </spell>
   <spell id="1236382" name="Monk Conduit of the Celestials 11.2 Class Set 4pc" passive="true">
     <class id="monk" name="Monk" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
@@ -9094,32 +9088,6 @@ Healing received from $@auracaster increased by $w2%.][]</tooltip>
     <tooltip>Yu'lon is increasing the cooldown recovery rate of $?c2[Renewing Mist, Rising Sun Kick, Life Cocoon, and Thunder Focus Tea]?c3[Fists of Fury, Strike of the Windlord, Rising Sun Kick, and Whirling Dragon Punch][] by $w2%.$?a1236382[
 
 Haste increased by $w8%.][]</tooltip>
-  </spell>
-  <spell id="1239442" name="Harmonic Surge" range="8">
-    <class id="monk" name="Monk" />
-    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
-      <effect number="1" id="1237211" type="2" type_text="School Damage (2)" school="nature" school_text="nature" sub_type="0" base_value="0" scaled_value="0" sp_coefficient="4" />
-    </effects>
-    <description>$@spelldesc1236377</description>
-  </spell>
-  <spell id="1239443" name="Harmonic Surge" velocity="30">
-    <class id="monk" name="Monk" />
-    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
-      <effect number="1" id="1237212" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" sp_coefficient="5" />
-      <effect number="2" id="1237288" type="3" type_text="Dummy (3)" sub_type="0" base_value="5" scaled_value="5" />
-    </effects>
-    <description>$@spelldesc1236377</description>
-  </spell>
-  <spell id="1239483" name="Potential Energy" duration="30" stacks_max="6" proc_chance="101">
-    <class id="monk" name="Monk" />
-    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
-      <effect number="1" id="1237292" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="1" scaled_value="1" />
-    </effects>
-    <description>$@spelldesc1236377</description>
-    <tooltip>Your next Tiger Palm will cause a Harmonic Surge.</tooltip>
   </spell>
   <spell id="1241059" name="Celestial Infusion" gcd="1" duration="16">
     <class id="monk" name="Monk" />
@@ -9211,14 +9179,11 @@ Haste increased by $w8%.][]</tooltip>
   <spell id="1243155" name="Way of the Serpent" passive="true">
     <class id="monk" name="Monk" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="3">
+    <effects count="2">
       <effect number="1" id="1243111" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="15" scaled_value="15" />
       <effect number="2" id="1243112" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="30" scaled_value="30" misc_value="22" />
-      <effect number="3" id="1280566" type="6" type_text="Apply Aura (6)" sub_type="330" sub_type_text="Cast while Moving (Whitelist) (330)" base_value="0" scaled_value="0" misc_value="7" />
     </effects>
-    <description>Soothing Mist and Crackling Jade Lightning may be channeled while moving, but movement speed is reduced by $1268958s1% while channeling.
-
-$?s399491[Sheilun's Gift][Vivify] healing increased by $s1% and Renewing Mist's healing is increased by $s2%.</description>
+    <description>$?s399491[Sheilun's Gift][Vivify] healing increased by $s1% and Renewing Mist's healing is increased by $s2%.</description>
   </spell>
   <spell id="1243287" name="Diffuse Magic" passive="true">
     <class id="monk" name="Monk" />
@@ -9261,9 +9226,9 @@ $s1% of Rising Sun Kick's damage splashes onto nearby enemies. Damage is reduced
     <class id="monk" name="Monk" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1251876" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="1" modifier_text="Spell Duration (1)" base_value="1000" scaled_value="1000" misc_value="1" />
+      <effect number="1" id="1251876" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="20" scaled_value="20" />
     </effects>
-    <description>The duration of Fists of Fury is increased by ${$s1/1000}.1 sec.</description>
+    <description>The damage of Fists of Fury is increased by $s1%.</description>
   </spell>
   <spell id="1248749" name="Cyclone's Drift" passive="true">
     <class id="monk" name="Monk" />
@@ -9279,7 +9244,7 @@ $s1% of Rising Sun Kick's damage splashes onto nearby enemies. Damage is reduced
     <effects count="1">
       <effect number="1" id="1251982" type="3" type_text="Dummy (3)" sub_type="0" base_value="5" scaled_value="5" />
     </effects>
-    <description>You release a Jadefire Stomp, dealing $388207s1 damage to $s2 enemies in front of you.</description>
+    <description>You release a Jadefire Stomp, dealing $1248815s1 damage to $s2 enemies in front of you.</description>
   </spell>
   <spell id="1248815" name="Jadefire Stomp" range="100">
     <class id="monk" name="Monk" />
@@ -9344,8 +9309,8 @@ $@spelldesc443028</description>
   </spell>
   <spell id="1249625" name="Zenith" duration="15" cooldown="16" stacks_max="1" proc_chance="101">
     <class id="monk" name="Monk" />
-    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="13">
+    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000000000000000000000000000000000010100000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="14">
       <effect number="1" id="1253256" type="6" type_text="Apply Aura (6)" sub_type="290" sub_type_text="Modify Critical Strike% (290)" base_value="0" scaled_value="0" />
       <effect number="2" id="1253257" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="0" scaled_value="0" />
       <effect number="3" id="1253258" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="23" modifier_text="Spell Effect 3 (23)" base_value="1000" scaled_value="1000" misc_value="23" />
@@ -9354,15 +9319,16 @@ $@spelldesc443028</description>
       <effect number="6" id="1253261" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="-120" scaled_value="-120" misc_value="12" misc_value_2="5097" />
       <effect number="7" id="1253262" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="14" modifier_text="Spell Resource Cost 1 (14)" base_value="-1" scaled_value="-1" misc_value="14" />
       <effect number="8" id="1253263" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="-1" scaled_value="-1" misc_value="3" misc_value_2="5412" />
-      <effect number="9" id="1253264" type="30" type_text="Energize Power (30)" sub_type="0" base_value="2" scaled_value="2" misc_value_energize="chi" />
+      <effect number="9" id="1253264" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
       <effect number="10" id="1253265" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
       <effect number="11" id="1272989" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="-50" scaled_value="-50" misc_value="33" misc_value_2="5097" />
       <effect number="12" id="1272990" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="-120" scaled_value="-120" misc_value="12" misc_value_2="5097" />
       <effect number="13" id="1301542" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="34" modifier_text="Spell Resource Cost 2 (34)" base_value="-1" scaled_value="-1" misc_value="34" />
+      <effect number="14" id="1310823" type="6" type_text="Apply Aura (6)" sub_type="332" sub_type_text="Override Action Spell (Misc w/ Base) (332)" base_value="1272696" scaled_value="1272696" misc_value="1249625" />
     </effects>
     <description>Chi costs are reduced by $s7 and Blackout Kick reduces the cooldown of affected abilities by an additional ${$s3/1000} sec for $d.
 
-Activating Zenith resets the remaining cooldown on Rising Sun Kick and grants $s9 Chi.</description>
+Activating Zenith resets the remaining cooldown on Rising Sun Kick.</description>
     <tooltip>Chi costs are reduced by $w7 and Blackout Kick reduces the cooldown of affected abilities by an additional ${$w3/1000} sec.$?$w1&gt;0[
 
 Critical strike chance increased by $w1%.][]</tooltip>
@@ -9430,14 +9396,14 @@ Critical strike chance increased by $w1%.][]</tooltip>
     <description>Your last ability to trigger Mastery: Combo Strikes was Storm, Earth, and Fire.</description>
     <tooltip>Your last ability to trigger Mastery: Combo Strikes was Storm, Earth, and Fire.</tooltip>
   </spell>
-  <spell id="1249763" name="Combo Strikes: Zenith" duration="-1">
+  <spell id="1249763" name="Combo Strikes: Zenith Stomp" duration="-1">
     <class id="monk" name="Monk" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
       <effect number="1" id="1253505" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
     </effects>
-    <description>Your last ability to trigger Mastery: Combo Strikes was Zenith.</description>
-    <tooltip>Your last ability to trigger Mastery: Combo Strikes was Zenith.</tooltip>
+    <description>Your last ability to trigger Mastery: Combo Strikes was Zenith Stomp.</description>
+    <tooltip>Your last ability to trigger Mastery: Combo Strikes was Zenith Stomp.</tooltip>
   </spell>
   <spell id="1249764" name="Combo Strikes: Crackling Jade Lightning" duration="-1">
     <class id="monk" name="Monk" />
@@ -9522,7 +9488,7 @@ Critical strike chance increased by $w1%.][]</tooltip>
     <effects count="1">
       <effect number="1" id="1253955" type="6" type_text="Apply Aura (6)" sub_type="42" sub_type_text="Proc Trigger Spell (42)" trigger_spell_name="Blackout Kick!" base_value="0" scaled_value="0" trigger_spell_id="116768" />
     </effects>
-    <description>Casting Strike of the Windlord and Whirling Dragon Punch grants Blackout Kick!.</description>
+    <description>Casting Strike of the Windlord or Whirling Dragon Punch grants Blackout Kick!.</description>
   </spell>
   <spell id="1250554" name="Rushing Wind Kick" duration="15" stacks_initial="1" stacks_max="1" proc_chance="101">
     <class id="monk" name="Monk" />
@@ -9568,7 +9534,7 @@ Movement speed reduced by $s2%.</tooltip>
     <spec id="Windwalker Monk" name="windwalker" />
     <class id="monk" name="Monk" />
     <attributes>0000101110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="23">
+    <effects count="24">
       <effect number="1" id="1266481" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="12" modifier_text="Spell Effect 2 (12)" base_value="2" scaled_value="2" misc_value="12" />
       <effect number="2" id="1266482" type="6" type_text="Apply Aura (6)" sub_type="453" sub_type_text="Modify Recharge Time (Category) (453)" base_value="-15000" scaled_value="-15000" misc_value="1910" />
       <effect number="3" id="1266483" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="-18" scaled_value="-18" misc_value="3" misc_value_2="3563" />
@@ -9592,6 +9558,7 @@ Movement speed reduced by $s2%.</tooltip>
       <effect number="21" id="1305800" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="-100" scaled_value="-100" misc_value="11" misc_value_2="6424" />
       <effect number="22" id="1308371" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="-3" scaled_value="-3" misc_value="3" misc_value_2="2991" />
       <effect number="23" id="1308372" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="50" scaled_value="50" misc_value="12" misc_value_2="6476" />
+      <effect number="24" id="1310809" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="-2" scaled_value="-2" misc_value="34" misc_value_2="6424" />
     </effects>
   </spell>
   <spell id="1258138" name="Mistweaver Monk" passive="true">
@@ -9681,19 +9648,20 @@ Movement speed reduced by $s2%.</tooltip>
       <effect number="1" id="1269975" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="20" scaled_value="20" />
       <effect number="2" id="1269976" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="5" scaled_value="5" />
     </effects>
-    <description>Rising Sun Kick and Vivify have a chance to activate Spiritfont, causing your next Enveloping Mist to channel Soothing Mist from you onto up to $s2 allies at $s1% effectiveness for $1260670d.
+    <description>Rising Sun Kick and Vivify have a chance to activate Spiritfont, causing your next Enveloping Mist's cast time to be reduced by $1260565s3% and channel Soothing Mist from you onto up to $s2 allies at $s1% effectiveness for $1260670d.
 
 If Spiritfont's Soothing Mists heal a full health target, they will jump to another injured ally or split its healing into your remaining Soothing Mists.</description>
   </spell>
   <spell id="1260565" name="Spiritfont" duration="30" stacks_max="2" proc_chance="101">
     <class id="monk" name="Monk" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="3">
       <effect number="1" id="1269991" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="30" scaled_value="30" />
       <effect number="2" id="1269992" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="5" scaled_value="5" />
+      <effect number="3" id="1313044" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="10" modifier_text="Spell Cast Time (10)" base_value="-50" scaled_value="-50" misc_value="10" />
     </effects>
     <description>$@spelldesc1260511</description>
-    <tooltip>Your next Enveloping Mist to channel Soothing Mist from you onto up to $w2 allies at $w1% effectiveness for $1260670d.</tooltip>
+    <tooltip>Your next Enveloping Mist's cast time is reduced by $w3% and channels Soothing Mist from you onto up to $w2 allies at $w1% effectiveness for $1260670d.</tooltip>
   </spell>
   <spell id="1260619" name="Elevated Stagger" duration="5" proc_chance="101">
     <class id="monk" name="Monk" />
@@ -9741,38 +9709,46 @@ If Spiritfont's Soothing Mists heal a full health target, they will jump to anot
     <description>Blackout Kick deals $s1% increased damage. Spinning Crane Kick deals $s2% additional damage.
 </description>
   </spell>
-  <spell id="1261703" name="Tigereye Brew" passive="true">
+  <spell id="1261703" name="Tigereye Brew" passive="true" proc_chance="100">
     <class id="monk" name="Monk" />
-    <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
+    <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="3">
       <effect number="1" id="1271547" type="6" type_text="Apply Aura (6)" sub_type="226" sub_type_text="Periodic Dummy (226)" period="8" base_value="10" scaled_value="10" />
+      <effect number="2" id="1310710" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="3" scaled_value="3" />
+      <effect number="3" id="1310900" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="20" scaled_value="20" />
     </effects>
-    <description>While in combat, you gain Tigereye Brew every $t1 sec, causing your critical strike chance to be increased by $1261724s1% during your next Zenith, stacking up to $1261724u times. Generates quickly up to $s1 stacks while out of combat.</description>
+    <description>Every $s2 Chi spent generates Tigereye Brew. Zenith consumes up to $s3 Tigereye Brew stacks to increase your critical strike chance for its duration by $1261724s1% per stack.
+
+Generates quickly up to $s1 stacks while out of combat and may generate up to a maximum of $1261724u stacks.</description>
   </spell>
-  <spell id="1261724" name="Tigereye Brew" duration="120" stacks_max="20" proc_chance="101">
+  <spell id="1261724" name="Tigereye Brew" duration="120" stacks_max="30" proc_chance="101">
     <class id="monk" name="Monk" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1271571" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" trigger_spell_id="1249625" />
+      <effect number="1" id="1271571" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="1" scaled_value="1" trigger_spell_id="1249625" />
     </effects>
     <description>$@spelldesc1261703</description>
-    <tooltip>Your critical strike chance is increased by $w1% during your next Zenith.</tooltip>
+    <tooltip>Your critical strike chance is increased by $s1% during your next Zenith per stack consumed.</tooltip>
   </spell>
   <spell id="1261844" name="Tigereye Brew" passive="true">
     <class id="monk" name="Monk" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
+    <effects count="2">
       <effect number="1" id="1271720" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="15" modifier_text="Spell Critical Bonus Multiplier (15)" base_value="5" scaled_value="5" misc_value="15" />
+      <effect number="2" id="1310783" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="500" scaled_value="500" />
     </effects>
-    <description>Your critical strike damage is increased by $s1%.</description>
+    <description>Your spells and abilities deal $s1% increased critical strike damage.</description>
   </spell>
-  <spell id="1261849" name="Tigereye Brew" passive="true" proc_chance="100">
+  <spell id="1261849" name="Tigereye Brew" passive="true">
     <class id="monk" name="Monk" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1271735" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="15" scaled_value="15" />
+      <effect number="1" id="1271735" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
     </effects>
-    <description>You have a chance equal to your critical strike to increase the damage of your Fists of Fury by $1262042s1% each time it deals damage.</description>
+    <description>Zenith now grants access to $s1 additional Zenith Stomps.
+
+$@spellicon1272696 $@spellname1272696:
+$@spelldesc1272696</description>
   </spell>
   <spell id="1262017" name="Fuel on the Fire" passive="true">
     <class id="monk" name="Monk" />
@@ -9798,15 +9774,6 @@ If Spiritfont's Soothing Mists heal a full health target, they will jump to anot
       <effect number="1" id="1272062" type="179" type_text="Create Area Trigger (179)" sub_type="0" base_value="1" scaled_value="1" misc_value="40226" />
     </effects>
     <description>$@spelldesc1262017</description>
-  </spell>
-  <spell id="1262042" name="Tigereye Brew" duration="10" stacks_max="10" proc_chance="101">
-    <class id="monk" name="Monk" />
-    <attributes>0000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
-      <effect number="1" id="1272065" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="15" scaled_value="15" />
-    </effects>
-    <description>$@spelldesc451294</description>
-    <tooltip>Fists of Fury's damage increased by $s1%.</tooltip>
   </spell>
   <spell id="1262159" name="Fuel on the Fire" range="40">
     <class id="monk" name="Monk" />
@@ -9862,7 +9829,7 @@ If Spiritfont's Soothing Mists heal a full health target, they will jump to anot
       <effect number="1" id="1272983" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="20" scaled_value="20" misc_value_2="6058" />
       <effect number="2" id="1272984" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="20" scaled_value="20" misc_value_2="2369" />
     </effects>
-    <description>$?c1[Invoke Niuzao, the Black Ox's stomp damage increased by $s2%.][Zenith Stomp damage increased by $s1%].</description>
+    <description>$?c1[Invoke Niuzao, the Black Ox's stomp damage increased by $s2%][Zenith Stomp damage increased by $s1%].</description>
   </spell>
   <spell id="1262612" name="Shado Over the Battlefield" passive="true">
     <class id="monk" name="Monk" />
@@ -10246,16 +10213,17 @@ $@spelldesc1265140</description>
   <spell id="1268807" name="Emperor's Elixir" passive="true">
     <class id="monk" name="Monk" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
+    <effects count="2">
       <effect number="1" id="1280328" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
+      <effect number="2" id="1313370" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="20" scaled_value="20" />
     </effects>
     <description>Thunder Focus Tea now empowers Enveloping Mist and Rising Sun Kick further.
 
 $@spellicon124682 $@spellname124682:
-Begins a channel of Soothing Mist that may be cast while moving onto your target.
+Begins a channel of Soothing Mist onto your target.
 
 $@spellicon107428 $@spellname107428:
-Releases a Jadefire Stomp infront of you.
+Releases a Jadefire Stomp infront of you that transfers damage into Ancient Teachings at $s2% effectiveness.
 
 $@spellicon1248812 $@spellname1248812:
 $@spelldesc1248812
@@ -10269,15 +10237,6 @@ $@spelldesc1248812
       <effect number="2" id="1280576" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="20" scaled_value="20" />
     </effects>
     <description>Renewing Mist healing is increased by up to $s1% in proportion to its coverage on yourself and your allies.</description>
-  </spell>
-  <spell id="1268958" name="Soothing Mist" range="40" duration="-1">
-    <class id="monk" name="Monk" />
-    <attributes>0000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="3">
-      <effect number="1" id="1280545" type="6" type_text="Apply Aura (6)" sub_type="33" sub_type_text="Decrease Movement Speed% (33)" base_value="-20" scaled_value="-20" />
-      <effect number="2" id="1280546" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
-      <effect number="3" id="1280568" type="6" type_text="Apply Aura (6)" sub_type="330" sub_type_text="Cast while Moving (Whitelist) (330)" base_value="0" scaled_value="0" misc_value="7" />
-    </effects>
   </spell>
   <spell id="1269159" name="Rushing Wind Kick">
     <class id="monk" name="Monk" />
@@ -10298,32 +10257,38 @@ $@spelldesc1248812
   <spell id="1270958" name="Harmonic Surge" passive="true">
     <class id="monk" name="Monk" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="6">
+    <effects count="8">
       <effect number="1" id="1283407" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="55" scaled_value="55" />
       <effect number="2" id="1283408" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="10" scaled_value="10" />
       <effect number="3" id="1283409" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="10" scaled_value="10" />
       <effect number="4" id="1283410" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="40" scaled_value="40" />
       <effect number="5" id="1283411" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
       <effect number="6" id="1283412" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
+      <effect number="7" id="1306317" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="5" scaled_value="5" />
+      <effect number="8" id="1306318" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="5" scaled_value="5" />
     </effects>
-    <description>Casting $?s322507[Celestial Brew]?s1241059[Celestial Infusion][Thunder Focus Tea] guarantees that your next $?c1[$s5][$s6] $Lcast:casts; of Tiger Palm or Vivify will trigger a Harmonic Surge, dealing $?c1[${$s1*$1239442s1/100}][${$s2*$1239442s1/100}] Nature damage split between your target and other nearby enemies, and $?c1[${$s3*$1239443s1/100}][${$s4*$1239443s1/100}] healing to up to $1239443s2 injured allies.</description>
+    <description>Casting $?s322507[Celestial Brew]?s1241059[Celestial Infusion][Thunder Focus Tea] grants $?c1[$s5][$s6] $Lcharge:charges; of Potential Energy. Your next cast of Tiger Palm or Vivify consumes all charges of Potential Energy to cause a Harmonic Surge.
+
+$@spellicon1271011$@spellname1271011:
+$@spelldesc1271011</description>
   </spell>
-  <spell id="1270990" name="Harmonic Surge" duration="30" stacks_max="6" proc_chance="101">
+  <spell id="1270990" name="Potential Energy" duration="30" stacks_max="6" proc_chance="101">
     <class id="monk" name="Monk" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
       <effect number="1" id="1283459" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="1" scaled_value="1" />
     </effects>
-    <description>$@spelldesc1270958</description>
+    <description>Your next cast of Tiger Palm or Vivify triggers a Harmonic Surge, dealing $?c1[${$1271011s1*$1270958s1/100}][${$1271011s1*$1270958s2/100}] Nature damage to your target and $?c1[${$1271011s1*$1270958s1/100}][${$1271011s1*$1270958s2/100}] to other nearby enemies, and $?c1[${$1271045s1*$1270958s3/100}][${$1271045s1*$1270958s4/100}] healing to up to $1271045s2 injured allies. Damage and healing increased per charge of Potential Energy.</description>
     <tooltip>Your next Tiger Palm or Vivify will cause a Harmonic Surge.</tooltip>
   </spell>
   <spell id="1271011" name="Harmonic Surge" range="8">
     <class id="monk" name="Monk" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
+    <effects count="2">
       <effect number="1" id="1283488" type="2" type_text="School Damage (2)" school="nature" school_text="nature" sub_type="0" base_value="0" scaled_value="0" sp_coefficient="4" />
+      <effect number="2" id="1306315" type="2" type_text="School Damage (2)" school="nature" school_text="nature" sub_type="0" base_value="0" scaled_value="0" sp_coefficient="4" />
     </effects>
-    <description>$@spelldesc1270958</description>
+    <description>For each charge of Potential Energy, deal $?c1[${$1271011s1*$1270958s1/100}][${$1271011s1*$1270958s2/100}] Nature damage to your target and $?c1[${$1271011s2*$1270958s1/100}][${$1271011s2*$1270958s2/100}] Nature damage to other nearby enemies, and heal up to $1271045s2 allies for $?c1[${$1271045s1*$1270958s3/100}][${$1271045s1*$1270958s4/100}]. Damage reduced above $1270958s7 targets.</description>
   </spell>
   <spell id="1271045" name="Harmonic Surge" velocity="30">
     <class id="monk" name="Monk" />
@@ -10332,7 +10297,7 @@ $@spelldesc1248812
       <effect number="1" id="1283536" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" sp_coefficient="5" />
       <effect number="2" id="1283537" type="3" type_text="Dummy (3)" sub_type="0" base_value="5" scaled_value="5" />
     </effects>
-    <description>$@spelldesc1270958</description>
+    <description>$@spelldesc1271011</description>
   </spell>
   <spell id="1271048" name="Potential Energy" passive="true">
     <class id="monk" name="Monk" />
@@ -10340,7 +10305,7 @@ $@spelldesc1248812
     <effects count="1">
       <effect number="1" id="1283542" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
     </effects>
-    <description>Casting $?c1[Keg Smash][Rising Sun Kick or Rushing Wind Kick] guarantees that your next cast of Tiger Palm or Vivify will cause a Harmonic Surge.</description>
+    <description>Casting $?c1[Keg Smash][Rising Sun Kick or Rushing Wind Kick] grants a charge of Potential Energy.</description>
   </spell>
   <spell id="1271105" name="Meditative Focus" passive="true">
     <class id="monk" name="Monk" />
@@ -10431,15 +10396,20 @@ Nature damage dealt by your main hand auto-attacks is increased by $s4% and they
     <effects count="1">
       <effect number="1" id="1285948" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="5" scaled_value="5" />
     </effects>
-    <description>Activating Zenith causes you to release a powerful stomp, dealing $1272696s1 Nature damage to nearby enemies, reduced beyond $s1 targets.</description>
+    <description>Activating Zenith causes you to release a powerful stomp, dealing $1272696s1 Nature damage to nearby enemies, reduced beyond $s1 targets.
+
+|cFFFFFFFFGenerates $1272696s2 Chi.</description>
   </spell>
-  <spell id="1272696" name="Zenith Stomp" level="1" range="100">
+  <spell id="1272696" name="Zenith Stomp" level="1" range="100" gcd="1" cooldown="1">
     <class id="monk" name="Monk" />
-    <attributes>0000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
+    <attributes>0000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="2">
       <effect number="1" id="1285950" type="2" type_text="School Damage (2)" school="nature" school_text="nature" sub_type="0" base_value="0" scaled_value="0" ap_coefficient="10" />
+      <effect number="2" id="1310821" type="30" type_text="Energize Power (30)" sub_type="0" base_value="2" scaled_value="2" misc_value_energize="chi" />
     </effects>
-    <description>$@spelldesc1272694</description>
+    <description>Release a powerful stomp, dealing $1272696s1 Nature damage to nearby enemies, reduced beyond $1272694s1 targets.
+
+|cFFFFFFFFGenerates $s2 Chi.</description>
   </spell>
   <spell id="1272781" name="Tiger Fang" passive="true" level="19">
     <class id="monk" name="Monk" />
@@ -10577,5 +10547,32 @@ Each addtional target reduces this bonus by $s2%.</description>
       <effect number="2" id="1301853" type="6" type_text="Apply Aura (6)" sub_type="332" sub_type_text="Override Action Spell (Misc w/ Base) (332)" base_value="1242468" scaled_value="1242468" misc_value="322101" />
     </effects>
     <description>Sheilun's Gift and Vivify healing is increased by $s1% on yourself.</description>
+  </spell>
+  <spell id="1291484" name="Zenith Stomp" duration="30" stacks_initial="1" stacks_max="3" proc_chance="100">
+    <class id="monk" name="Monk" />
+    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1310866" type="6" type_text="Apply Aura (6)" sub_type="408" sub_type_text="Set Action Button Spell Count (408)" base_value="1" scaled_value="1" trigger_spell_id="1272696" />
+    </effects>
+    <description>$@spelldesc1272694</description>
+    <tooltip>Zenith Stomp may be cast.</tooltip>
+  </spell>
+  <spell id="1292919" name="Coalescence" range="50000" velocity="30" duration="8" proc_chance="101">
+    <class id="monk" name="Monk" />
+    <attributes>0000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000010000000000000100000000000010000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000001000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1313286" type="6" type_text="Apply Aura (6)" sub_type="3" sub_type_text="Periodic Damage (3)" school="nature" school_text="nature" period="1" base_value="0" scaled_value="0" />
+    </effects>
+    <description>$@spelldesc450529</description>
+    <tooltip>Dealing $w1 damage per second.</tooltip>
+  </spell>
+  <spell id="1292922" name="Coalescence" range="50000" velocity="30" duration="8" proc_chance="101">
+    <class id="monk" name="Monk" />
+    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000010000000010000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000100000000000000000000000000000000000000000001000000001000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1313290" type="6" type_text="Apply Aura (6)" sub_type="8" sub_type_text="Periodic Heal (8)" base_value="0" scaled_value="0" />
+    </effects>
+    <description>$@spelldesc450529</description>
+    <tooltip>Healing $w1 per second.</tooltip>
   </spell>
 </spell_query>

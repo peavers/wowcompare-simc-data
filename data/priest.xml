@@ -495,7 +495,7 @@ Summons a Shadowfiend to attack your target for $1280172d.$?c3[
 
 |cFFFFFFFFGenerates ${$200010s1/100} Insanity each time the Shadowfiend attacks.|r][
 
-|cFFFFFFFFGenerates ${$343727m1/100}.1% mana each time the Shadowfiend attacks.|r]</description>
+|cFFFFFFFFGenerates ${$343727m1/10}.1% mana each time the Shadowfiend attacks.|r]</description>
   </spell>
   <spell id="34861" name="Holy Word: Sanctify" range="40" gcd="1.5">
     <class id="priest" name="Priest" />
@@ -863,7 +863,7 @@ Increases the healing of Renew by ${$s3}.1%.</description>
     <class id="priest" name="Priest" />
     <attributes>0000101100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
-      <effect number="1" id="135203" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="35" scaled_value="35" />
+      <effect number="1" id="135203" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="28" scaled_value="28" />
       <effect number="2" id="178045" type="3" type_text="Dummy (3)" sub_type="0" base_value="5" scaled_value="5" />
     </effects>
     <description>Power Word: Shield, Flash Heal, Plea, Penance, and Power Word: Radiance apply Atonement to your target for $194384d.
@@ -1329,9 +1329,9 @@ Or maybe it's just subtle mind control.</description>
     <class id="priest" name="Priest" />
     <attributes>0000101110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="17">
-      <effect number="1" id="179715" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="13" scaled_value="13" />
-      <effect number="2" id="191076" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="13" scaled_value="13" misc_value="22" />
-      <effect number="3" id="191077" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="24" modifier_text="Spell Coefficient (24)" base_value="13" scaled_value="13" misc_value="24" />
+      <effect number="1" id="179715" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="22" scaled_value="22" />
+      <effect number="2" id="191076" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="22" scaled_value="22" misc_value="22" />
+      <effect number="3" id="191077" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="24" modifier_text="Spell Coefficient (24)" base_value="22" scaled_value="22" misc_value="24" />
       <effect number="4" id="191078" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="0" scaled_value="90" points_per_level="1" />
       <effect number="5" id="191079" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="0" scaled_value="90" points_per_level="1" misc_value="22" />
       <effect number="6" id="869198" type="6" type_text="Apply Aura (6)" sub_type="429" sub_type_text="Modify Pet Damage Done% (429)" base_value="20" scaled_value="20" />
@@ -1372,9 +1372,9 @@ Or maybe it's just subtle mind control.</description>
       <effect number="16" id="1035935" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="30" scaled_value="30" />
       <effect number="17" id="1042533" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="165" scaled_value="165" />
       <effect number="18" id="1049712" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="165" scaled_value="165" misc_value="22" />
-      <effect number="19" id="1079597" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="41" scaled_value="41" />
+      <effect number="19" id="1079597" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="76" scaled_value="76" />
       <effect number="20" id="1079598" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="25" scaled_value="25" misc_value="22" />
-      <effect number="21" id="1081540" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="24" modifier_text="Spell Coefficient (24)" base_value="99" scaled_value="99" misc_value="24" />
+      <effect number="21" id="1081540" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="24" modifier_text="Spell Coefficient (24)" base_value="149" scaled_value="149" misc_value="24" />
       <effect number="22" id="1081541" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="-33" scaled_value="-33" />
       <effect number="23" id="1089477" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="-33" scaled_value="-33" />
       <effect number="24" id="1302601" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="60" scaled_value="60" misc_value="23" misc_value_2="6366" />
@@ -1527,7 +1527,7 @@ Or maybe it's just subtle mind control.</description>
     <resource type="0" cost="3.5000000000000004" type_name="Base Mana (0)" cost_mana_flat="8750" cost_mana_flat_level="90" />
     <attributes>0000000000000000100000000000000100000000000000000000000000000000000000000000000000010000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="271185" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" sp_coefficient="14.25" />
+      <effect number="1" id="271185" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" sp_coefficient="17.8125" />
     </effects>
     <description>Wraps an ally in shadows which heal for $s1, but at a price.
 
@@ -1674,7 +1674,7 @@ $@spelldesc139</description>
     <attributes>0000000000000000100000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="4">
       <effect number="1" id="285534" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
-      <effect number="2" id="298593" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" sp_coefficient="4.6" />
+      <effect number="2" id="298593" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" sp_coefficient="5.75" />
       <effect number="3" id="298594" type="3" type_text="Dummy (3)" sub_type="0" base_value="4" scaled_value="4" />
       <effect number="4" id="298595" type="3" type_text="Dummy (3)" sub_type="0" base_value="60" scaled_value="60" />
     </effects>
@@ -1987,7 +1987,7 @@ When Guardian Spirit expires without saving the target from death, reduce its re
     <resource type="0" cost="2.2" type_name="Base Mana (0)" cost_mana_flat="5500" cost_mana_flat_level="90" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="295730" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" sp_coefficient="2.4" />
+      <effect number="1" id="295730" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" sp_coefficient="3" />
     </effects>
     <description>A quick, efficient plea to heal an ally for $s1.</description>
   </spell>
@@ -4809,13 +4809,12 @@ $healing=${($SPS*$s5/100)*(1+$@versadmg)*$m3/100}</variables>
   <spell id="375981" name="Shadowy Insight" duration="10" proc_chance="101">
     <class id="priest" name="Priest" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="6">
+    <effects count="5">
       <effect number="1" id="1002727" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="10" modifier_text="Spell Cast Time (10)" base_value="-100" scaled_value="-100" misc_value="10" />
       <effect number="2" id="1074372" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="0" scaled_value="0" />
       <effect number="3" id="1074373" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="12" modifier_text="Spell Effect 2 (12)" base_value="0" scaled_value="0" misc_value="12" />
       <effect number="4" id="1279065" type="6" type_text="Apply Aura (6)" sub_type="411" sub_type_text="Modify Cooldown Charge (Category) (411)" base_value="1" scaled_value="1" misc_value="1602" />
-      <effect number="5" id="1279066" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="14" modifier_text="Spell Resource Cost 1 (14)" base_value="0" scaled_value="0" misc_value="14" />
-      <effect number="6" id="1313928" type="6" type_text="Apply Aura (6)" sub_type="500" sub_type_text="Ignore Spell Charge Cooldown (Category) (500)" base_value="0" scaled_value="0" misc_value="1602" />
+      <effect number="5" id="1279066" type="6" type_text="Apply Aura (6)" sub_type="500" sub_type_text="Ignore Spell Charge Cooldown (Category) (500)" base_value="0" scaled_value="0" misc_value="1602" />
     </effects>
     <description>$@spelldesc375888</description>
     <tooltip>Your next Mind Blast is instant cast.</tooltip>
@@ -5164,7 +5163,7 @@ Can accumulate up to $390993U charges.</description>
       <effect number="4" id="1189635" type="6" type_text="Apply Aura (6)" sub_type="408" sub_type_text="Set Action Button Spell Count (408)" base_value="0" scaled_value="0" trigger_spell_id="596" />
     </effects>
     <description>$@spelldesc390992</description>
-    <tooltip>The cast time of your next Heal or Prayer of Healing is reduced by $w2% and its healing is increased by $w1%.</tooltip>
+    <tooltip>The cast time of your next Prayer of Healing is reduced by $w2% and its healing is increased by $w1%.</tooltip>
   </spell>
   <spell id="390994" name="Voice of Harmony" passive="true">
     <class id="priest" name="Priest" />
@@ -6144,8 +6143,8 @@ When an ally walks through your Angelic Feather, you are also granted $s1% of it
       <effect number="1" id="1134710" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="1" modifier_text="Spell Duration (1)" base_value="4000" scaled_value="4000" misc_value="1" />
       <effect number="2" id="1134711" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="1" modifier_text="Spell Duration (1)" base_value="40" scaled_value="40" misc_value="1" />
       <effect number="3" id="1176321" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="23" modifier_text="Spell Effect 3 (23)" base_value="25" scaled_value="25" misc_value="23" />
-      <effect number="4" id="1176322" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="25" scaled_value="25" misc_value="3" misc_value_2="4263" />
-      <effect number="5" id="1197410" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="25" scaled_value="25" misc_value="12" misc_value_2="4263" />
+      <effect number="4" id="1176322" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="40" scaled_value="40" misc_value="3" misc_value_2="4263" />
+      <effect number="5" id="1197410" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="40" scaled_value="40" misc_value="12" misc_value_2="4263" />
     </effects>
     <description>$?a137032[Increases the duration of Atonement by ${$s1/1000} sec.][Increases the duration of your Renew by $s2%.]
 </description>
@@ -6398,7 +6397,7 @@ $@spelldesc450983]</description>
     <class id="priest" name="Priest" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
-      <effect number="1" id="1150625" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="14" modifier_text="Spell Resource Cost 1 (14)" base_value="200" scaled_value="200" misc_value="14" />
+      <effect number="1" id="1150625" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="12" modifier_text="Spell Effect 2 (12)" base_value="200" scaled_value="200" misc_value="12" />
       <effect number="2" id="1150626" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="50" scaled_value="50" />
     </effects>
     <description>$?c1[While Entropic Rift is active, Atonement healing with Void Blast and Penance is $s2% more effective.][Void Blast generates ${$s1/100} additional Insanity.]</description>
@@ -6412,16 +6411,15 @@ $@spelldesc450983]</description>
   </spell>
   <spell id="450983" name="Void Blast" level="23" range="40" cast_time_else="1.5" gcd="1.5">
     <class id="priest" name="Priest" />
-    <resource type="13" cost="-6" type_name="Insanity (13)" />
     <resource type="0" cost="0.25" type_name="Base Mana (0)" cost_mana_flat="625" cost_mana_flat_level="90" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
       <effect number="1" id="1151263" type="2" type_text="School Damage (2)" school="shadow" school_text="shadow" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" sp_coefficient="2.1" />
-      <effect number="2" id="1151264" type="3" type_text="Dummy (3)" sub_type="0" base_value="8" scaled_value="8" />
+      <effect number="2" id="1151264" type="30" type_text="Energize Power (30)" sub_type="0" base_value="0" scaled_value="0" misc_value_energize="insanity" />
     </effects>
     <description>Sends a blast of cosmic void energy at the enemy, causing $s1 Shadow damage.$?c3[
 
-|cFFFFFFFFGenerates ${$c/100*-1} Insanity.|r][]</description>
+|cFFFFFFFFGenerates ${$s2/100} Insanity.|r][]</description>
     <variables>$ext=${$231688s1/1000} sec</variables>
   </spell>
   <spell id="451018" name="Dark Energy" passive="true">
@@ -7420,9 +7418,9 @@ Movement speed increased by $343988w%.][]</tooltip>
     <class id="priest" name="Priest" />
     <attributes>0000101110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="11">
-      <effect number="1" id="1235032" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="0" scaled_value="0" />
-      <effect number="2" id="1235033" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="0" scaled_value="0" misc_value="1" />
-      <effect number="3" id="1235034" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="0" scaled_value="0" misc_value="2" />
+      <effect number="1" id="1235032" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="-8" scaled_value="-8" />
+      <effect number="2" id="1235033" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="-8" scaled_value="-8" misc_value="1" />
+      <effect number="3" id="1235034" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="-8" scaled_value="-8" misc_value="2" />
       <effect number="4" id="1248345" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="0" scaled_value="0" />
       <effect number="5" id="1248505" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="0" scaled_value="0" misc_value="1" />
       <effect number="6" id="1264774" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="-2" scaled_value="-2" misc_value="3" misc_value_2="2672" />
@@ -7446,10 +7444,9 @@ Movement speed increased by $343988w%.][]</tooltip>
   <spell id="1240388" name="Dark Thoughts" passive="true">
     <class id="priest" name="Priest" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="3">
+    <effects count="2">
       <effect number="1" id="1238729" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="100" scaled_value="100" misc_value="23" misc_value_2="2610" />
       <effect number="2" id="1238730" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="25" scaled_value="25" />
-      <effect number="3" id="1313733" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="100" scaled_value="100" misc_value="33" misc_value_2="2610" />
     </effects>
     <description>Increases the chance for Shadowy Insight to occur by $s2%. When consuming Shadowy Insight, Mind Blast generates ${$s1/100} additional Insanity.</description>
   </spell>
@@ -7778,7 +7775,7 @@ $@spelldesc109186][Increases Shadowy Apparition damage by $s1%.]</description>
     </effects>
     <description>Increases your Intellect by $s1%.</description>
   </spell>
-  <spell id="1250820" name="Strength of Soul" passive="true">
+  <spell id="1250820" name="Strength of Resolve" passive="true">
     <class id="priest" name="Priest" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
@@ -7828,7 +7825,7 @@ $@spelldesc109186][Increases Shadowy Apparition damage by $s1%.]</description>
     <effects count="1">
       <effect number="1" id="1257296" type="6" type_text="Apply Aura (6)" sub_type="42" sub_type_text="Proc Trigger Spell (42)" trigger_spell_name="Shadow Mend" base_value="0" scaled_value="0" trigger_spell_id="1252217" />
     </effects>
-    <description>Shadow Word: Pain damage has a chance to upgrade your next $@spellname2061 to $@spellname186263.
+    <description>Shadow Word: Pain damage has a chance to upgrade your next $@spellname2061 to $@spellname186263. Stacks up to $1252217u charges.
 
 $@spellicon186263 $@spellname186263:
 $@spelldesc186263</description>
@@ -7961,9 +7958,9 @@ $penancehealing=${$47750s1*$&lt;darkside&gt;*(3+$&lt;castigation&gt;+$&lt;harsh&
       <effect number="7" id="1264808" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="5" scaled_value="5" misc_value="12" misc_value_2="2672" />
       <effect number="8" id="1264809" type="6" type_text="Apply Aura (6)" sub_type="341" sub_type_text="Modify Cooldown Time (Category) (341)" base_value="-30000" scaled_value="-30000" misc_value="1182" />
       <effect number="9" id="1264810" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="30" scaled_value="30" />
-      <effect number="10" id="1264811" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="15" scaled_value="15" misc_value="2" />
+      <effect number="10" id="1264811" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="-8" scaled_value="-8" misc_value="2" />
       <effect number="11" id="1264821" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="30" scaled_value="30" />
-      <effect number="12" id="1314377" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="-13" scaled_value="-13" />
+      <effect number="12" id="1314377" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="-30" scaled_value="-30" />
     </effects>
     <description>Discipline Priest core passive</description>
   </spell>

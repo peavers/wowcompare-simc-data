@@ -76,7 +76,7 @@ Cannot be used if you have Forbearance. Causes Forbearance for $25771d.</descrip
   <spell id="1022" name="Blessing of Protection" range="40" gcd="1.5" duration="10" cooldown="1.5">
     <class id="paladin" name="Paladin" />
     <resource type="0" cost="3" type_name="Base Mana (0)" cost_mana_flat="7500" cost_mana_flat_level="90" />
-    <attributes>0000000000000000101000000000000000000000000000010000000000000000000100001000000000000100000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000</attributes>
+    <attributes>0000000000000000101000000000000000000000000000010000000000000000000100001000000000000100000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000010000000000000000000000000000000</attributes>
     <effects count="4">
       <effect number="1" id="378" type="6" type_text="Apply Aura (6)" sub_type="39" sub_type_text="School Immunity (39)" base_value="0" scaled_value="0" misc_value="1" />
       <effect number="2" id="379" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
@@ -261,7 +261,7 @@ $damage=${$s1*$&lt;retribution&gt;}</variables>
     <class id="paladin" name="Paladin" />
     <attributes>0000000000000000101000000001000000000000000000000000000000000000001000000000000000000000000000000000000001000000000000000000001010000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="15852" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" sp_coefficient="6.125" />
+      <effect number="1" id="15852" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" sp_coefficient="6.7375" />
     </effects>
     <description>$@spelldesc20473</description>
   </spell>
@@ -910,7 +910,7 @@ Also increases your attack power by ${$s2}.1%.</description>
     <resource type="0" cost="0.6" type_name="Base Mana (0)" cost_mana_flat="1500" cost_mana_flat_level="90" />
     <attributes>0000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="3">
-      <effect number="1" id="86331" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" sp_coefficient="3.672" />
+      <effect number="1" id="86331" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" sp_coefficient="4.4064" />
       <effect number="2" id="337580" type="3" type_text="Dummy (3)" sub_type="0" base_value="5" scaled_value="5" />
       <effect number="3" id="736030" type="3" type_text="Dummy (3)" sub_type="0" base_value="5" scaled_value="5" />
     </effects>
@@ -2062,8 +2062,7 @@ When the shield expires, it bursts to inflict Holy damage equal to the total amo
       <effect number="3" id="1248059" type="6" type_text="Apply Aura (6)" sub_type="87" sub_type_text="Modify Damage Taken% (87)" base_value="0" scaled_value="0" misc_value_mod_damage="127" />
     </effects>
     <description>$@spelldesc26573</description>
-    <tooltip>$?c1[Shield of the Righteous damage and Word of Glory healing increased by $w2%.]?c2[Hammer of the Righteous also causes a wave of light that hits all other enemies near the target.]?c3[Shield of the Righteous damage and Word of Glory healing increased by $w2%.][]$?$w3&lt;0[
-Damage taken reduced by $w3%.][]</tooltip>
+    <tooltip>$?s53595[Hammer of the Righteous also causes a wave of light that hits all other enemies near the target.][]$?$w3&lt;0[Damage taken reduced by $w3%.][]$?!s53595&amp;$w3=0[Standing in Consecration.][]</tooltip>
   </spell>
   <spell id="190784" name="Divine Steed" cooldown="0.75">
     <class id="paladin" name="Paladin" />
@@ -2290,7 +2289,7 @@ Damage taken reduced by $w3%.][]</tooltip>
   <spell id="204018" name="Blessing of Spellwarding" level="1" range="40" gcd="1.5" duration="10" cooldown="1.5">
     <class id="paladin" name="Paladin" />
     <resource type="0" cost="3" type_name="Base Mana (0)" cost_mana_flat="7500" cost_mana_flat_level="90" />
-    <attributes>0000000000000000101000000000000000000000000000000000000000000000000000001000000000000100000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000010000000100000000000000000000000000000000000000000000</attributes>
+    <attributes>0000000000000000101000000000000000000000000000000000000000000000000000001000000000000100000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000010000000100000000000010000000000000000000000000000000</attributes>
     <effects count="2">
       <effect number="1" id="301055" type="6" type_text="Apply Aura (6)" sub_type="39" sub_type_text="School Immunity (39)" base_value="0" scaled_value="0" misc_value="126" />
       <effect number="2" id="1035079" type="6" type_text="Apply Aura (6)" sub_type="79" sub_type_text="Modify Damage Done% (79)" base_value="0" scaled_value="0" misc_value_mod_damage="1" />
@@ -2827,7 +2826,7 @@ $w6 nearby allies will be healed for $w5% of the damage done by Judgment and Cru
     <description>Empowers the friendly target with the spirit of the forgotten queen, causing the target to be immune to all damage for $d.</description>
   </spell>
   <spell id="228050" name="Divine Shield" range="50000" duration="10">
-    <attributes>0000000000000000000000000000000000100000000000100000000000000100000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000100100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <attributes>0000000000000000000000000000000000000000000000100000000000000100000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000100100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
       <effect number="1" id="343141" type="6" type_text="Apply Aura (6)" sub_type="39" sub_type_text="School Immunity (39)" base_value="0" scaled_value="0" misc_value="127" />
     </effects>
@@ -2879,7 +2878,7 @@ Damage taken increased by $w2.][]</tooltip>
     <class id="paladin" name="Paladin" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="349470" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="138" scaled_value="138" misc_value="12" />
+      <effect number="1" id="349470" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="483" scaled_value="483" misc_value="12" />
     </effects>
     <description>Judgment deems the target unworthy, preventing the next $&lt;shield&gt; damage dealt by the target.
 </description>
@@ -5246,7 +5245,7 @@ The limit on Consecration does not apply to this effect.</description>
     </effects>
     <description>Unleashes a powerful weapon strike that deals $s1 $?s403664[Holystrike][Holy] damage to an enemy target,
 
-Final Verdict has a $s2% chance to reset the cooldown of Judgement.</description>
+Final Verdict has a $s2% chance to reset the cooldown of Judgment.</description>
   </spell>
   <spell id="383329" name="Final Verdict" range="10" stacks_initial="1" stacks_max="1" proc_chance="100">
     <class id="paladin" name="Paladin" />
@@ -7221,7 +7220,7 @@ $?s2812[Denounce][Shield of the Righteous] now has a $s1% chance to activate Div
     <resource type="9" cost="3" type_name="Holy Power (9)" />
     <attributes>0000000000000000101000000000000000000000010000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="4">
-      <effect number="1" id="1084762" type="2" type_text="School Damage (2)" school="holy" school_text="holy" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" ap_coefficient="2.465" />
+      <effect number="1" id="1084762" type="2" type_text="School Damage (2)" school="holy" school_text="holy" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" ap_coefficient="1.98" />
       <effect number="2" id="1084763" type="64" type_text="Trigger Spell (64)" trigger_spell_name="Lightforged Blessing" sub_type="0" base_value="0" scaled_value="0" trigger_spell_id="403460" />
       <effect number="3" id="1084764" type="64" type_text="Trigger Spell (64)" trigger_spell_name="Lightforged Blessing" sub_type="0" base_value="0" scaled_value="0" trigger_spell_id="407467" />
       <effect number="4" id="1084768" type="3" type_text="Dummy (3)" sub_type="0" base_value="2000" scaled_value="2000" />
@@ -7970,8 +7969,9 @@ Hammer of Light heals you for $?a137028[$s2][$s5]% of your maximum health, incre
   <spell id="432459" name="Holy Bulwark" range="40" gcd="1.5" velocity="20">
     <class id="paladin" name="Paladin" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
+    <effects count="2">
       <effect number="1" id="1121173" type="32" type_text="Trigger Missiles (32)" sub_type="0" base_value="0" scaled_value="0" trigger_spell_id="432496" />
+      <effect number="2" id="1311044" type="30" type_text="Energize Power (30)" sub_type="0" base_value="3" scaled_value="3" misc_value_energize="holy_power" />
     </effects>
     <description>Will the Light to coalesce and become manifest as a Holy Armament, wielded by your friendly target.
 
@@ -7979,7 +7979,9 @@ $@spellicon432496 $@spellname432496:
 
 $@spelldesc432496
 
-Becomes Sacred Weapon after use.</description>
+Becomes Sacred Weapon after use.$?c1[
+
+|cFFFFFFFFGenerates $s2 Holy Power.][]</description>
   </spell>
   <spell id="432463" name="Hammerfall" passive="true" proc_chance="100">
     <class id="paladin" name="Paladin" />
@@ -7994,8 +7996,9 @@ While Shake the Heavens is active, this effect calls down an additional Empyrean
   <spell id="432472" name="Sacred Weapon" range="40" gcd="1.5" velocity="20">
     <class id="paladin" name="Paladin" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
+    <effects count="2">
       <effect number="1" id="1121188" type="32" type_text="Trigger Missiles (32)" sub_type="0" base_value="0" scaled_value="0" trigger_spell_id="432502" />
+      <effect number="2" id="1311043" type="30" type_text="Energize Power (30)" sub_type="0" base_value="3" scaled_value="3" misc_value_energize="holy_power" />
     </effects>
     <description>Will the Light to coalesce and become manifest as a Holy Armament, wielded by your target.
 
@@ -8003,7 +8006,9 @@ $@spellicon432502 $@spellname432502:
 
 $@spelldesc432502
 
-Becomes Holy Bulwark after use.</description>
+Becomes Holy Bulwark after use.$?c1[
+
+|cFFFFFFFFGenerates $s2 Holy Power.][]</description>
   </spell>
   <spell id="432478" name="Holy Armament Override" duration="-1">
     <class id="paladin" name="Paladin" />
@@ -9973,7 +9978,7 @@ Beacon of the Savior transfers to the lowest health ally within $s1 yds if it he
     <description>$@spelldesc1244878</description>
     <tooltip>Healed whenever the Paladin heals a nearby ally.$?e3[
 
-Damage taken reduced by $w4%.][]$?e4[
+Damage taken reduced by $w4%.][]$?e5[
 
 Healed for $w6 every $t6 sec.][]</tooltip>
   </spell>
@@ -9994,13 +9999,15 @@ Healed for $w6 every $t6 sec.][]</tooltip>
     </effects>
     <description>Beacon of the Savior transfers an additional $s1% of the amount healed and allies with Beacon of the Savior receive $s2% more healing from you.</description>
   </spell>
-  <spell id="1245368" name="Beacon of the Savior" passive="true">
+  <spell id="1245368" name="Beacon of the Savior" passive="true" proc_chance="100">
     <class id="paladin" name="Paladin" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
       <effect number="1" id="1246374" type="6" type_text="Apply Aura (6)" sub_type="226" sub_type_text="Periodic Dummy (226)" period="8" base_value="0" scaled_value="0" />
     </effects>
-    <description>Every $t1 sec or when Beacon of the Savior transfers to a new injured target, they are granted an absorb shield that prevents the next $1245369s1 damage and reduces damage taken by $1245369s2% for $1245369d.</description>
+    <description>Every $t1 sec or when Beacon of the Savior transfers to a new injured target, they are granted an absorb shield that prevents the next $1245369s1 damage and reduces damage taken by $1245369s2% for $1245369d.
+
+Beacon of the Savior now additionally follows the target of your Holy Light and Flash of Light spells once every $proccooldown sec.</description>
   </spell>
   <spell id="1245369" name="Beacon of the Savior" range="100" duration="15">
     <class id="paladin" name="Paladin" />
@@ -10319,9 +10326,9 @@ $@spelldesc184662</description>
       <effect number="2" id="1274955" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
       <effect number="3" id="1297607" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
     </effects>
-    <description>You have a $s1% chance to $?c3[gain Blessing of An'she and ][]generate $s2 Holy Power after casting Avenging Wrath.$?c3[
+    <description>$?c3[You have a $s1% chance to gain Blessing of An'she and generate $s2 Holy Power after casting Avenging Wrath.
 
-During Avenging Wrath, Hammer of Wrath casts Blade of Justice at $s3% effectiveness.][]</description>
+During Avenging Wrath, Hammer of Wrath casts Blade of Justice at $s3% effectiveness.][Infusion of Light occurs $s4% more often during Avenging Wrath.]</description>
   </spell>
   <spell id="1263787" name="Endless Gleam" passive="true" proc_chance="101">
     <class id="paladin" name="Paladin" />
@@ -10499,7 +10506,7 @@ During Avenging Wrath your Avenger's Shield always benefits from Vanguard.</desc
   </spell>
   <spell id="1269142" name="Glory of the Vanguard" range="100">
     <class id="paladin" name="Paladin" />
-    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <attributes>0000000100000000000000000000010000000000001000000000000000000000000000000000000000000000000000000000000000000000111000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
       <effect number="1" id="1280785" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
     </effects>
@@ -10519,7 +10526,7 @@ During Avenging Wrath your Avenger's Shield always benefits from Vanguard.</desc
     <effects count="1">
       <effect number="1" id="1280841" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
     </effects>
-    <description>$@spelldesc1267203</description>
+    <description>$@spelldesc1267215</description>
     <tooltip>Your next Shield of the Righteous deals $s1~% increased damage to your primary target and refracts onto $1267215s2~ nearby enemies for additional Holy damage.</tooltip>
   </spell>
   <spell id="1269224" name="Blaze of Glory" range="30" stacks_max="5" proc_chance="101">
@@ -10528,7 +10535,7 @@ During Avenging Wrath your Avenger's Shield always benefits from Vanguard.</desc
     <effects count="1">
       <effect number="1" id="1280950" type="2" type_text="School Damage (2)" school="holy" school_text="holy" sub_type="0" base_value="0" scaled_value="0" ap_coefficient="2" />
     </effects>
-    <description>$@spelldesc1267203</description>
+    <description>Shield of the Righteous deals $1269179s1% increased damage to your primary target and refracts light onto $1267215s2~ nearby enemies for $s1 Holy damage.</description>
   </spell>
   <spell id="1269225" name="Blaze of Glory" range="30" stacks_max="5" proc_chance="101">
     <class id="paladin" name="Paladin" />
@@ -10868,5 +10875,85 @@ $damage=${$s1*$&lt;retribution&gt;}</variables>
     </effects>
     <description>Healing is increased by $s1%.
 </description>
+  </spell>
+  <spell id="1289616" name="Divine Steed" level="1" gcd="1.5" duration="3">
+    <class id="paladin" name="Paladin" />
+    <attributes>0000000000000000101000000000000000000000001000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="8">
+      <effect number="1" id="1308074" type="6" type_text="Apply Aura (6)" sub_type="87" sub_type_text="Modify Damage Taken% (87)" base_value="0" scaled_value="0" misc_value_mod_damage="127" />
+      <effect number="2" id="1308075" type="6" type_text="Apply Aura (6)" sub_type="172" sub_type_text="Increase Mounted Speed% (172)" base_value="0" scaled_value="0" />
+      <effect number="3" id="1308076" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" misc_value="14565" misc_value_2="230" />
+      <effect number="4" id="1308077" type="77" type_text="Server Side Script (77)" sub_type="0" base_value="100" scaled_value="100" />
+      <effect number="5" id="1308078" type="6" type_text="Apply Aura (6)" sub_type="31" sub_type_text="Increase Speed% (31)" base_value="100" scaled_value="100" />
+      <effect number="6" id="1308079" type="6" type_text="Apply Aura (6)" sub_type="487" sub_type_text="Mount Cosmetic Mount (487)" base_value="0" scaled_value="0" misc_value="14584" />
+      <effect number="7" id="1308080" type="6" type_text="Apply Aura (6)" sub_type="191" sub_type_text="Use Base Move Speed (191)" base_value="0" scaled_value="0" />
+      <effect number="8" id="1308081" type="6" type_text="Apply Aura (6)" sub_type="312" sub_type_text="Replace Animation (Set) (312)" base_value="0" scaled_value="0" misc_value="1154" />
+    </effects>
+    <description>$@spelldesc190784</description>
+    <tooltip>Increases ground speed by $s4%$?$w1&lt;0[, and reduces damage taken by $w1%][].</tooltip>
+  </spell>
+  <spell id="1289617" name="Divine Steed" level="1" gcd="1.5" duration="3">
+    <class id="paladin" name="Paladin" />
+    <attributes>0000000000000000101000000000000000000000001000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="8">
+      <effect number="1" id="1308082" type="6" type_text="Apply Aura (6)" sub_type="87" sub_type_text="Modify Damage Taken% (87)" base_value="0" scaled_value="0" misc_value_mod_damage="127" />
+      <effect number="2" id="1308083" type="6" type_text="Apply Aura (6)" sub_type="172" sub_type_text="Increase Mounted Speed% (172)" base_value="0" scaled_value="0" />
+      <effect number="3" id="1308084" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" misc_value="14565" misc_value_2="230" />
+      <effect number="4" id="1308085" type="77" type_text="Server Side Script (77)" sub_type="0" base_value="100" scaled_value="100" />
+      <effect number="5" id="1308086" type="6" type_text="Apply Aura (6)" sub_type="31" sub_type_text="Increase Speed% (31)" base_value="100" scaled_value="100" />
+      <effect number="6" id="1308087" type="6" type_text="Apply Aura (6)" sub_type="487" sub_type_text="Mount Cosmetic Mount (487)" base_value="0" scaled_value="0" misc_value="19085" />
+      <effect number="7" id="1308088" type="6" type_text="Apply Aura (6)" sub_type="191" sub_type_text="Use Base Move Speed (191)" base_value="0" scaled_value="0" />
+      <effect number="8" id="1308089" type="6" type_text="Apply Aura (6)" sub_type="312" sub_type_text="Replace Animation (Set) (312)" base_value="0" scaled_value="0" misc_value="1154" />
+    </effects>
+    <description>$@spelldesc190784</description>
+    <tooltip>Increases ground speed by $s4%$?$w1&lt;0[, and reduces damage taken by $w1%][].</tooltip>
+  </spell>
+  <spell id="1289728" name="Holy Armaments" passive="true">
+    <class id="paladin" name="Paladin" />
+    <attributes>0000001100000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1308254" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
+    </effects>
+    <description>$@spelldesc432472</description>
+  </spell>
+  <spell id="1289890" name="Holy Armaments" duration="-1">
+    <class id="paladin" name="Paladin" />
+    <attributes>0000000100000000000000000000000000000000000000000000000000001000100000000000000000000000000000000000000000000000000010000000000000000000000000000000010000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000100000000000000000000000000000000100000000000000000010000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1308476" type="6" type_text="Apply Aura (6)" sub_type="332" sub_type_text="Override Action Spell (Misc w/ Base) (332)" base_value="432459" scaled_value="432459" misc_value="375576" />
+    </effects>
+    <description>$@spelldesc432472</description>
+  </spell>
+  <spell id="1289892" name="Holy Armaments" duration="-1">
+    <class id="paladin" name="Paladin" />
+    <attributes>0000000100000000000000000000000000000000000000000000000000001000100000000000000000000000000000000000000000000000000010000000000000000000000000000000010000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000100000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1308479" type="6" type_text="Apply Aura (6)" sub_type="332" sub_type_text="Override Action Spell (Misc w/ Base) (332)" base_value="432459" scaled_value="432459" misc_value="114165" misc_value_2="2" trigger_spell_id="432459" />
+    </effects>
+    <description>$@spelldesc432472</description>
+  </spell>
+  <spell id="1289922" name="Holy Armament Override" duration="-1">
+    <class id="paladin" name="Paladin" />
+    <attributes>0000000100000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1308529" type="6" type_text="Apply Aura (6)" sub_type="332" sub_type_text="Override Action Spell (Misc w/ Base) (332)" base_value="432472" scaled_value="432472" misc_value="375576" />
+    </effects>
+    <description>$@spelldesc432472</description>
+  </spell>
+  <spell id="1289943" name="Holy Armament Override" duration="-1">
+    <class id="paladin" name="Paladin" />
+    <attributes>0000000100000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1308563" type="6" type_text="Apply Aura (6)" sub_type="332" sub_type_text="Override Action Spell (Misc w/ Base) (332)" base_value="432472" scaled_value="432472" misc_value="114165" />
+    </effects>
+    <description>$@spelldesc432472</description>
+  </spell>
+  <spell id="1293918" name="Divine Shield" range="50000" duration="10">
+    <attributes>0000000100000000000000000000000000100000000000100000000000000100000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000010000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000100100000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1314980" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
+    </effects>
+    <description>$@spelldesc228049</description>
+    <tooltip>Immune to all attacks and spells.</tooltip>
   </spell>
 </spell_query>

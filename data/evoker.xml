@@ -133,7 +133,7 @@ Damage taken increased by $w2.][]</tooltip>
     <effects count="1">
       <effect number="1" id="881542" type="68" type_text="Interrupt Cast (68)" sub_type="0" base_value="0" scaled_value="0" />
     </effects>
-    <description>Interrupt an enemy's spellcasting and prevent any spell from that school of magic from being cast for 4 sec.</description>
+    <description>Interrupt an enemy's spellcasting and prevent any spell from that school of magic from being cast for $d.</description>
   </spell>
   <spell id="353759" name="Deep Breath" range="100" duration="1">
     <class id="evoker" name="Evoker" />
@@ -261,8 +261,8 @@ $sFourDur=${4+$&lt;deepExDur&gt;}
     <class id="evoker" name="Evoker" />
     <attributes>0000101110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="24">
-      <effect number="1" id="890886" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="-16" scaled_value="-16" />
-      <effect number="2" id="896453" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="-16" scaled_value="-16" misc_value="22" />
+      <effect number="1" id="890886" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="-20" scaled_value="-20" />
+      <effect number="2" id="896453" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="-20" scaled_value="-20" misc_value="22" />
       <effect number="3" id="900193" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="0" scaled_value="90" points_per_level="1" />
       <effect number="4" id="900194" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="0" scaled_value="90" points_per_level="1" misc_value="22" />
       <effect number="5" id="903547" type="6" type_text="Apply Aura (6)" sub_type="429" sub_type_text="Modify Pet Damage Done% (429)" base_value="0" scaled_value="90" points_per_level="1" />
@@ -570,11 +570,14 @@ $dura=$?a406380[${6*(1+$406380s2/100)+$&lt;flight&gt;}.1][${6+$&lt;flight&gt;}]<
   <spell id="359793" name="Fluttering Seedlings" passive="true" stacks_max="1" proc_chance="101">
     <class id="evoker" name="Evoker" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
-      <effect number="1" id="896464" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
+    <effects count="3">
+      <effect number="1" id="896464" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="1" scaled_value="1" />
       <effect number="2" id="915976" type="3" type_text="Dummy (3)" sub_type="0" base_value="40" scaled_value="40" />
+      <effect number="3" id="1311273" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
     </effects>
-    <description>Emerald Blossom sends out flying seedlings when it bursts, healing $s1 $Lally:allies; up to $s2 yds away for $361361s1.</description>
+    <description>Emerald Blossom sends out $s1 flying $Lseedling:seedlings; when it bursts, plus up to $s3 additional seedlings if Emerald Blossom heals fewer than $355916s2 allies.
+
+Seedlings each heal an ally up to $s2 yds away for $361361s1.</description>
   </spell>
   <spell id="359816" name="Dream Flight" range_min="15" range="50" gcd="1.5" duration="6" cooldown="120">
     <class id="evoker" name="Evoker" />
@@ -646,9 +649,9 @@ $dmg=${$INT*0.3*(1+$@versadmg)*$pctD}</variables>
   </spell>
   <spell id="360995" name="Verdant Embrace" range="25" gcd="1.5" cooldown="0.5">
     <class id="evoker" name="Evoker" />
-    <resource type="0" cost="3.3000000000000003" type_name="Base Mana (0)" cost_mana_flat="8250" cost_mana_flat_level="90" cost_aura_id="356810" cost_aura_name="Preservation Evoker" />
-    <resource type="0" cost="3.3000000000000003" type_name="Base Mana (0)" cost_mana_flat="25000" cost_mana_flat_level="90" cost_aura_id="356809" cost_aura_name="Devastation Evoker" />
-    <resource type="0" cost="3.3000000000000003" type_name="Base Mana (0)" cost_mana_flat="25000" cost_mana_flat_level="90" cost_aura_id="396186" cost_aura_name="Augmentation Evoker" />
+    <resource type="0" cost="2.4" type_name="Base Mana (0)" cost_mana_flat="6000" cost_mana_flat_level="90" cost_aura_id="356810" cost_aura_name="Preservation Evoker" />
+    <resource type="0" cost="2.4" type_name="Base Mana (0)" cost_mana_flat="25000" cost_mana_flat_level="90" cost_aura_id="356809" cost_aura_name="Devastation Evoker" />
+    <resource type="0" cost="2.4" type_name="Base Mana (0)" cost_mana_flat="25000" cost_mana_flat_level="90" cost_aura_id="396186" cost_aura_name="Augmentation Evoker" />
     <attributes>0000000000000000100000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
       <effect number="1" id="898467" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
@@ -708,7 +711,7 @@ $dmg=${$INT*0.3*(1+$@versadmg)*$pctD}</variables>
     <class id="evoker" name="Evoker" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="899173" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" sp_coefficient="1.554" />
+      <effect number="1" id="899173" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" sp_coefficient="2.6" />
     </effects>
     <description>$@spelldesc359793</description>
   </spell>
@@ -931,8 +934,8 @@ Healing increased by $s4% when not in a raid.</description>
       <effect number="5" id="1306575" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
       <effect number="6" id="1313362" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
     </effects>
-    <description>Reinforce your scales, reducing damage taken by $s1%. Lasts $d.</description>
-    <tooltip>Damage taken reduced by $w1%.$?$w2=1[
+    <description>Reinforce your scales, reducing damage taken by $s1% $?s374348[and causing you to be healed over $374349d equal to the damage it prevented][]. Lasts $d.</description>
+    <tooltip>Damage taken reduced by $w1%$?$e4[ and healing equal to damage prevented.][.]$?$w2=1[
 Immune to interrupt and silence effects.][]</tooltip>
   </spell>
   <spell id="364342" name="Blessing of the Bronze" level="30" range="40" gcd="1.5" cooldown="15">
@@ -1145,9 +1148,10 @@ When Reversion critically heals, its duration is extended by 2 sec, up to a maxi
       <effect number="1" id="912785" type="65" type_text="Apply Aura Raid (65)" sub_type="468" sub_type_text="Trigger Spell Based on Health% (468)" base_value="30" scaled_value="30" misc_value="1" trigger_spell_id="368435" />
       <effect number="2" id="997898" type="3" type_text="Dummy (3)" sub_type="0" base_value="60" scaled_value="60" />
     </effects>
-    <description>When you or an ally fall below $s1% health, a version of yourself enters your timeline and heals them for $361195s1. Your alternate self continues healing for $368415d before returning to their timeline.
+    <description>When you or an ally fall below $s1% health, a version of yourself enters your timeline and heals them for $&lt;amount&gt;. Your alternate self continues healing for $368415d before returning to their timeline.
 
 May only occur once every $s2 sec.</description>
+    <variables>$amount=${$361195s1*3}</variables>
   </spell>
   <spell id="368415" name="Time of Need" range="40" duration="8" cooldown="60">
     <class id="evoker" name="Evoker" />
@@ -1595,7 +1599,7 @@ $@spelldesc368847</description>
       <effect number="2" id="1030563" type="3" type_text="Dummy (3)" sub_type="0" base_value="5" scaled_value="5" />
       <effect number="3" id="1084490" type="3" type_text="Dummy (3)" sub_type="0" base_value="5" scaled_value="5" />
     </effects>
-    <description>Fire Breath heals $s3 nearby injured allies for $s1% of damage done to up to $s2 targets, split evenly among them.</description>
+    <description>Fire Breath and Deep Breath heal $s3 nearby injured allies for $s1% of damage done to up to $s2 targets, split evenly among them.</description>
   </spell>
   <spell id="371441" name="Life-Giver's Flame" range="100">
     <class id="evoker" name="Evoker" />
@@ -1818,13 +1822,16 @@ $cap=${$SP*2.254*$&lt;pvp&gt;}</variables>
     <class id="evoker" name="Evoker" />
     <resource type="0" cost="7.5" type_name="Base Mana (0)" cost_mana_flat="18750" cost_mana_flat_level="90" />
     <attributes>0000000000000000100000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="3">
+    <effects count="4">
       <effect number="1" id="999377" type="179" type_text="Create Area Trigger (179)" sub_type="0" base_value="1" scaled_value="1" misc_value="25294" />
       <effect number="2" id="1044076" type="3" type_text="Dummy (3)" sub_type="0" base_value="5" scaled_value="5" />
       <effect number="3" id="1179965" type="179" type_text="Create Area Trigger (179)" sub_type="0" base_value="1" scaled_value="1" misc_value="34997" />
+      <effect number="4" id="1314376" type="3" type_text="Dummy (3)" sub_type="0" base_value="30" scaled_value="30" />
     </effects>
-    <description>Send forward a vortex of temporal energy, absorbing $&lt;shield&gt; damage on you and any allies in its path. Absorption is reduced beyond $s2 targets.</description>
-    <variables>$shield=${$SP*$s2*(1+$@versadmg)}</variables>
+    <description>Send forward a vortex of temporal energy, absorbing $&lt;shield&gt; damage on you and any allies in its path. Absorption is reduced beyond $s2 targets.
+
+Applies Echo at $s4% effectiveness on the first $s2 allies it passes through.</description>
+    <variables>$shield=${$SP*6*(1+$@versadmg)}</variables>
   </spell>
   <spell id="373862" name="Temporal Anomaly" range="100" duration="15">
     <class id="evoker" name="Evoker" />
@@ -1886,7 +1893,7 @@ Movement speed increased by $w2%.</tooltip>
     <effects count="1">
       <effect number="1" id="1000163" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
     </effects>
-    <description>Obsidian Scales surrounds you with a Renewing Blaze, causing $s1% of the damage it reduced to be healed back over $374349d.</description>
+    <description>Obsidian Scales surrounds you with a Renewing Blaze, causing $s1% of the damage it prevented to be healed back over $374349d.</description>
   </spell>
   <spell id="374349" name="Renewing Blaze" range="100" duration="8">
     <class id="evoker" name="Evoker" />
@@ -2263,7 +2270,7 @@ Each time this occurs during Dragonrage, its effectiveness is reduced by $s2%.</
   </spell>
   <spell id="375802" name="Burnout" duration="15" stacks_max="2" proc_chance="101">
     <class id="evoker" name="Evoker" />
-    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
       <effect number="1" id="1002422" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="10" modifier_text="Spell Cast Time (10)" base_value="-100" scaled_value="-100" misc_value="10" />
       <effect number="2" id="1089730" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="-100" scaled_value="-100" misc_value="12" misc_value_2="2731" />
@@ -2330,15 +2337,6 @@ Each time this occurs during Dragonrage, its effectiveness is reduced by $s2%.</
     <description>$s1% of delayed damage from Time Dilation is absorbed.</description>
     <variables>$base=${50}</variables>
   </spell>
-  <spell id="376236" name="Resonating Sphere" passive="true">
-    <class id="evoker" name="Evoker" />
-    <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
-      <effect number="1" id="1003135" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="30" scaled_value="30" />
-      <effect number="2" id="1044131" type="3" type_text="Dummy (3)" sub_type="0" base_value="5" scaled_value="5" />
-    </effects>
-    <description>Temporal Anomaly applies Echo at $s1% effectiveness to the first $s2 allies it passes through.</description>
-  </spell>
   <spell id="376237" name="Nozdormu's Teachings" passive="true">
     <class id="evoker" name="Evoker" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
@@ -2363,7 +2361,7 @@ Each time this occurs during Dragonrage, its effectiveness is reduced by $s2%.</
       <effect number="2" id="1123492" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="14" modifier_text="Spell Resource Cost 1 (14)" base_value="-15" scaled_value="-15" misc_value="14" />
       <effect number="3" id="1126539" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="34" modifier_text="Spell Resource Cost 2 (34)" base_value="-15" scaled_value="-15" misc_value="34" />
     </effects>
-    <description>Reversion, Time Dilation, Echo, and Temporal Anomaly last $s1% longer and cost $s2% less mana.</description>
+    <description>Reversion, Time Dilation, Echo, and $?s1291636[Temporal Barrier][Temporal Anomaly] last $s1% longer and cost $s2% less mana.</description>
   </spell>
   <spell id="376788" name="Dream Breath" range="100" gcd="1.5" duration="2" proc_chance="101">
     <class id="evoker" name="Evoker" />
@@ -3983,7 +3981,8 @@ Affects the nearest ally within $s2 yds, preferring damage dealers with their co
     </effects>
     <description>Fire Breath grants the inferno's blessing for $410263d to you and a nearby ally, giving their damaging attacks and spells a high chance to deal an additional $&lt;dmg&gt; Fire damage.</description>
     <variables>$coeff=${3.5}
-$dmg=${$INT*$&lt;coeff&gt;*(1+$@versadmg)*$pctD}</variables>
+$meTalent=$?s1291457[${1+($1291457s1/100)}][${1}]
+$dmg=${$INT*$&lt;coeff&gt;*$&lt;meTalent&gt;*(1+$@versadmg)*$pctD}</variables>
   </spell>
   <spell id="410263" name="Inferno's Blessing" range="100" duration="8" proc_chance="101">
     <class id="evoker" name="Evoker" />
@@ -5303,7 +5302,7 @@ The duration of this effect is extended when Deep Breath is cast multiple times.
     <effects count="1">
       <effect number="1" id="1135603" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="-10" scaled_value="-10" />
     </effects>
-    <description>Deep Breath resets a charge of Hover.</description>
+    <description>$?s403631[Breath of Eons][Deep Breath] resets a charge of Hover.</description>
   </spell>
   <spell id="441661" name="Bombardments" level="10" range="100" velocity="40">
     <class id="evoker" name="Evoker" />
@@ -5427,7 +5426,7 @@ $409560s1% of damage dealt by allies affected by Ebon Might is copied as additio
     </effects>
     <description>Fire Breath $?c1[reaches its][and Dream Breath reach their] maximum empower level $s1% faster.</description>
   </spell>
-  <spell id="444088" name="Consume Flame" passive="true">
+  <spell id="444088" name="Consume Flame" passive="true" proc_chance="101">
     <class id="evoker" name="Evoker" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000010000000000000000000010000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="7">
@@ -5437,7 +5436,7 @@ $409560s1% of damage dealt by allies affected by Ebon Might is copied as additio
       <effect number="4" id="1275546" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="150" scaled_value="150" />
       <effect number="5" id="1275591" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="4000" scaled_value="4000" />
       <effect number="6" id="1278179" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="200" scaled_value="200" />
-      <effect number="7" id="1317265" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="115" scaled_value="115" />
+      <effect number="7" id="1317269" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="115" scaled_value="115" />
     </effects>
     <description>$?c1[Disintegrate damage consumes ${$s2/1000}.1 sec of Fire Breath from enemies it damages, detonating it for $s4% of the amount consumed.
 
@@ -5735,14 +5734,6 @@ Emerald Blossom healing consumes ${$s1/1000} sec of Dream Breath from allies it 
     <description>$@spelldesc459537</description>
     <tooltip>Eruption essence cost reduced by $s1.</tooltip>
   </spell>
-  <spell id="459725" name="Molten Embers" passive="true">
-    <class id="evoker" name="Evoker" />
-    <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
-      <effect number="1" id="1166747" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="33" modifier_text="Spell Effect 5 (33)" base_value="15" scaled_value="15" misc_value="33" />
-    </effects>
-    <description>Enemies affected by Fire Breath's damage over time effect take $s1% increased damage from your Black spells.</description>
-  </spell>
   <spell id="460688" name="Double-time" level="10" range="100" duration="10">
     <class id="evoker" name="Evoker" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
@@ -5941,7 +5932,7 @@ Emerald Blossom healing consumes ${$s1/1000} sec of Dream Breath from allies it 
       <effect number="4" id="1227842" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="1" scaled_value="1" misc_value="31" misc_value_2="4948" />
       <effect number="5" id="1227843" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="1" scaled_value="1" misc_value="37" misc_value_2="4948" />
     </effects>
-    <description>Disintegrate ticks $s3 additional time, but deals $s2% less damage.</description>
+    <description>Disintegrate deals damage $s1% more often, but deals $s2% less damage.</description>
   </spell>
   <spell id="1223935" name="Light's Hand" range="100" cast_time_else="1.5" velocity="40" duration="12" stacks_max="3" proc_chance="101">
     <class id="evoker" name="Evoker" />
@@ -6127,10 +6118,11 @@ Increases the duration of your active Ebon Might effects by ${$395153s3/1000} se
   <spell id="1237978" name="Tempo Charged" passive="true">
     <class id="evoker" name="Evoker" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="3">
+    <effects count="4">
       <effect number="1" id="1234901" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="15" scaled_value="15" />
       <effect number="2" id="1283597" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="15" scaled_value="15" misc_value="22" />
       <effect number="3" id="1294408" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="15" scaled_value="15" misc_value="12" misc_value_2="6229" />
+      <effect number="4" id="1319670" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="24" modifier_text="Spell Coefficient (24)" base_value="15" scaled_value="15" misc_value="24" />
     </effects>
     <description>Bronze healing and absorption increased by $s1%.</description>
   </spell>
@@ -6176,7 +6168,7 @@ Increases the duration of your active Ebon Might effects by ${$395153s3/1000} se
       <effect number="1" id="1241354" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="25" scaled_value="25" />
       <effect number="2" id="1241355" type="3" type_text="Dummy (3)" sub_type="0" base_value="100" scaled_value="100" />
     </effects>
-    <description>Casting Emerald Blossom causes your next Echo to cast on an additional ally within $s1 yards at $s2% effectiveness.</description>
+    <description>Casting Emerald Blossom causes your next Echo to cast on an additional ally within $s1 yards at $s2% effectiveness. Stacks up to $1242759u charges.</description>
   </spell>
   <spell id="1242745" name="Inner Flame" passive="true" proc_chance="101">
     <class id="evoker" name="Evoker" />
@@ -6376,14 +6368,6 @@ Increases the duration of your active Ebon Might effects by ${$395153s1/1000} se
     </effects>
     <description>Tip the Scales' cooldown is reduced by ${$s1/-1000} sec.</description>
   </spell>
-  <spell id="1260568" name="Energy Cycles" passive="true" level="10">
-    <class id="evoker" name="Evoker" />
-    <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010001000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
-      <effect number="1" id="1269997" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="6" scaled_value="6" />
-    </effects>
-    <description>Temporal Burst grants Essence Burst every $s1 sec.</description>
-  </spell>
   <spell id="1260647" name="Overclock" passive="true" level="10">
     <class id="evoker" name="Evoker" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010001000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
@@ -6461,7 +6445,7 @@ Dream Breath's heal over time lasts ${$s2/1000} sec longer.][]</description>
     <class id="evoker" name="Evoker" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1275699" type="2" type_text="School Damage (2)" school="spellfrost" school_text="spellfrost" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" sp_coefficient="3" />
+      <effect number="1" id="1275699" type="2" type_text="School Damage (2)" school="spellfrost" school_text="spellfrost" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" sp_coefficient="12" />
     </effects>
     <description>$@spelldesc1264378</description>
   </spell>
@@ -6826,5 +6810,35 @@ $duIV=${2+$&lt;bD&gt;+$&lt;bE&gt;}</variables>
       <effect number="16" id="1307236" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="-5" scaled_value="-5" misc_value="3" misc_value_2="6457" />
       <effect number="17" id="1307237" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="5" scaled_value="5" misc_value="3" misc_value_2="6458" />
     </effects>
+  </spell>
+  <spell id="1291457" name="Mighty Inferno" passive="true">
+    <class id="evoker" name="Evoker" />
+    <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1310827" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="40" scaled_value="40" />
+    </effects>
+    <description>Inferno's Blessing's damage is increased by $s1%, and your effects that extend Ebon Might also extend Inferno's Blessing.</description>
+  </spell>
+  <spell id="1291522" name="Chronal Dynamo" passive="true">
+    <class id="evoker" name="Evoker" />
+    <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="2">
+      <effect number="1" id="1310930" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="10" modifier_text="Spell Cast Time (10)" base_value="-200" scaled_value="-200" misc_value="10" />
+      <effect number="2" id="1310931" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="50" scaled_value="50" />
+    </effects>
+    <description>Living Flame's cast time is reduced by ${$s1/-1000}.1 sec, and it deals $s2% increased damage or healing when it is a non-instant cast.</description>
+  </spell>
+  <spell id="1291636" name="Temporal Barrier" range="30" cast_time_else="1.5" gcd="1.5" duration="15" cooldown="15">
+    <class id="evoker" name="Evoker" />
+    <resource type="0" cost="7.5" type_name="Base Mana (0)" cost_mana_flat="18750" cost_mana_flat_level="90" />
+    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100001000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="3">
+      <effect number="1" id="1311112" type="6" type_text="Apply Aura (6)" sub_type="69" sub_type_text="Absorb Damage (69)" base_value="0" scaled_value="0" sp_coefficient="9" misc_value="127" />
+      <effect number="2" id="1311705" type="3" type_text="Dummy (3)" sub_type="0" base_value="4" scaled_value="4" />
+      <effect number="3" id="1314379" type="3" type_text="Dummy (3)" sub_type="0" base_value="30" scaled_value="30" />
+    </effects>
+    <description>Send out a ripple of temporal energy, absorbing $s1 damage and applying Echo at $s3% effectiveness on your target and up to $s2 allies within $a1 yds.</description>
+    <tooltip>Absorbing $w1 damage.</tooltip>
+    <variables>$shield=${$SP*6*(1+$@versadmg)}</variables>
   </spell>
 </spell_query>

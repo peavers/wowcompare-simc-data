@@ -154,7 +154,7 @@ You must dismiss any active beast companions and have an empty Call Pet slot bef
   </spell>
   <spell id="3355" name="Freezing Trap" level="1" range="100" duration="60" proc_chance="101">
     <class id="hunter" name="Hunter" />
-    <attributes>0000000000000000000000001001001000000100001000000010000001000000001000000000001000010000000000000000000000000000000000000010001000000001000100000000000000000100000101000000000001100000000000000000000000001000000000010000000000000000000000000000000000000010000001000000000000000000000000100000000000010000000010000000000010000000000000000000001000000000000000000000000000000000001000000000000000000000000000000000000011000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <attributes>0000000000000000000000001011001000000100001000000010000001000000001000000000001000010000000000000000000000000000000000000010001000000001000100000000000000000100000101000000000001100000000000000000000000001000000000010000000000000000000000000000000000000010000001000000000000000000000000100000000000010000000010000000000010000000000000000000001000000000000000000000000000000000001000000000000000000000000000000000000011000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
       <effect number="1" id="1071" type="6" type_text="Apply Aura (6)" sub_type="12" sub_type_text="Stun (12)" base_value="0" scaled_value="0" />
       <effect number="2" id="1072" type="6" type_text="Apply Aura (6)" sub_type="308" sub_type_text="Modify Crit Chance% from Caster's Spells (308)" base_value="0" scaled_value="0" misc_value="7" />
@@ -706,7 +706,7 @@ Grievously wounds the target, reducing the effectiveness of any healing received
     <class id="hunter" name="Hunter" />
     <attributes>0100100000000000100000000000000000000000000000000000000000000000000000000000000001001000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="3">
-      <effect number="1" id="49735" type="2" type_text="School Damage (2)" school="physical" school_text="physical" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" ap_coefficient="0.8" />
+      <effect number="1" id="49735" type="2" type_text="School Damage (2)" school="physical" school_text="physical" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" ap_coefficient="1.6" />
       <effect number="2" id="101525" type="3" type_text="Dummy (3)" sub_type="0" base_value="2000" scaled_value="2000" />
       <effect number="3" id="752564" type="3" type_text="Dummy (3)" sub_type="0" base_value="30" scaled_value="30" />
     </effects>
@@ -1472,7 +1472,7 @@ Damage other than Steel Trap may break the immobilization effect. Trap will exis
     <resource type="2" cost="40" type_name="Focus (2)" />
     <attributes>0100000000000000100000000000000000000000010000000000000000010000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="269119" type="2" type_text="School Damage (2)" school="arcane" school_text="arcane" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" ap_coefficient="1.575" />
+      <effect number="1" id="269119" type="2" type_text="School Damage (2)" school="arcane" school_text="arcane" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" ap_coefficient="2.09475" />
     </effects>
     <description>A quick shot that causes $sw2 Arcane damage.$?s260393[
 
@@ -2815,7 +2815,7 @@ Can always be seen and tracked by the Hunter.</tooltip>
     <attributes>0100100000000000100000000000000000000000010000000000000000010000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000100000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
       <effect number="1" id="480918" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
-      <effect number="2" id="1193792" type="2" type_text="School Damage (2)" school="physical" school_text="physical" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" ap_coefficient="1.05" />
+      <effect number="2" id="1193792" type="2" type_text="School Damage (2)" school="physical" school_text="physical" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" ap_coefficient="1.3965" />
     </effects>
     <description>Fires several missiles, hitting your current target and all enemies within $A2 yards for $s2 Physical damage. Deals reduced damage beyond $2643s1 targets.$?s260393[
 
@@ -3006,25 +3006,24 @@ Deals $s3% increased damage to your primary target.</description>
     <class id="hunter" name="Hunter" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
-      <effect number="1" id="485306" type="6" type_text="Apply Aura (6)" sub_type="643" sub_type_text="Modify Ranged Attack Speed Flat (643)" base_value="2000" scaled_value="2000" />
-      <effect number="2" id="1007203" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="100" scaled_value="100" />
+      <effect number="1" id="485306" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
+      <effect number="2" id="1311981" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
     </effects>
-    <description>Aimed Shot causes your next $?s342049[Chimaera Shot][Arcane Shot] or Multi-Shot to deal $260242s1% more damage, cost $260242s3% less Focus, and have its global cooldown reduced by $260242s6%.
+    <description>Aimed Shot causes your next Arcane Shot or Multi-Shot to deal $260242s1% more damage and cost $260242s3% less Focus.
 
-Your Auto Shot damage is increased by $s2% but the time between your Auto Shots is increased by ${$s1/1000}.1 sec.</description>
+Precise Shots benefits $?a466932[Black Arrow][Kill Shot]'s damage at $s2% effectiveness.</description>
   </spell>
   <spell id="260242" name="Precise Shots" level="1" duration="15" stacks_max="1" proc_chance="100">
     <class id="hunter" name="Hunter" />
     <attributes>0000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="5">
-      <effect number="1" id="485309" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="100" scaled_value="100" />
-      <effect number="2" id="713795" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="100" scaled_value="100" />
+    <effects count="4">
+      <effect number="1" id="485309" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="50" scaled_value="50" />
+      <effect number="2" id="713795" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="50" scaled_value="50" />
       <effect number="3" id="737584" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="14" modifier_text="Spell Resource Cost 1 (14)" base_value="-60" scaled_value="-60" misc_value="14" />
-      <effect number="4" id="808871" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="-50" scaled_value="-50" />
-      <effect number="5" id="1289973" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="7" modifier_text="Spell Critical Chance (7)" base_value="0" scaled_value="0" misc_value="7" />
+      <effect number="4" id="808871" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="7" modifier_text="Spell Critical Chance (7)" base_value="0" scaled_value="0" misc_value="7" />
     </effects>
     <description>$@spelldesc260240</description>
-    <tooltip>Damage of Arcane Shot or Multi-Shot increased by $s1%, incurs a $s4% reduced global cooldown, and their Focus cost is reduced by $s3%.</tooltip>
+    <tooltip>Damage of Arcane Shot, Kill Shot, or Multi-Shot increased by $s1% and their Focus cost is reduced by $s3%.</tooltip>
   </spell>
   <spell id="260243" name="Volley" level="1" range="40" gcd="1.5" duration="6" cooldown="45">
     <class id="hunter" name="Hunter" />
@@ -4163,13 +4162,15 @@ Cunning: $@spellname53271</description>
     <description>Increases your critical strike chance by $s3% and critical strike damage by $s4% for $d.
 
 $@spellicon19434 $@spellname19434
-Reduces its cooldown rate by $s2%$?a471366[, its cast time by $471366s1%, and its Focus cost by $471366s2%.][.]
+Cooldown recovers $s2% faster$?a471366[, cast time reduced by $471366s1%, and Focus cost reduced $471366s2%.][.]
 
 $@spellicon257044 $@spellname257044
-Reduces its cooldown by $s1%.$?a470943[
+Cooldown recovers $s1% faster.$?(a1253599&amp;a470943)[
+
+|cFFFFFFFFApplies Sentinel's Mark.|r]?(!a1253599&amp;a470943)[
 
 |cFFFFFFFFApplies Spotter's Mark.|r][]</description>
-    <tooltip>Critical strike chance increased by $s3% and critical strike damage increased by $s4%. The cooldown of Aimed Shot and Rapid Fire is reduced by ${100*(1-(100/(100+$m1)))}%$?a471366[, the cast time of Aimed Shot by $471366s1%, and the Focus cost of Aimed Shot by $471366s2%.][.]</tooltip>
+    <tooltip>Critical strike chance increased by $s3% and critical strike damage increased by $s4%. Aimed Shot recovers its cooldown $s2% faster and Rapid Fire recovers its cooldown $s1% faster$?a471366[, the cast time of Aimed Shot by $471366s1%, and the Focus cost of Aimed Shot by $471366s2%.][.]</tooltip>
   </spell>
   <spell id="294029" name="Frenzy Strikes" passive="true" level="1">
     <class id="hunter" name="Hunter" />
@@ -5392,16 +5393,18 @@ Aspect of the Hydra's damage bonus is increased by $s3%.</description>
     </effects>
     <description>All damage done by your pet is increased by $s1%.</description>
   </spell>
-  <spell id="378934" name="Lunge" passive="true" proc_chance="101">
+  <spell id="378934" name="Lunge" passive="true">
     <class id="hunter" name="Hunter" />
     <attributes>0000001000000000000000000000000100000000001000000000000000000000000000000000000000000000000010000000000000000000110010000000000000000000000000010000000100000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="4">
       <effect number="1" id="1007441" type="6" type_text="Apply Aura (6)" sub_type="344" sub_type_text="Modify Auto Attack Damage Done% (344)" base_value="25" scaled_value="25" />
-      <effect number="2" id="1167594" type="6" type_text="Apply Aura (6)" sub_type="453" sub_type_text="Modify Recharge Time (Category) (453)" base_value="-1000" scaled_value="-1000" misc_value="1716" />
+      <effect number="2" id="1167594" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
+      <effect number="3" id="1311168" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
+      <effect number="4" id="1311171" type="6" type_text="Apply Aura (6)" sub_type="137" sub_type_text="Modify Total Stat% (137)" base_value="2" scaled_value="2" misc_value_2="2" />
     </effects>
     <description>The damage of your auto-attacks is increased by $s1%.
 
-The cooldown of Wildfire Bomb is reduced by ${-$s2/1000}.1 sec.</description>
+Your Agility is increased by $s2%, increased by an additional $s3% while dual-wielding.</description>
   </spell>
   <spell id="378937" name="Explosives Expert" passive="true">
     <class id="hunter" name="Hunter" />
@@ -5971,21 +5974,19 @@ Each time Rapid Fire deals damage, there is a 5% chance to coalesce a Wind Arrow
     <description>$@spelldesc406425</description>
   </spell>
   <spell id="407404" name="In the Rhythm" passive="true" level="1">
-    <class id="hunter" name="Hunter" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
       <effect number="1" id="1070830" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="25" scaled_value="25" />
     </effects>
-    <description>When Rapid Fire finishes channeling, the time between your Auto Shots is reduced by ${-$407405s1/1000}.1 sec for $407405d.</description>
+    <description>When Rapid Fire finishes channeling, your critical strike chance is increased by $407405s1% for $407405d.</description>
   </spell>
-  <spell id="407405" name="In the Rhythm" level="1" duration="12">
-    <class id="hunter" name="Hunter" />
+  <spell id="407405" name="In the Rhythm" level="1" duration="8">
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1070831" type="6" type_text="Apply Aura (6)" sub_type="643" sub_type_text="Modify Ranged Attack Speed Flat (643)" base_value="-1000" scaled_value="-1000" />
+      <effect number="1" id="1070831" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="7" modifier_text="Spell Critical Chance (7)" base_value="6" scaled_value="6" misc_value="7" />
     </effects>
     <description>$@spelldesc407404</description>
-    <tooltip>The time between your Auto Shots is reduced by ${-$s1/1000}.1 sec.</tooltip>
+    <tooltip>Your critical strike chance is increased by $s1%.</tooltip>
   </spell>
   <spell id="407412" name="Bloody Frenzy" passive="true" proc_chance="101">
     <class id="hunter" name="Hunter" />
@@ -6640,10 +6641,10 @@ Aimed Shot grants $1279347s1% increased movement speed for $1279347d, decaying r
     <class id="hunter" name="Hunter" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
-      <effect number="1" id="1166875" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="25" scaled_value="25" />
-      <effect number="2" id="1166876" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="15" scaled_value="15" />
+      <effect number="1" id="1166875" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="15" scaled_value="15" />
+      <effect number="2" id="1166876" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="25" scaled_value="25" />
     </effects>
-    <description>Multi-Shot deals $s1% increased damage and Volley deals $s2% increased damage.</description>
+    <description>Explosive Shot deals $s1% increased damage and Volley deals $s2% increased damage.</description>
   </spell>
   <spell id="459808" name="Wailing Arrow" duration="15" proc_chance="101">
     <class id="hunter" name="Hunter" />
@@ -6652,8 +6653,8 @@ Aimed Shot grants $1279347s1% increased movement speed for $1279347d, decaying r
       <effect number="1" id="1166885" type="6" type_text="Apply Aura (6)" sub_type="332" sub_type_text="Override Action Spell (Misc w/ Base) (332)" base_value="392060" scaled_value="392060" misc_value="288613" />
       <effect number="2" id="1275894" type="6" type_text="Apply Aura (6)" sub_type="332" sub_type_text="Override Action Spell (Misc w/ Base) (332)" base_value="392060" scaled_value="392060" misc_value="19574" />
     </effects>
-    <description>$@spelldesc459730</description>
-    <tooltip>Your next Aimed Shot is a Wailing Arrow.</tooltip>
+    <description>$@spelldesc1264290</description>
+    <tooltip>$?c1[Bestial Wrath][Trueshot] is temporarily replaced with Wailing Arrow.</tooltip>
   </spell>
   <spell id="459828" name="Sulfur-Lined Pockets" passive="true" proc_chance="101">
     <class id="hunter" name="Hunter" />
@@ -7171,9 +7172,9 @@ The cooldown of $?a137015[Black Arrow]?a466932[Black Arrow][Kill Shot] is reset.
     <effects count="1">
       <effect number="1" id="1186801" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
     </effects>
-    <description>Trueshot sends your Spotting Eagle into a frenzy, instantly applying Spotter's Mark to your target. 
+    <description>Trueshot sends your $?a1253599[Sentinel Owl][Spotting Eagle] into a frenzy, instantly applying $?a1253599[Sentinel's Mark][Spotter's Mark] to your target. 
 
-During Trueshot, your chance to apply Spotter's Mark is increased by $s1%.</description>
+During Trueshot, your chance to apply $?a1253599[Sentinel's Mark][Spotter's Mark] is increased by $s1%.</description>
   </spell>
   <spell id="470945" name="Aspect of the Hydra" passive="true" proc_chance="100">
     <class id="hunter" name="Hunter" />
@@ -7218,6 +7219,14 @@ During Trueshot, your chance to apply Spotter's Mark is increased by $s1%.</desc
     </effects>
     <description>Trueshot now also reduces the cast time of Aimed Shot by $s1% and reduces the Focus cost of Aimed Shot by $s2%.</description>
   </spell>
+  <spell id="471369" name="Precision Detonation" passive="true" proc_chance="100">
+    <class id="hunter" name="Hunter" />
+    <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1187670" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
+    </effects>
+    <description>When Aimed Shot damages a target affected by your Explosive Shot, Explosive Shot instantly explodes, dealing $474199s1% increased damage.</description>
+  </spell>
   <spell id="471428" name="Incendiary Ammunition" passive="true" level="1">
     <class id="hunter" name="Hunter" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
@@ -7258,7 +7267,7 @@ $@spellicon471881 Wyvern
 A Wyvern descends from the skies, letting out a battle cry that increases the damage of you and your pets by ${$471881s1*$s3}% for $471881d.
 
 $@spellicon471936 Boar
-A Boar charges through your target $s2 $Ltime:times;, dealing $471936s1 physical damage to the primary target and $471938s1 damage to up to $471938s2 nearby enemies.
+A Boar charges through your target $s2 $Ltime:times;, dealing $471938s1 damage to nearby enemies and an additional $471936s1 physical damage to its primary target. Damage reduced beyond $471938s2 targets.
 
 $@spellicon471993 Bear
 A Bear leaps into the fray, rending the flesh of your enemies, dealing $471999o1 damage over $471999d to up to $471999s2 nearby enemies.</description>
@@ -7477,22 +7486,21 @@ Casting $?c1[Kill Command][Wildfire Bomb] extends the duration of your Wyvern by
     <effects count="1">
       <effect number="1" id="1190877" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="25" scaled_value="25" />
     </effects>
-    <description>When your Boar deals damage, the damage of your next $?c1[Cobra Shot][Hatchet Toss] is increased by $?c1[$472640s1][$472640s2]%.
+    <description>$?c1[When your Boar deals damage, the damage of your next Cobra Shot is increased by $472640s1%.
 
-Each target damaged by your Boar causes $?c1[Cobra Shot][Hatchet Toss] to strike $?c1[${$472640s3}][${$472640s4}] additional $Ltarget:targets;, up to $472640u.</description>
+Each additional enemy damaged by your Boar causes Cobra Shot to strike $472640s3 additional $Ltarget:targets;, up to $472640u][Each time your Boar deals damage, the damage of your next Boomstick is increased by $472640s2%, up to ${$472640s2*$472640u}%].</description>
   </spell>
   <spell id="472640" name="Hogstrider" duration="20" stacks_max="4" proc_chance="100">
     <class id="hunter" name="Hunter" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="5">
+    <effects count="4">
       <effect number="1" id="1190878" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="200" scaled_value="200" />
-      <effect number="2" id="1190880" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="200" scaled_value="200" />
+      <effect number="2" id="1190880" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="5" scaled_value="5" />
       <effect number="3" id="1190881" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="17" modifier_text="Spell Chain Targets (17)" base_value="1" scaled_value="1" misc_value="17" />
       <effect number="4" id="1190882" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="17" modifier_text="Spell Chain Targets (17)" base_value="1" scaled_value="1" misc_value="17" />
-      <effect number="5" id="1259166" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="17" modifier_text="Spell Chain Targets (17)" base_value="1" scaled_value="1" misc_value="17" />
     </effects>
     <description>$@spelldesc472639</description>
-    <tooltip>Your next $?c1[Cobra Shot][Hatchet Toss] strikes $?c1[$s3][$s4] additional $ltarget:targets; and its damage is increased by $?c1[$s1][$s2]%</tooltip>
+    <tooltip>$?c1[Your next Cobra Shot strikes $s3 additional $Ltarget:targets; and its damage is increased by $s1%][Boomstick damage increased by $s2%].</tooltip>
   </spell>
   <spell id="472660" name="No Mercy" passive="true">
     <class id="hunter" name="Hunter" />
@@ -7575,10 +7583,13 @@ Each target damaged by your Boar causes $?c1[Cobra Shot][Hatchet Toss] to strike
   <spell id="473369" name="Eagle's Accuracy" passive="true">
     <class id="hunter" name="Hunter" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
+    <effects count="2">
       <effect number="1" id="1192245" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="5" scaled_value="5" />
+      <effect number="2" id="1312383" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="10" scaled_value="10" />
     </effects>
-    <description>Aimed Shot and Rapid Fire's damage is increased by ${$s1}.1%.</description>
+    <description>Aimed Shot deals $s1% increased damage.
+
+Rapid Fire deals $s2% increased damage.</description>
   </spell>
   <spell id="473370" name="Double Tap" passive="true">
     <class id="hunter" name="Hunter" />
@@ -7589,22 +7600,6 @@ Each target damaged by your Boar causes $?c1[Cobra Shot][Hatchet Toss] to strike
       <effect number="3" id="1192464" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="80" scaled_value="80" />
     </effects>
     <description>Casting Trueshot or Volley grants Double Tap, causing your next Aimed Shot to fire again at $s2% power, or your next Rapid Fire to fire $s3% additional shots during its channel.</description>
-  </spell>
-  <spell id="473378" name="Bullet Hell" passive="true">
-    <class id="hunter" name="Hunter" />
-    <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
-      <effect number="1" id="1192256" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="11" modifier_text="Spell Cooldown (11)" base_value="-15000" scaled_value="-15000" misc_value="11" />
-    </effects>
-    <description>The cooldown of Volley is reduced by ${-$s1/1000} sec.</description>
-  </spell>
-  <spell id="473379" name="Target Acquisition" passive="true" proc_chance="100">
-    <class id="hunter" name="Hunter" />
-    <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
-      <effect number="1" id="1192259" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="1000" scaled_value="1000" />
-    </effects>
-    <description>Consuming Spotter's Mark reduces the cooldown of Aimed Shot by ${$s1/1000}.1 sec.</description>
   </spell>
   <spell id="473380" name="Quickdraw" passive="true">
     <class id="hunter" name="Hunter" />
@@ -7622,28 +7617,32 @@ Each target damaged by your Boar causes $?c1[Cobra Shot][Hatchet Toss] to strike
     </effects>
     <description>Rapid Fire grants Precise Shots.</description>
   </spell>
-  <spell id="473520" name="Shrapnel Shot" passive="true">
+  <spell id="473520" name="Shrapnel Shot" passive="true" proc_chance="100">
     <class id="hunter" name="Hunter" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
       <effect number="1" id="1192466" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
     </effects>
-    <description>Casting Volley has a $s1% chance to grant Lock and Load.</description>
+    <description>Casting Explosive Shot has a $s1% chance to grant Lock and Load.</description>
   </spell>
   <spell id="473523" name="Windrunner Quiver" passive="true">
     <class id="hunter" name="Hunter" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="6">
-      <effect number="1" id="1192472" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="37" modifier_text="Spell Max Stacks (37)" base_value="1" scaled_value="1" misc_value="37" />
-      <effect number="2" id="1192473" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="90" scaled_value="90" />
-      <effect number="3" id="1192490" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="3" modifier_text="Spell Effect 1 (3)" base_value="-10" scaled_value="-10" misc_value="3" />
-      <effect number="4" id="1193959" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="12" modifier_text="Spell Effect 2 (12)" base_value="-10" scaled_value="-10" misc_value="12" />
-      <effect number="5" id="1193960" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
-      <effect number="6" id="1295022" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
+    <effects count="3">
+      <effect number="1" id="1192472" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="3" modifier_text="Spell Effect 1 (3)" base_value="15" scaled_value="15" misc_value="3" />
+      <effect number="2" id="1192473" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="12" modifier_text="Spell Effect 2 (12)" base_value="15" scaled_value="15" misc_value="12" />
+      <effect number="3" id="1192490" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="30" scaled_value="30" />
     </effects>
-    <description>Precise Shots can now stack up to ${1+$s1} times, but its damage bonus is reduced by ${-$s3}%.
+    <description>Consuming Precise Shots has a $s3% to grant Precise Shots.
 
-Casting Aimed Shot has a $s6% chance to grant an additional stack of Precise Shots.</description>
+The damage bonus of Precise Shots is increased by an additional $s1%.</description>
+  </spell>
+  <spell id="474199" name="Precision Detonation" duration="15" stacks_initial="1" stacks_max="1" proc_chance="101">
+    <class id="hunter" name="Hunter" />
+    <attributes>0000100100000000001000000001000000000000001000000000000000000000000000000000000100000000000000000000000100000000000000000010000000000001000000010000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000010000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1193672" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="20" scaled_value="20" />
+    </effects>
   </spell>
   <spell id="474257" name="On Target" duration="10" stacks_max="4" proc_chance="101">
     <class id="hunter" name="Hunter" />
@@ -8095,8 +8094,8 @@ Bestial Wrath now sends your Dire Beasts into a rage, increasing their damage de
     <class id="hunter" name="Hunter" />
     <attributes>0000001000000000000000000000000100000000000000000000000000001000000000000000000000000000000000000000000000000000000000000010000000000000000000010000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000100000000000000000000000000000110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
-      <effect number="1" id="1226075" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="3" modifier_text="Spell Effect 1 (3)" base_value="20" scaled_value="20" misc_value="3" />
-      <effect number="2" id="1226076" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="12" modifier_text="Spell Effect 2 (12)" base_value="20" scaled_value="20" misc_value="12" />
+      <effect number="1" id="1226075" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="3" modifier_text="Spell Effect 1 (3)" base_value="10" scaled_value="10" misc_value="3" />
+      <effect number="2" id="1226076" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="12" modifier_text="Spell Effect 2 (12)" base_value="10" scaled_value="10" misc_value="12" />
     </effects>
     <description>The damage bonus of Precise Shots is increased by an additional $s1%.</description>
   </spell>
@@ -8252,7 +8251,7 @@ If Bleak Powder damages $s2 or more enemies, gain $?c1[Beast Cleave][Trick Shots
       <effect number="5" id="1255481" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
       <effect number="6" id="1267297" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
     </effects>
-    <description>You and your pet leap to your target and strike as one, dealing ${$1253862s1+$1253859s1} Physical damage$?a1256938[ to your target and up to $1256938s2 nearby enemies][].
+    <description>You and your pet leap to your target and strike as one, dealing ${$1253862s1+$1253859s1} Physical damage$?a1256938[ to your target and up to $1256938s2 nearby enemies][]. Your pet frees itself from roots when it leaps.
 
 For the next $d, the damage dealt by you and your pet is increased by $s1%$?a1256938[ and your attack speed is increased by $s4%][].
 
@@ -8424,7 +8423,7 @@ Each additional target reduces this bonus by $s2%.</description>
     <effects count="1">
       <effect number="1" id="1258673" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="5" scaled_value="5" />
     </effects>
-    <description>When Kill Command critically strikes, it bleeds its target for an additional $1253138o1 damage over $1253138d.</description>
+    <description>When Strike as One critically strikes, it bleeds its target for an additional $1253138o1 damage over $1253138d.</description>
   </spell>
   <spell id="1253138" name="Sic 'Em" range="100" duration="5">
     <class id="hunter" name="Hunter" />
@@ -8450,7 +8449,7 @@ Each additional target reduces this bonus by $s2%.</description>
     <effects count="1">
       <effect number="1" id="1258742" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="5" scaled_value="5" />
     </effects>
-    <description>Wildfire Bomb's periodic effect is now a Bleed.</description>
+    <description>Wildfire Bomb's periodic effect is now a Bleed and grants you and your pet ${$1292687s1*$1292687d} Focus over $1292687d.</description>
   </spell>
   <spell id="1253176" name="Flamebreak" passive="true">
     <class id="hunter" name="Hunter" />
@@ -8559,16 +8558,16 @@ When your Sentinel Owl applies Sentinel's Mark, reduce the cooldown of $?c2[Aime
     <class id="hunter" name="Hunter" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000010001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="6">
-      <effect number="1" id="1259903" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="3" modifier_text="Spell Effect 1 (3)" base_value="40" scaled_value="40" misc_value="3" />
+      <effect number="1" id="1259903" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="3" modifier_text="Spell Effect 1 (3)" base_value="10" scaled_value="10" misc_value="3" />
       <effect number="2" id="1259904" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="3" modifier_text="Spell Effect 1 (3)" base_value="4" scaled_value="4" misc_value="3" />
       <effect number="3" id="1260075" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="1" modifier_text="Spell Duration (1)" base_value="2000" scaled_value="2000" misc_value="1" />
       <effect number="4" id="1260076" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="1" modifier_text="Spell Duration (1)" base_value="2000" scaled_value="2000" misc_value="1" />
-      <effect number="5" id="1276519" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="12" modifier_text="Spell Effect 2 (12)" base_value="40" scaled_value="40" misc_value="12" />
+      <effect number="5" id="1276519" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="12" modifier_text="Spell Effect 2 (12)" base_value="10" scaled_value="10" misc_value="12" />
       <effect number="6" id="1276520" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="2000" scaled_value="2000" misc_value="1" misc_value_2="6394" />
     </effects>
     <description>$?c2[Precise Shots damage bonus][Tip of the Spear damage bonus] increased by $?c2[$s1][$s2]%.
 
-$?c2[Trueshot][Takedown] duration increased by $?c2[${$s3/1000} ][${$s4/1000}] sec.</description>
+$?c2[Trueshot][Takedown] duration increased by $?c2[${$s3/1000}][${$s4/1000}] sec.</description>
   </spell>
   <spell id="1253831" name="Sanctified Armaments" passive="true" proc_chance="100">
     <class id="hunter" name="Hunter" />
@@ -8850,14 +8849,6 @@ Raptor Swipe deals $s2% increased damage to its primary target.</description>
 
 Raptor Swipes that benefit from Tip of the Spear provoke an additional Strike as One at $s2% effectiveness.</description>
   </spell>
-  <spell id="1259922" name="Lethality" passive="true" proc_chance="100">
-    <class id="hunter" name="Hunter" />
-    <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
-      <effect number="1" id="1269258" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="15" modifier_text="Spell Critical Bonus Multiplier (15)" base_value="5" scaled_value="5" misc_value="15" />
-    </effects>
-    <description>Critical strike damage dealt by your abilities and auto-attacks increased by $s1%.</description>
-  </spell>
   <spell id="1261193" name="Boomstick" range="20" gcd="1.5" duration="3" cooldown="60">
     <class id="hunter" name="Hunter" />
     <resource type="2" cost="50" type_name="Focus (2)" />
@@ -8866,7 +8857,7 @@ Raptor Swipes that benefit from Tip of the Spear provoke an additional Strike as
       <effect number="1" id="1270838" type="6" type_text="Apply Aura (6)" sub_type="23" sub_type_text="Periodic Trigger Spell (23)" trigger_spell_name="Boomstick" period="1" base_value="0" scaled_value="0" trigger_spell_id="1261215" />
       <effect number="2" id="1270885" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="8" scaled_value="8" />
       <effect number="3" id="1290065" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="20" scaled_value="20" />
-      <effect number="4" id="1314791" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
+      <effect number="4" id="1316256" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
     </effects>
     <description>Unload a series of ${($d/$t1)+1} shotgun blasts $s3 yds in front of you, dealing ${$1261215s1*4} Physical damage over $d. Deals reduced damage beyond $s2 targets.</description>
   </spell>
@@ -9078,10 +9069,13 @@ Deals reduced damage beyond $1264355s2 $Ltarget:targets;.</description>
   <spell id="1264775" name="Sharpened Fangs" passive="true">
     <class id="hunter" name="Hunter" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
+    <effects count="2">
       <effect number="1" id="1276352" type="6" type_text="Apply Aura (6)" sub_type="318" sub_type_text="Modify Mastery% (318)" base_value="3" scaled_value="3" />
+      <effect number="2" id="1311163" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="15" scaled_value="15" />
     </effects>
-    <description>Your mastery is increased by $s1%.</description>
+    <description>Your mastery is increased by $s1%.$?c3[
+
+Wildfire Bomb deals an additional $s2% increased damage to its primary target.][]</description>
   </spell>
   <spell id="1264781" name="Lethal Barbs" passive="true" proc_chance="100">
     <class id="hunter" name="Hunter" />
@@ -9099,7 +9093,7 @@ $?c1[Auto shot][Auto attack] damage increased by $?c1[$s2][$s3]%.</description>
     <class id="hunter" name="Hunter" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1276369" type="30" type_text="Energize Power (30)" sub_type="0" base_value="2" scaled_value="2" misc_value_energize="focus" />
+      <effect number="1" id="1276369" type="30" type_text="Energize Power (30)" sub_type="0" base_value="1" scaled_value="1" misc_value_energize="focus" />
     </effects>
     <description>$@spelldesc1264781</description>
   </spell>
@@ -9118,10 +9112,10 @@ $?c1[Auto shot][Auto attack] damage increased by $?c1[$s2][$s3]%.</description>
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="3">
       <effect number="1" id="1276389" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="50" scaled_value="50" misc_value="3" misc_value_2="5828" />
-      <effect number="2" id="1276390" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="50" scaled_value="50" misc_value="12" misc_value_2="5828" />
+      <effect number="2" id="1276390" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="2" scaled_value="2" misc_value="12" misc_value_2="5828" />
       <effect number="3" id="1276404" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="3" scaled_value="3" misc_value="37" misc_value_2="5828" />
     </effects>
-    <description>Hogstrider further increases the damage of $?c1[Cobra Shot][Hatchet Toss] by $?c1[$s1][$s2]% and it now strikes up to $s3 additional targets.</description>
+    <description>$?c1[Hogstrider further increases the damage of Cobra Shot by $s1% and it now strikes up to $s3 additional targets][Hogstrider further increases the damage of Boomstick by $s2%].</description>
   </spell>
   <spell id="1264825" name="Hunter Beast Mastery 12.0 Class Set 2pc" passive="true">
     <class id="hunter" name="Hunter" />
@@ -9647,7 +9641,7 @@ $@spelldesc471363]</description>
     <class id="hunter" name="Hunter" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1289972" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="33" modifier_text="Spell Effect 5 (33)" base_value="10" scaled_value="10" misc_value="33" />
+      <effect number="1" id="1289972" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="32" modifier_text="Spell Effect 4 (32)" base_value="10" scaled_value="10" misc_value="32" />
     </effects>
     <description>Precise Shots now increases the critical strike chance of Arcane Shot and Multi-Shot by $s1%</description>
   </spell>
@@ -9765,7 +9759,7 @@ $@spelldesc471363]</description>
     <description>$@spelldesc19574</description>
     <tooltip>Damage dealt increased by $w1%.</tooltip>
   </spell>
-  <spell id="1286400" name="Heart of the Pack" duration="-1">
+  <spell id="1286400" name="Scout's Vigil" duration="-1">
     <class id="hunter" name="Hunter" />
     <attributes>0000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
@@ -9773,5 +9767,24 @@ $@spelldesc471363]</description>
     </effects>
     <description>$@spelldesc1265052</description>
     <tooltip>Haste increased by $W1%.</tooltip>
+  </spell>
+  <spell id="1289896" name="Misdirection" level="27" range="100" duration="30" proc_chance="101">
+    <class id="hunter" name="Hunter" />
+    <attributes>0000100100000000100000000100000000000000001000000000000000100000000100001000000000000000000000001000000000000000000000000010000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="2">
+      <effect number="1" id="1308485" type="130" type_text="Redirect Threat (130)" sub_type="0" base_value="100" scaled_value="100" misc_value="38000" />
+      <effect number="2" id="1308487" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
+    </effects>
+    <description>$@spelldesc34477</description>
+    <tooltip>Threat redirected from Hunter.</tooltip>
+  </spell>
+  <spell id="1292687" name="Shrapnel Bomb" duration="3">
+    <class id="hunter" name="Hunter" />
+    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1312911" type="6" type_text="Apply Aura (6)" sub_type="24" sub_type_text="Periodic Energize Power (24)" period="1" base_value="5" scaled_value="5" misc_value="2" />
+    </effects>
+    <description>$@spelldesc1253172</description>
+    <tooltip>Generating ${$s1*$d} Focus over $d.</tooltip>
   </spell>
 </spell_query>

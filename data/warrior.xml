@@ -201,7 +201,7 @@ Critical strike chance of all abilities increased by $w4%.</tooltip>
     </effects>
     <description>Run at high speed toward an ally, intercepting all melee and ranged attacks against them for $147833d while they remain within $147833A1 yds.</description>
   </spell>
-  <spell id="5246" name="Intimidating Shout" level="34" range="8" gcd="1.5" duration="8" cooldown="90" proc_chance="100">
+  <spell id="5246" name="Intimidating Shout" range="8" gcd="1.5" duration="8" cooldown="90" proc_chance="100">
     <class id="warrior" name="Warrior" />
     <attributes>0000100000000000101000000000000000010001000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000100000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="7">
@@ -211,10 +211,10 @@ Critical strike chance of all abilities increased by $w4%.</tooltip>
       <effect number="6" id="1312103" type="6" type_text="Apply Aura (6)" sub_type="33" sub_type_text="Decrease Movement Speed% (33)" base_value="-70" scaled_value="-70" />
       <effect number="7" id="1312104" type="6" type_text="Apply Aura (6)" sub_type="191" sub_type_text="Use Base Move Speed (191)" base_value="7" scaled_value="7" />
     </effects>
-    <description>Causes the targeted enemy to cower in fear while all enemies within $a2 yards flee from you and their movement speed is reduced by $s3% for $d.
+    <description>Causes the targeted enemy to cower in fear while all enemies within $a5 yards flee from you and their movement speed is reduced by $s3% for $d.
 Damage may cancel the effect.</description>
     <tooltip>Terrified of $@auracaster.
-Movement speed reduced by $w3%.</tooltip>
+Movement speed reduced by $?e3[$w3][$w6]%.</tooltip>
   </spell>
   <spell id="5301" name="Revenge Trigger" passive="true" level="12" proc_chance="101">
     <spec id="Protection Warrior" name="protection" />
@@ -303,16 +303,15 @@ Your successful dodges and parries have a chance to make your next Revenge cost 
   <spell id="6673" name="Battle Shout" level="10" gcd="1.5" duration="3600">
     <class id="warrior" name="Warrior" />
     <attributes>0000100000000000101000000000000000000000001000000100000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000001000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000010000000000000000000000000000</attributes>
-    <effects count="6">
+    <effects count="5">
       <effect number="1" id="2384" type="6" type_text="Apply Aura (6)" sub_type="166" sub_type_text="Modify Melee Attack Power% (166)" base_value="5" scaled_value="5" />
       <effect number="2" id="728517" type="6" type_text="Apply Aura (6)" sub_type="167" sub_type_text="Modify Ranged Attack Power% (167)" base_value="5" scaled_value="5" />
       <effect number="3" id="1101943" type="6" type_text="Apply Aura (6)" sub_type="137" sub_type_text="Modify Total Stat% (137)" base_value="0" scaled_value="0" misc_value_2="4" />
-      <effect number="4" id="1261100" type="6" type_text="Apply Aura (6)" sub_type="166" sub_type_text="Modify Melee Attack Power% (166)" base_value="0" scaled_value="0" />
-      <effect number="5" id="1261101" type="6" type_text="Apply Aura (6)" sub_type="167" sub_type_text="Modify Ranged Attack Power% (167)" base_value="0" scaled_value="0" />
-      <effect number="6" id="1286689" type="203" type_text="Remove Aura (203)" sub_type="0" base_value="0" scaled_value="0" trigger_spell_id="1271909" />
+      <effect number="4" id="1261100" type="6" type_text="Apply Aura (6)" sub_type="167" sub_type_text="Modify Ranged Attack Power% (167)" base_value="0" scaled_value="0" />
+      <effect number="5" id="1261101" type="203" type_text="Remove Aura (203)" sub_type="0" base_value="0" scaled_value="0" trigger_spell_id="1271909" />
     </effects>
     <description>Increases the attack power of all raid and party members within $a1 yards by $s1% for $d.</description>
-    <tooltip>Attack power increased by ${$w1+$w4}%.$?$w3&gt;0[
+    <tooltip>Attack power increased by $w1%.$?$w3&gt;0[
 
 Stamina increased by $w3%.][]</tooltip>
   </spell>
@@ -362,7 +361,9 @@ Spurs all allies within $1244157A1 yards, increasing their movement speed by $12
     </effects>
     <description>Whirlwind $?s436707[and Thunder Clap cause][causes] your next $85739u single-target $lattack:attacks; to strike up to $85739s1 additional targets for $85739s2% damage.
 
-Whirlwind generates $190411s1 Rage plus an additional $190411s2 per target hit. Maximum $&lt;maxRage&gt; Rage.</description>
+Whirlwind generates $190411s1 Rage plus an additional $190411s2 per target hit. Maximum $&lt;maxRage&gt; Rage.
+
+If you know Rend, Whirlwind inflicts Rend on all targets.</description>
     <variables>$damage=${$199667s1+$44949s1+(2*($199852s1+$199851s1))}
 $maxRage=${$190411s1+($190411s2*$190411s3)}</variables>
   </spell>
@@ -1073,7 +1074,9 @@ Damage taken reduced by $w2%.</tooltip>
       <effect number="4" id="738490" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="7" modifier_text="Spell Critical Chance (7)" base_value="0" scaled_value="0" misc_value="7" />
     </effects>
     <description>$@spelldesc2565</description>
-    <tooltip>Block chance increased by $s1%.</tooltip>
+    <tooltip>Block chance increased by $w1%.$?$w4&gt;0[
+
+Shield Slam damage increased by $w4%][]</tooltip>
   </spell>
   <spell id="132824" name="Rope Swing Smawh" range="50000">
     <class id="warrior" name="Warrior" />
@@ -2185,7 +2188,7 @@ Immune to crowd control.</tooltip>
     <class id="warrior" name="Warrior" />
     <attributes>0000100000000000100000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000100001000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="5">
-      <effect number="1" id="345047" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="30" scaled_value="30" />
+      <effect number="1" id="345047" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
       <effect number="2" id="345048" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
       <effect number="3" id="345049" type="6" type_text="Apply Aura (6)" sub_type="226" sub_type_text="Periodic Dummy (226)" period="2" base_value="0" scaled_value="0" />
       <effect number="4" id="1286499" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="50" scaled_value="50" />
@@ -4360,7 +4363,7 @@ Successfully interrupting an enemy increases the damage you deal to them by $383
     </effects>
     <description>Rend and Deep Wounds' Bleed effects last $s1% longer and have a $s2% increased critical strike chance.
 
-If you have Rend, Mortal Strike inflicts Rend on targets below $s3% health.
+If you know Rend, Mortal Strike inflicts Rend on targets below $s3% health.
 </description>
   </spell>
   <spell id="383155" name="Improved Sweeping Strikes" passive="true">
@@ -4493,13 +4496,13 @@ If you have Rend, Mortal Strike inflicts Rend on targets below $s3% health.
     </effects>
     <description>$@spelldesc383877</description>
   </spell>
-  <spell id="383877" name="Hack and Slash" passive="true" proc_chance="25">
+  <spell id="383877" name="Hack and Slash" passive="true" proc_chance="100">
     <class id="warrior" name="Warrior" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
       <effect number="1" id="1016065" type="6" type_text="Apply Aura (6)" sub_type="42" sub_type_text="Proc Trigger Spell (42)" trigger_spell_name="Hack and Slash" base_value="0" scaled_value="0" trigger_spell_id="383873" />
     </effects>
-    <description>Each Rampage strike has a $h% chance to refund a charge of Raging Blow.</description>
+    <description>Rampage has a $h% chance to refund a charge of Raging Blow.</description>
   </spell>
   <spell id="383885" name="Vicious Contempt" passive="true">
     <class id="warrior" name="Warrior" />
@@ -4733,7 +4736,8 @@ Also remove fear effects from$?a1227751[ and reduce the duration of the next cro
     <effects count="1">
       <effect number="1" id="1018566" type="6" type_text="Apply Aura (6)" sub_type="87" sub_type_text="Modify Damage Taken% (87)" base_value="-20" scaled_value="-20" misc_value_mod_damage="126" />
     </effects>
-    <description>$@spelldesc23920</description>
+    <description>Raise your $?c3[shield][weapon], reducing magic damage you take by $385391s1% for $d.
+</description>
     <tooltip>Magical damage taken reduced by $s1%.</tooltip>
   </spell>
   <spell id="385571" name="Improved Overpower" passive="true">
@@ -5654,7 +5658,7 @@ $?c1[Mortal Strike][Shield Slam] grants a stack of Colossal Might and $?c1[Cleav
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
       <effect number="1" id="1114011" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="5" scaled_value="5" misc_value="37" misc_value_2="3306" />
-      <effect number="2" id="1135859" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
+      <effect number="2" id="1135859" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="5" scaled_value="5" />
     </effects>
     <description>Colossal Might stacks up to 10 times. If you would gain a stack of Colossal Might and are at max stacks, the cooldown of Demolish is reduced by $s2 sec.
 
@@ -5719,14 +5723,20 @@ Size increased by $s5%.</description>
   <spell id="429647" name="Practiced Strikes" passive="true">
     <class id="warrior" name="Warrior" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="3">
-      <effect number="1" id="1114022" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="20" scaled_value="20" />
+    <effects count="5">
+      <effect number="1" id="1114022" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="15" scaled_value="15" />
       <effect number="2" id="1184820" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="15" scaled_value="15" />
-      <effect number="3" id="1210713" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="23" modifier_text="Spell Effect 3 (23)" base_value="30" scaled_value="30" misc_value="23" />
+      <effect number="3" id="1210713" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="15" scaled_value="15" />
+      <effect number="4" id="1310830" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="15" scaled_value="15" />
+      <effect number="5" id="1310831" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="23" modifier_text="Spell Effect 3 (23)" base_value="30" scaled_value="30" misc_value="23" />
     </effects>
-    <description>$?c1[Mortal Strike, Cleave, and Slam][Shield Slam and Revenge] damage increased by $?c1[$s1][$s2]%.$?c3[
+    <description>$?c1[Mortal Strike and Slam damage increased by $s1%.
 
-Shield Slam generates an additional ${$s3/10} Rage.][]</description>
+Cleave and Whirlwind damage increased by $s2%][Shield Slam damage increased by $s3%.
+
+Revenge and Thunder Clap damage increased by $s4%].$?c3[
+
+Shield Slam generates an additional ${$s5/10} Rage.][]</description>
   </spell>
   <spell id="431548" name="Precise Might" passive="true" proc_chance="101">
     <class id="warrior" name="Warrior" />
@@ -5867,7 +5877,7 @@ $?a137048[Revenge][Raging Blow] and Execute damage increased by $s2%.</descripti
       <effect number="12" id="1246797" type="6" type_text="Apply Aura (6)" sub_type="312" sub_type_text="Replace Animation (Set) (312)" base_value="0" scaled_value="0" misc_value="1207" />
       <effect number="13" id="1278010" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="5" modifier_text="Spell Range (5)" base_value="45" scaled_value="45" misc_value="5" />
     </effects>
-    <description>Unleash a series of precise and powerful strikes against your target, dealing ${$440884s1+$440886s1+$440888s1} damage to it, and $440888s1 damage to enemies within 8 yds of it. Deals reduced damage beyond $s1 targets.
+    <description>Unleash a series of precise and powerful strikes against your target, dealing ${$440884s1+$440886s1+$440888s1} damage to it, and $440888s1 damage to enemies within $440888A1 yds of it. Deals reduced damage beyond $s1 targets.
 
 While channeling Demolish, you take $s4% less damage and are immune to stuns, knockbacks, and forced movement effects.
 
@@ -6107,15 +6117,16 @@ This effect cannot occur more than once every $proccooldown sec.</description>
   <spell id="444769" name="Imminent Demise" passive="true">
     <class id="warrior" name="Warrior" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="3">
       <effect number="1" id="1141367" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="3" scaled_value="3" />
       <effect number="2" id="1298727" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
+      <effect number="3" id="1318124" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
     </effects>
     <description>Every $s1 Slayer's Strikes you gain Sudden Death.
 
 Using Sudden Death accelerates your next Bladestorm, striking 1 additional time (max $445606u). Bladestorm's total duration is unchanged.
 
-Sudden Death has a $s2% chance to trigger Reap the Storm.</description>
+Sudden Death has a $s2% chance to trigger Reap the Storm at $s3% effectiveness.</description>
   </spell>
   <spell id="444770" name="Death Drive" passive="true">
     <class id="warrior" name="Warrior" />
@@ -6160,14 +6171,14 @@ Sudden Death has a $s2% chance to trigger Reap the Storm.</description>
   </spell>
   <spell id="444775" name="Reap the Storm" passive="true" proc_chance="101">
     <class id="warrior" name="Warrior" />
-    <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000010000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000010000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="4">
       <effect number="1" id="1141373" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="8" scaled_value="8" />
       <effect number="2" id="1196332" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="3" scaled_value="3" />
       <effect number="3" id="1289791" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="20" scaled_value="20" />
       <effect number="4" id="1300777" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="20" scaled_value="20" />
     </effects>
-    <description>$?c1[Mortal Strike and Cleave when it hits $s2 or more targets have][Bloodthirst has] a $?c1[$s3][$s4]% chance to cause you to unleash a flurry of steel, striking all nearby enemies for $446005s1 Physical damage and applying Overwhelmed. Deals reduced damage beyond $s1 targets.
+    <description>When $?c1[Cleave hits][Rampage hits] $s2 or more targets$?c2[ via Improved Whirlwind][] you have a $?c1[$s3][$s4]% chance to unleash a flurry of steel, striking all nearby enemies for $446005s1 Physical damage and applying Overwhelmed. Deals reduced damage beyond $s1 targets.
 </description>
   </spell>
   <spell id="444776" name="Relentless Pursuit" passive="true">
@@ -6210,14 +6221,17 @@ Charge removes all movement impairing effects, this effect cannot occur more tha
   <spell id="444780" name="Unrelenting Onslaught" passive="true">
     <class id="warrior" name="Warrior" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000010000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="3">
+    <effects count="4">
       <effect number="1" id="1141378" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="5" scaled_value="5" />
       <effect number="2" id="1147804" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="1" scaled_value="1" />
       <effect number="3" id="1160105" type="6" type_text="Apply Aura (6)" sub_type="332" sub_type_text="Override Action Spell (Misc w/ Base) (332)" base_value="446035" scaled_value="446035" misc_value="227847" />
+      <effect number="4" id="1310824" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="20" scaled_value="20" />
     </effects>
     <description>Using Sudden Death causes you to both reduce the cooldown of Bladestorm by $s1 sec and apply $s2 stack of Overwhelmed to your primary target per stack of Executioner you have.
 
-You can use Pummel and Storm Bolt while Bladestorming.</description>
+You can use Pummel and Storm Bolt while Bladestorming.
+
+Bladestorm damage increased by $s4%.</description>
   </spell>
   <spell id="445579" name="Slayer's Strike" range="5">
     <class id="warrior" name="Warrior" />
@@ -7293,9 +7307,9 @@ $@spelldesc262115</description>
     <class id="warrior" name="Warrior" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1270668" type="6" type_text="Apply Aura (6)" sub_type="42" sub_type_text="Proc Trigger Spell (42)" trigger_spell_name="Deep Wounds" base_value="0" scaled_value="0" trigger_spell_id="262115" />
+      <effect number="1" id="1270668" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
     </effects>
-    <description>Mortal Strike and Cleave critical strikes inflict Deep Wounds.
+    <description>Mortal Strike and Slam critical strikes inflict Deep Wounds at $s1% effectiveness.
 
 $@spellicon262115 $@spellname262115
 $@spelldesc262115</description>
@@ -7318,7 +7332,7 @@ $@spelldesc262115</description>
     <description>$@spelldesc1261051</description>
     <tooltip>Mortal Strike has a $w1% increased chance to trigger Tactician.</tooltip>
   </spell>
-  <spell id="1261189" name="Crushing Combo" duration="20" stacks_max="3" proc_chance="101">
+  <spell id="1261189" name="Crushing Combo" duration="20" stacks_max="2" proc_chance="101">
     <class id="warrior" name="Warrior" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
@@ -7661,7 +7675,7 @@ Kill your killer or die.</tooltip>
     </effects>
     <description>While Shield Block is active, Shield Slam deals 10% additional damage and has a 20% increased chance to critically strike.
 
-Enemies damaged by Phalanx's wave of force deal $1292071s1% reduced damage to you for $1292071d.</description>
+Enemies damaged by Phalanx's wave of force deal ${$1292071s1/-1}.1% reduced damage to you for $1292071d.</description>
   </spell>
   <spell id="1269314" name="Master of Warfare" passive="true" proc_chance="101">
     <class id="warrior" name="Warrior" />
@@ -7711,8 +7725,10 @@ Rampage damage increased by $w3%][]</tooltip>
       <effect number="2" id="1281199" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="0" scaled_value="0" />
       <effect number="3" id="1281200" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="15" modifier_text="Spell Critical Bonus Multiplier (15)" base_value="0" scaled_value="0" misc_value="15" />
     </effects>
-    <description>$@spelldesc1269314</description>
+    <description>Heroic Strike causes your attacks to penetrate $s1% armor$?a1269306[ and increase Mortal Strike, Cleave, and Overpower damage by ${$1269306s1/10}.1% and increase critical strike damage by ${$1269306s2/10}.1%][].
+</description>
     <tooltip>Your attacks penetrate $w1% armor.$?$W2&gt;0[
+
 Mortal Strike, Cleave, and Overpower damage increased by ${$W2}.1% and critical strike damage increased by ${$W3}.1%.][]</tooltip>
   </spell>
   <spell id="1270116" name="Phalanx" proc_chance="101">
@@ -7721,8 +7737,7 @@ Mortal Strike, Cleave, and Overpower damage increased by ${$W2}.1% and critical 
     <effects count="1">
       <effect number="1" id="1282003" type="2" type_text="School Damage (2)" school="physical" school_text="physical" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" ap_coefficient="1.98" />
     </effects>
-    <description>Dealing $s2% reduced damage to you.</description>
-    <tooltip>Dealing $s2% reduced damage to $@auracaster.</tooltip>
+    <description>$@spelldesc1269311</description>
   </spell>
   <spell id="1270704" name="Decimator" passive="true">
     <class id="warrior" name="Warrior" />
@@ -7730,7 +7745,7 @@ Mortal Strike, Cleave, and Overpower damage increased by ${$W2}.1% and critical 
     <effects count="1">
       <effect number="1" id="1283007" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
     </effects>
-    <description>Demolish's final strike applies Deep Wounds to all targets, at $s1% effectiveness.</description>
+    <description>Demolish's final strike applies Deep Wounds to all targets at $s1% effectiveness.</description>
   </spell>
   <spell id="1270709" name="Cut to the Bone" passive="true" proc_chance="101">
     <class id="warrior" name="Warrior" />
@@ -7917,7 +7932,7 @@ Shattering Throw and Wrecking Throw silence non-players for $1277104d.</descript
   </spell>
   <spell id="1277104" name="Javelineer" range="50000" duration="3">
     <class id="warrior" name="Warrior" />
-    <attributes>0000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <attributes>0001000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
       <effect number="1" id="1289260" type="6" type_text="Apply Aura (6)" sub_type="27" sub_type_text="Silence (27)" base_value="1" scaled_value="1" misc_value="127" />
     </effects>
@@ -7941,7 +7956,7 @@ Shattering Throw and Wrecking Throw silence non-players for $1277104d.</descript
       <effect number="2" id="1289582" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="50" scaled_value="50" />
       <effect number="3" id="1289586" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
     </effects>
-    <description>Fight through the pain, ignoring $s2% of damage taken for $d sec or until ${($s1)*(1+$@versadmg)} damage has been prevented.</description>
+    <description>Fight through the pain, ignoring $s2% of damage taken for $d or until ${($s1)*(1+$@versadmg)} damage has been prevented.</description>
     <tooltip>Ignoring $s2% of damage taken, preventing $w1 total damage.</tooltip>
     <variables>$baselineMult=$?s137048[${1.00}][${1.00}]
 $colossusMult=$?s429644[${1.20}][${1.00}]
@@ -7963,7 +7978,7 @@ $absorb=${($AP*16)*(1+$@versadmg)*$&lt;baselineMult&gt;*$&lt;colossusMult&gt;}</
     <effects count="1">
       <effect number="1" id="1290572" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="10" scaled_value="10" />
     </effects>
-    <description>Your next Shield Slam will trigger Phalanx.</description>
+    <description>Your next Shield Slam deals $s1% additional damage and will trigger Phalanx's wave of force.</description>
     <tooltip>Your next Shield Slam deals $w1% additional damage and will trigger Phalanx.</tooltip>
   </spell>
   <spell id="1280961" name="Stance Mastery" passive="true">
@@ -8028,7 +8043,26 @@ When an attack deals $386208s5% or more of your maximum health in damage, that d
     <effects count="1">
       <effect number="1" id="1311875" type="6" type_text="Apply Aura (6)" sub_type="269" sub_type_text="Modify Damage Done% to Caster (269)" base_value="-5" scaled_value="-5" misc_value="127" />
     </effects>
-    <description>$@spelldesc1269313</description>
-    <tooltip>Dealing $w1% reduced damage to $@auracaster.</tooltip>
+    <description>Enemies damaged by Phalanx's wave of force deal ${$s1/-1}.1% reduced damage to you for $d.
+</description>
+    <tooltip>Dealing ${$W1/-1}.1% reduced damage to $@auracaster.</tooltip>
+  </spell>
+  <spell id="1293603" name="Wrecking Throw Highlight" passive="true" range="25">
+    <class id="warrior" name="Warrior" />
+    <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1314405" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
+    </effects>
+    <description>$@spelldesc384110</description>
+    <variables>$damage=${($AP*1.0)*(1+$@versadmg)}</variables>
+  </spell>
+  <spell id="1293610" name="Shattering Throw Highlight" passive="true" range="25">
+    <class id="warrior" name="Warrior" />
+    <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1314421" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
+    </effects>
+    <description>$@spelldesc384110</description>
+    <variables>$damage=${($AP*1.0)*(1+$@versadmg)}</variables>
   </spell>
 </spell_query>

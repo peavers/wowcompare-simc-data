@@ -86,7 +86,7 @@ $damage=${$&lt;aotb&gt;*$&lt;bmMastery&gt;*$&lt;beastMasterTalent&gt;*$&lt;train
       <effect number="3" id="129192" type="6" type_text="Apply Aura (6)" sub_type="226" sub_type_text="Periodic Dummy (226)" period="1" base_value="0" scaled_value="0" />
       <effect number="4" id="274827" type="179" type_text="Create Area Trigger (179)" sub_type="0" base_value="26" scaled_value="26" misc_value="4485" />
     </effects>
-    <description>Corrupts the targeted ground, causing ${$52212m1*11} Shadow damage over $d to targets within the area.$?s207311&amp;c1[
+    <description>Corrupts the targeted ground, causing ${$52212m1*11} Shadow damage over $d to targets within the area.$?s316916&amp;c1[
 
 While you remain within the area, your Heart Strike will hit up to $188290m3 additional targets.][]</description>
   </spell>
@@ -289,7 +289,7 @@ $shield=${$MHP*$m2/100*(1+$@versadmg)*$&lt;amb&gt;*$&lt;gWard&gt;}
       <effect number="4" id="1279501" type="6" type_text="Apply Aura (6)" sub_type="118" sub_type_text="Modify Healing Received% (118)" base_value="0" scaled_value="0" misc_value="127" />
     </effects>
     <description>Create a death pact that heals you for $s1% of your maximum health, but absorbs incoming healing equal to $s3% of your max health for $d.</description>
-    <tooltip>The next $w2 healing received will be absorbed.$?w4&gt;0[Healing received increased by $w4%.][]</tooltip>
+    <tooltip>The next $w2 healing received will be absorbed. $?$W4&gt;0[Healing received increased by $w4%.][]</tooltip>
   </spell>
   <spell id="48792" name="Icebound Fortitude" level="38" duration="8" cooldown="120" proc_chance="100">
     <class id="deathknight" name="Death Knight" />
@@ -657,7 +657,7 @@ Modifying your rune requires a Runeforge in Ebon Hold.</description>
     </effects>
     <description>An unholy strike that deals $s1 Shadow damage and causing your plagues on the target to erupt, dealing their damage an additional time at $s2% effectiveness.
 
-Spreads Virulent Plague on the target to a nearby enemy.</description>
+Applies Virulent Plague or spreads it to a nearby enemy.</description>
   </spell>
   <spell id="55095" name="Frost Fever" range="50000" duration="24" proc_chance="101">
     <class id="deathknight" name="Death Knight" />
@@ -4046,11 +4046,9 @@ When leaving your Death and Decay you retain its bonus effects for ${$s2/1000} s
       <effect number="3" id="813512" type="6" type_text="Apply Aura (6)" sub_type="226" sub_type_text="Periodic Dummy (226)" period="1" base_value="0" scaled_value="0" />
       <effect number="4" id="813513" type="179" type_text="Create Area Trigger (179)" sub_type="0" base_value="26" scaled_value="26" misc_value="4485" />
     </effects>
-    <description>Corrupts the targeted ground, causing ${$341340m1*11} Shadow damage over $d to targets within the area.$?!c2[
+    <description>Corrupts the targeted ground, causing ${$341340m1*11} Shadow damage over $d to targets within the area.$?s316916&amp;c1[
 
-While you remain within the area, your ][]$?s223829&amp;!c2[Necrotic Strike and ][]$?c1[Heart Strike will hit up to $188290m3 additional targets and inflict Death's Due for $324164d.]?s207311&amp;!c2[Clawing Shadows will hit up to ${$55090s4-1} enemies near the target and inflict Death's Due for $324164d.]?!c2[Scourge Strike will hit up to ${$55090s4-1} enemies near the target and inflict Death's Due for $324164d.][
-
-While you remain within the area, your Obliterate will hit up to $315442s2 additional target and inflict Death's Due for $324164d.]
+While you remain within the area, your Heart Strike will hit up to $188290m3 additional targets.][]
 
 Death's Due reduces damage enemies deal to you by $324164s1%, up to a maximum of ${$324164s1*-$324164u}% and their power is transferred to you as an equal amount of Strength.</description>
   </spell>
@@ -4637,13 +4635,16 @@ Pestilence: Slows the target by $327093s2% and deals $327093o1 shadow damage ove
     <resource type="5" cost="1" type_name="Rune (5)" />
     <resource type="6" cost="-10" type_name="Runic Power (6)" />
     <attributes>0000000000000000101000000000000000000000010000000000000000010000000000000000000000010000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="3">
       <effect number="1" id="844983" type="2" type_text="School Damage (2)" school="shadowfrost" school_text="shadowfrost" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" ap_coefficient="4.5" />
       <effect number="2" id="844984" type="64" type_text="Trigger Spell (64)" trigger_spell_name="Soul Reaper" sub_type="0" base_value="35" scaled_value="35" trigger_spell_id="1241521" />
+      <effect number="3" id="1310993" type="3" type_text="Dummy (3)" sub_type="0" base_value="2" scaled_value="2" />
     </effects>
-    <description>Rupture the soul of your enemy, dealing $s1 Shadowfrost damage and causing the foe to take $1241521s1% increased damage from your diseases and minions for $1241521d. Consumes all available charges to cast Putrefy.
+    <description>Rupture the soul of your enemy, dealing $s1 Shadowfrost damage and causing the foe to take $1241521s1% increased damage from your diseases and minions for $1241521d.
 
-Only usable on enemies below $s2% maximum health.</description>
+Only usable on enemies below $s2% maximum health.
+
+|cFFFFFFFFConsumes up to $s3 available $lcharge:charges; to cast Putrefy.|r</description>
   </spell>
   <spell id="343295" name="Soul Reaper" range="100">
     <class id="deathknight" name="Death Knight" />
@@ -5415,11 +5416,12 @@ Dark Transformation resets Soul Reaper's cooldown and allows it to be used on an
   <spell id="377580" name="Putrid Echoes" passive="true">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000001110000000000000000000000100000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
-      <effect number="1" id="1005502" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="20" scaled_value="20" />
-      <effect number="2" id="1274475" type="6" type_text="Apply Aura (6)" sub_type="411" sub_type_text="Modify Cooldown Charge (Category) (411)" base_value="1" scaled_value="1" misc_value="2441" />
+    <effects count="3">
+      <effect number="1" id="1005502" type="6" type_text="Apply Aura (6)" sub_type="411" sub_type_text="Modify Cooldown Charge (Category) (411)" base_value="2" scaled_value="2" misc_value="2441" />
+      <effect number="2" id="1311075" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="20" scaled_value="20" />
+      <effect number="3" id="1311496" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
     </effects>
-    <description>Putrefy deals $s1% increased damage and has $s2 additional charge.</description>
+    <description>Putrefy deals $s2% increased damage, has $s1 additional $Lcharge:charges; and consumes up to $s3 available charges.</description>
   </spell>
   <spell id="377587" name="Ghoulish Frenzy" passive="true">
     <class id="deathknight" name="Death Knight" />
@@ -5716,7 +5718,7 @@ The duration of Lesser Ghouls are increased by $s1% of your Mastery.</descriptio
     <attributes>0000000000000000000000000000000100000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="3">
       <effect number="1" id="1026943" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
-      <effect number="2" id="1051086" type="35" type_text="Apply Party Aura (35)" sub_type="395" sub_type_text="Area Trigger (395)" base_value="0" scaled_value="0" misc_value="28179" />
+      <effect number="2" id="1051086" type="35" type_text="Apply Party Aura (35)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
       <effect number="3" id="1255736" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="25" scaled_value="25" />
     </effects>
     <description>$@spelldesc390259</description>
@@ -6368,10 +6370,11 @@ Vampiric Strike heals you for $?a137008[$434422s2][$434422s3]% of your maximum h
   <spell id="433925" name="Essence of the Blood Queen" duration="20" stacks_max="5" proc_chance="101">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="3">
+    <effects count="4">
       <effect number="1" id="1123561" type="6" type_text="Apply Aura (6)" sub_type="193" sub_type_text="Modify All Haste% (193)" base_value="10" scaled_value="10" />
       <effect number="2" id="1123822" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="0" scaled_value="0" />
       <effect number="3" id="1232986" type="6" type_text="Apply Aura (6)" sub_type="318" sub_type_text="Modify Mastery% (318)" base_value="0" scaled_value="0" />
+      <effect number="4" id="1310893" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="0" scaled_value="0" />
     </effects>
     <description>Essence of the Blood Queen empowers you, $?a434075[increasing your Haste by ${$s1/10}.1% up to ${$s1/10*$u}.1%, and increases the damage of your Death Coil and Death Strike by $s2% up to ${$s2*$U}%][increasing your Haste by ${$s1/10}.1% up to ${$s1*$U/10}.1%] for $d.</description>
     <tooltip>Haste increased by ${$W1}.1%.$?a434075[
@@ -6440,11 +6443,12 @@ Chance to gain Vampiric Strike increased by $434033s2%.</tooltip>
   <spell id="434075" name="Frenzied Bloodthirst" passive="true">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="3">
       <effect number="1" id="1123818" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="2" scaled_value="2" misc_value="37" misc_value_2="3134" />
       <effect number="2" id="1123820" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="5" scaled_value="5" misc_value="12" misc_value_2="3134" />
+      <effect number="3" id="1310894" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="5" scaled_value="5" misc_value="32" misc_value_2="3134" />
     </effects>
-    <description>Essence of the Blood Queen stacks $s1 additional times and increases the damage of your $?s137008[Death Coil and Death Strike][Death Coil, Epidemic and Death Strike] by $s2% per stack.</description>
+    <description>Essence of the Blood Queen stacks $s1 additional times and increases the damage of your $?s137008[Death Coil and Death Strike by $s2%][Death Coil and Death Strike by $s2%, and Epidemic by $s3%] per stack.</description>
   </spell>
   <spell id="434100" name="Vampiric Aura" passive="true">
     <class id="deathknight" name="Death Knight" />
@@ -6533,7 +6537,7 @@ Gift of the San'layn increases the effectiveness of your Essence of the Blood Qu
   <spell id="434153" name="Gift of the San'layn" duration="10">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="8">
+    <effects count="9">
       <effect number="1" id="1123959" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="80" scaled_value="80" misc_value="3" misc_value_2="3134" />
       <effect number="2" id="1123960" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="80" scaled_value="80" misc_value="12" misc_value_2="3134" />
       <effect number="3" id="1123963" type="6" type_text="Apply Aura (6)" sub_type="332" sub_type_text="Override Action Spell (Misc w/ Base) (332)" base_value="433895" scaled_value="433895" />
@@ -6542,6 +6546,7 @@ Gift of the San'layn increases the effectiveness of your Essence of the Blood Qu
       <effect number="6" id="1124832" type="6" type_text="Apply Aura (6)" sub_type="285" sub_type_text="Cast Linked Spell w/ Value (285)" base_value="433895" scaled_value="433895" trigger_spell_id="434674" />
       <effect number="7" id="1251889" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="80" scaled_value="80" misc_value="23" misc_value_2="3134" />
       <effect number="8" id="1251890" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="200" scaled_value="200" misc_value="23" misc_value_2="3134" />
+      <effect number="9" id="1319005" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="80" scaled_value="80" misc_value="32" misc_value_2="3134" />
     </effects>
     <description>$@spelldesc434152</description>
     <tooltip>The effectiveness of Essence of the Blood Queen is increased by $?a137007[$w1][$w4]%.
@@ -6961,12 +6966,13 @@ When a Reaper's Mark explodes, the cooldowns of this effect and Death Pact are r
   <spell id="440861" name="A Feast of Souls" duration="-1" proc_chance="100">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="3">
       <effect number="1" id="1135013" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="20" scaled_value="20" />
       <effect number="2" id="1141480" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
+      <effect number="3" id="1311563" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="20" scaled_value="20" />
     </effects>
     <description>$@spelldesc444072</description>
-    <tooltip>Your Runic Power spending abilities deal $w1% increased damage.</tooltip>
+    <tooltip>$?c2[Runic Power spending abilities deal $w1%]?c3[Death Coil deals $w1% and Epidemic deals $w3%][] increased damage.</tooltip>
   </spell>
   <spell id="441378" name="Exterminate" passive="true" proc_chance="101">
     <class id="deathknight" name="Death Knight" />
@@ -6979,19 +6985,21 @@ When a Reaper's Mark explodes, the cooldowns of this effect and Death Pact are r
       <effect number="5" id="1169219" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="8" scaled_value="8" />
       <effect number="6" id="1233545" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
     </effects>
-    <description>After Reaper's Mark explodes, your next $s3 $?a137008[$LMarrowrend:Marrowrends;][$LObliterate:Obliterates; or $LFrostscythe:Frostscythes;]$?a137008[ cost $s4 $LRune:Runes; and][] summon $s1 $Lscythe:scythes; to strike your enemies.
+    <description>After Reaper's Mark explodes, your next $s3 $?a137008[$LMarrowrend:Marrowrends;][$LObliterate:Obliterates; or $LFrostscythe:Frostscythes;] cost $s4 $LRune:Runes; and summon $s1 $Lscythe:scythes; to strike your enemies.
 
 The first scythe strikes your target for $?a137008[$441424s1][$441424s2] Shadowfrost damage $?c2[and has a $s6% chance to grant Killing Machine,][and] the second scythe strikes all enemies around your target for $?a137008[$441426s1][$441426s2] Shadowfrost damage$?(a441894&amp;a137008)[ and applies Blood Plague]?(a441894&amp;$a137006)[ and applies Frost Fever][]. Deals reduced damage beyond $s5 targets.</description>
   </spell>
   <spell id="441416" name="Exterminate" duration="30" stacks_initial="1" stacks_max="2" proc_chance="101">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="4">
       <effect number="1" id="1135858" type="6" type_text="Apply Aura (6)" sub_type="42" sub_type_text="Proc Trigger Spell (42)" base_value="100" scaled_value="100" />
       <effect number="2" id="1136665" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="14" modifier_text="Spell Resource Cost 1 (14)" base_value="-50" scaled_value="-50" misc_value="14" />
+      <effect number="3" id="1311382" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="32" modifier_text="Spell Effect 4 (32)" base_value="-100" scaled_value="-100" misc_value="32" />
+      <effect number="4" id="1311383" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="33" modifier_text="Spell Effect 5 (33)" base_value="-100" scaled_value="-100" misc_value="33" />
     </effects>
     <description>$@spelldesc441378</description>
-    <tooltip>Your next $?a137008[Marrowrend costs 1 Rune and][Obliterate or Frostscythe] will call forth $441378s1 scythes to strike down your foes.</tooltip>
+    <tooltip>Your next $?a137008[Marrowrend costs 1 Rune and][Obliterate or Frostscythe costs 1 Rune and] will call forth $441378s1 scythes to strike down your foes.</tooltip>
   </spell>
   <spell id="441424" name="Exterminate" range="100">
     <class id="deathknight" name="Death Knight" />
@@ -7206,7 +7214,7 @@ Additionally, each Rune you spend increase its value by $s2%.</description>
       <effect number="1" id="1140359" type="6" type_text="Apply Aura (6)" sub_type="23" sub_type_text="Periodic Trigger Spell (23)" base_value="2" scaled_value="2" />
       <effect number="2" id="1146068" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="10" scaled_value="10" />
     </effects>
-    <description>While you have $s1 or more Horsemen aiding you, your Runic Power spending abilities deal $440861s1% increased damage.</description>
+    <description>While you have $s1 or more Horsemen aiding you, your $?c2[Runic Power spending abilities deal]?c3[Death Coil deals $440861s1% and Epidemic deals $440861s3%][] increased damage.</description>
   </spell>
   <spell id="444074" name="Horsemen's Aid" passive="true">
     <class id="deathknight" name="Death Knight" />
@@ -8047,7 +8055,7 @@ $@spelldesc1228433</description>
       <effect number="1" id="1163908" type="2" type_text="School Damage (2)" school="shadow" school_text="shadow" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" ap_coefficient="1.0125" />
       <effect number="2" id="1245144" type="64" type_text="Trigger Spell (64)" trigger_spell_name="Festering Scythe" sub_type="0" base_value="0" scaled_value="0" trigger_spell_id="1241077" />
     </effects>
-    <description>Slashes through all enemies within $a1 yds in front of you, dealing $s1 Shadow damage and hastening all of your Plagues on targets hit to deal damage $1241077s1% faster for $1241077d.</description>
+    <description>Slashes through all enemies within $a1 yds in front of you, dealing $s1 Shadow damage and hastening all of your plagues on targets hit to deal damage $1241077s1% faster for $1241077d.</description>
   </spell>
   <spell id="458169" name="Hyperpyrexia" range="100" duration="4">
     <class id="deathknight" name="Death Knight" />
@@ -8840,7 +8848,7 @@ Frostscythe damage increased by $w4%.][]</tooltip>
     <description>You sacrifice $s5% of your health every $t5 sec and in exchange you cannot be slowed below $s2% of normal speed, and you are immune to forced movement effects and knockbacks. Lasts $d.</description>
     <tooltip>Sacrificing $w5% of your health every $t5 sec, but cannot be slowed below $w2% of normal speed, and you are immune to forced movement effects and knockbacks.</tooltip>
   </spell>
-  <spell id="1233448" name="Dark Transformation" level="32" range="100" duration="15" cooldown="45">
+  <spell id="1233448" name="Dark Transformation" level="32" range="100" gcd="1.5" duration="15" cooldown="45">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000000000000000100000000000000000000000000000000000000000000000001000000000000000010000000000000000000000000000000000000000001000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="4">
@@ -8907,12 +8915,11 @@ Damage dealt increased by $w1%.</tooltip>
   <spell id="1234559" name="Desecrate" passive="true">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="3">
-      <effect number="1" id="1228924" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="300" scaled_value="300" />
-      <effect number="2" id="1286019" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="5" scaled_value="5" />
-      <effect number="3" id="1290550" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="150" scaled_value="150" />
+    <effects count="2">
+      <effect number="1" id="1228924" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="19" modifier_text="Spell Tick Time (19)" base_value="-50" scaled_value="-50" misc_value="19" />
+      <effect number="2" id="1286019" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="1" modifier_text="Spell Duration (1)" base_value="-50" scaled_value="-50" misc_value="1" />
     </effects>
-    <description>Death and Decay has a chance to collapse whenever it damages a diseased enemy, dealing $?c3[$s1]?c1[$s3][]% of its remaining damage instantly and granting you its bonus effects for the remaining duration.</description>
+    <description>Death and Decay deals its damage ${(1/(1+($s1/100))-1)*100}% faster.</description>
   </spell>
   <spell id="1234689" name="Desecrate" duration="10" stacks_initial="1" stacks_max="1" proc_chance="101">
     <class id="deathknight" name="Death Knight" />
@@ -8955,7 +8962,7 @@ Grants you the benefits of standing in Death and Decay.</description>
   </spell>
   <spell id="1235391" name="Dark Transformation" level="32" range="100" duration="15">
     <class id="deathknight" name="Death Knight" />
-    <attributes>0000000000000000100000000000000000000000000000000000000000001000001000000000000000010000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <attributes>0000000000000000100000000000000100000000000000000000000000001000001000000000000000010000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
       <effect number="1" id="1230682" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="1" scaled_value="1" />
       <effect number="2" id="1230683" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="1" scaled_value="1" />
@@ -9225,16 +9232,6 @@ For each stack of Clawing Shadows, your Scourge Strike chains to an additional e
 $@spellicon91778$@spellname91778
 $@spelldesc91778</description>
   </spell>
-  <spell id="1241707" name="March of Madness" passive="true">
-    <class id="deathknight" name="Death Knight" />
-    <attributes>0000001000000000000000000000000100000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="3">
-      <effect number="1" id="1240848" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="3" scaled_value="3" />
-      <effect number="2" id="1240849" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="15" scaled_value="15" />
-      <effect number="3" id="1296026" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="15" scaled_value="15" />
-    </effects>
-    <description>Your Lesser Ghouls deal $s2% increased damage.</description>
-  </spell>
   <spell id="1241786" name="Infected Claws" range="100" duration="12">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100100000000000000000000000000000000000000000000000000000000000000000100000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
@@ -9316,7 +9313,7 @@ $@spelldesc383269</description>
       <effect number="1" id="1241583" type="179" type_text="Create Area Trigger (179)" sub_type="0" base_value="0" scaled_value="0" misc_value="38420" />
       <effect number="2" id="1289731" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
     </effects>
-    <description>Unleash vortex of necrotic energy and bone, dealing $1242172s1 Shadowstrike damage up to $1242158s2 foes and $1242178s1 Shadow damage to all pierced enemies.</description>
+    <description>Unleash a vortex of necrotic energy and bone, dealing $1242172s1 Shadowstrike damage up to $1242158s2 foes and $1242178s1 Shadow damage to all pierced enemies.</description>
   </spell>
   <spell id="1242175" name="Necrotic Coil" level="1" range="100" duration="-1">
     <class id="deathknight" name="Death Knight" />
@@ -9358,16 +9355,6 @@ $@spelldesc383269</description>
     </effects>
     <description>$@spelldesc276837</description>
   </spell>
-  <spell id="1242561" name="Scythe of Decay" passive="true">
-    <class id="deathknight" name="Death Knight" />
-    <attributes>0000001000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000010000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000100000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
-      <effect number="1" id="1242143" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="8" scaled_value="8" />
-    </effects>
-    <description>Festering Scythe casts a Death and Decay at the target location.
-
-Can only occur every $1282565d.</description>
-  </spell>
   <spell id="1242564" name="Dread Plague" range="100">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
@@ -9395,22 +9382,9 @@ Clawing Shadows can now stack $s3 additional times.</description>
       <effect number="1" id="1242214" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
       <effect number="2" id="1289275" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
     </effects>
-    <description>Army of the Dead now raises an Abomination that attacks enemies while emitting a disease cloud that lasts for $288853d.
-
-Enemies within the disease cloud take $1244102s1% increased damage from your minions.</description>
+    <description>Army of the Dead now raises an Abomination for $288853d to attack enemies while emitting a disease cloud, dealing $1244347s1 Plague damage to nearby enemies every $s1 sec.</description>
   </spell>
-  <spell id="1242616" name="Blightfall" passive="true" proc_chance="101">
-    <class id="deathknight" name="Death Knight" />
-    <attributes>0000001000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000010000010000000000000000000010000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="4">
-      <effect number="1" id="1242223" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="5" scaled_value="5" misc_value="22" />
-      <effect number="2" id="1242229" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="5" scaled_value="5" misc_value="22" misc_value_2="5227" />
-      <effect number="3" id="1296423" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="5" scaled_value="5" misc_value="22" misc_value_2="961" />
-      <effect number="4" id="1296424" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="5" scaled_value="5" misc_value="22" misc_value_2="6230" />
-    </effects>
-    <description>All diseases deal $s1% increased damage.</description>
-  </spell>
-  <spell id="1242654" name="Reaping" duration="20" stacks_max="2" proc_chance="100">
+  <spell id="1242654" name="Reaping" duration="30" stacks_max="2" proc_chance="100">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000100000000000000000000000010000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000010000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="3">
@@ -9451,20 +9425,11 @@ Enemies within the disease cloud take $1244102s1% increased damage from your min
     <description>$@spelldesc1242608</description>
     <tooltip>Taking $w1% increased damage from $@auracaster's minions.</tooltip>
   </spell>
-  <spell id="1244158" name="March of Madness" duration="-1">
-    <class id="deathknight" name="Death Knight" />
-    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000010000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
-      <effect number="1" id="1244748" type="6" type_text="Apply Aura (6)" sub_type="79" sub_type_text="Modify Damage Done% (79)" base_value="15" scaled_value="15" misc_value_mod_damage="127" />
-    </effects>
-    <description>$@spelldesc1241707</description>
-    <tooltip>Damage increased by $w1%.</tooltip>
-  </spell>
   <spell id="1244347" name="Disease Cloud" range="100">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1245054" type="2" type_text="School Damage (2)" school="shadowstorm" school_text="shadowstorm" sub_type="0" base_value="0" scaled_value="0" ap_coefficient="0.2" />
+      <effect number="1" id="1245054" type="2" type_text="School Damage (2)" school="shadowstorm" school_text="shadowstorm" sub_type="0" base_value="0" scaled_value="0" ap_coefficient="0.35" />
     </effects>
     <description>$@spelldesc1242608</description>
   </spell>
@@ -9479,8 +9444,8 @@ Enemies within the disease cloud take $1244102s1% increased damage from your min
   </spell>
   <spell id="1247378" name="Putrefy" range="40" gcd="1.5">
     <class id="deathknight" name="Death Knight" />
-    <resource type="5" cost="1" type_name="Rune (5)" />
     <resource type="6" cost="-10" type_name="Runic Power (6)" />
+    <resource type="5" cost="1" type_name="Rune (5)" />
     <attributes>0000000000000000101000000000000000000000010000000000000000000000000000000000000000010000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
       <effect number="1" id="1249493" type="3" type_text="Dummy (3)" sub_type="0" base_value="1" scaled_value="1" />
@@ -9532,9 +9497,9 @@ Enemies within the disease cloud take $1244102s1% increased damage from your min
       <effect number="1" id="1256924" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
     </effects>
   </spell>
-  <spell id="1254252" name="Lesser Ghoul" duration="30" stacks_initial="1" stacks_max="8" proc_chance="101">
+  <spell id="1254252" name="Lesser Ghoul" duration="30" stacks_max="8" proc_chance="101">
     <class id="deathknight" name="Death Knight" />
-    <attributes>0000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <attributes>0000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
       <effect number="1" id="1260598" type="6" type_text="Apply Aura (6)" sub_type="408" sub_type_text="Set Action Button Spell Count (408)" base_value="1" scaled_value="1" misc_value_2="50" trigger_spell_id="55090" />
       <effect number="2" id="1260656" type="6" type_text="Apply Aura (6)" sub_type="408" sub_type_text="Set Action Button Spell Count (408)" base_value="1" scaled_value="1" misc_value_2="50" trigger_spell_id="433895" />
@@ -9546,7 +9511,7 @@ Enemies within the disease cloud take $1244102s1% increased damage from your min
     <class id="deathknight" name="Death Knight" />
     <attributes>0000001000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000010000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
-      <effect number="1" id="1261023" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="4000" scaled_value="4000" />
+      <effect number="1" id="1261023" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="4500" scaled_value="4500" />
       <effect number="2" id="1261024" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="35" scaled_value="35" />
     </effects>
     <description>The explosion effect of Putrefy extends the duration of your plagues by ${$s1/1000}.1 sec and deals $s2% of the damage they would deal over that time instantly.
@@ -9956,7 +9921,7 @@ Deals $1263752s1 Shadow damage every $1263729t1 sec to enemies within $1263752A1
     </effects>
     <description>Putrefy deals $s1% increased damage and causes your next Scourge Strike to cost no Rune.</description>
   </spell>
-  <spell id="1265384" name="Frostwyrm's Fury" level="44" gcd="1.5" duration="10">
+  <spell id="1265384" name="Frostwyrm's Fury" level="44" duration="10">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000000000000000100000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
@@ -9968,11 +9933,19 @@ Deals $1263752s1 Shadow damage every $1263729t1 sec to enemies within $1263752A1
   <spell id="1265547" name="Thrill of Blood" passive="true">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000010000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="8">
       <effect number="1" id="1277378" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
       <effect number="2" id="1277379" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
+      <effect number="3" id="1311173" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="5" scaled_value="5" />
+      <effect number="4" id="1311174" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="5" scaled_value="5" />
+      <effect number="5" id="1311177" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="5" scaled_value="5" />
+      <effect number="6" id="1319200" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="5" scaled_value="5" misc_value="22" />
+      <effect number="7" id="1319201" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="5" scaled_value="5" misc_value="22" />
+      <effect number="8" id="1319202" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="5" scaled_value="5" misc_value="22" />
     </effects>
-    <description>Essence of the Blood Queen additionally increases your Mastery by $?c3[${$s1/10}.1][${$s3/10}.1]% per stack.</description>
+    <description>Essence of the Blood Queen additionally increases your Mastery by $?c3[${$s1/10}.1][${$s3/10}.1]% per stack.
+
+$?c3[Dread Plague deals $s5% and Virulent Plague deals $s3%][Blood Plague deals $s4%] increased damage.</description>
   </spell>
   <spell id="1265574" name="Transfusion" passive="true" proc_chance="101">
     <class id="deathknight" name="Death Knight" />
@@ -10067,7 +10040,7 @@ Frostwyrm's Fury deals $s1% increased damage. After the Frostwyrm flies away, yo
     <class id="deathknight" name="Death Knight" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000010000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="8">
-      <effect number="1" id="1277859" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
+      <effect number="1" id="1277859" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="1" scaled_value="1" />
       <effect number="2" id="1277860" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
       <effect number="3" id="1277861" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
       <effect number="4" id="1277862" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="1" scaled_value="1" />
@@ -10078,7 +10051,7 @@ Frostwyrm's Fury deals $s1% increased damage. After the Frostwyrm flies away, yo
     </effects>
     <description>Reaper's Mark deals $s7% increased damage.
 
-Casting $?c1?[Dancing Rune Weapon][Frostwyrm's Fury] grants $?c1?[$s4][$s1] $Lstack:stacks; of Exterminate with $?c1?[$s5][$s2]% first scythe and $?c1?[$s6][$s3]% second scythe effectiveness.</description>
+Casting $?c1?[Dancing Rune Weapon][Reaper's Mark] grants $?c1?[$s4][$s1] $Lstack:stacks; of Exterminate with $?c1?[$s5][$s2]% first scythe and $?c1?[$s6][$s3]% second scythe effectiveness.</description>
   </spell>
   <spell id="1265859" name="Frigid Resolve" passive="true" proc_chance="101">
     <class id="deathknight" name="Death Knight" />
@@ -10154,11 +10127,20 @@ Reaper's Mark grants $s4 charges of Bonegrinder if it is known.]?c1[Death Strike
   <spell id="1265971" name="Unholy Armaments" passive="true">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000010000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="9">
       <effect number="1" id="1278079" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="5" scaled_value="5" misc_value_2="5860" />
       <effect number="2" id="1278083" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="5" scaled_value="5" misc_value="22" misc_value_2="5860" />
+      <effect number="3" id="1311179" type="6" type_text="Apply Aura (6)" sub_type="382" sub_type_text="Modify Pet Stat (382)" base_value="10" scaled_value="10" misc_value="2" misc_value_2="26125" />
+      <effect number="4" id="1311180" type="6" type_text="Apply Aura (6)" sub_type="382" sub_type_text="Modify Pet Stat (382)" base_value="10" scaled_value="10" misc_value="3" misc_value_2="26125" />
+      <effect number="5" id="1311181" type="6" type_text="Apply Aura (6)" sub_type="382" sub_type_text="Modify Pet Stat (382)" base_value="20" scaled_value="20" misc_value="2" misc_value_2="237409" />
+      <effect number="6" id="1311182" type="6" type_text="Apply Aura (6)" sub_type="382" sub_type_text="Modify Pet Stat (382)" base_value="20" scaled_value="20" misc_value="3" misc_value_2="237409" />
+      <effect number="7" id="1311183" type="6" type_text="Apply Aura (6)" sub_type="382" sub_type_text="Modify Pet Stat (382)" base_value="10" scaled_value="10" misc_value="2" misc_value_2="99541" />
+      <effect number="8" id="1311184" type="6" type_text="Apply Aura (6)" sub_type="382" sub_type_text="Modify Pet Stat (382)" base_value="10" scaled_value="10" misc_value="3" misc_value_2="99541" />
+      <effect number="9" id="1311745" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="20" scaled_value="20" />
     </effects>
-    <description>The abilities that Horsemen cast deal $s1% increased damage.</description>
+    <description>The abilities that Horsemen cast deal $s1% increased damage.$?c3[
+
+Your Ghoul and skeletal archer deals $s3% and Lesser Ghouls deal $s5% increased damage][].</description>
   </spell>
   <spell id="1265982" name="Boiling Point" duration="3">
     <class id="deathknight" name="Death Knight" />
@@ -10278,37 +10260,39 @@ Your next Frostscythe deals $w2% increased damage.</tooltip>
     <description>$@spelldesc1264804</description>
     <tooltip>Your next Scourge Strike costs no Rune.</tooltip>
   </spell>
-  <spell id="1271967" name="Pestilence" range="30" gcd="1.5">
+  <spell id="1271967" name="Blightfall" range="30" gcd="1.5">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000000000000000100000000000000000000000000000000000000000000000001000000000000000010000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
       <effect number="1" id="1284985" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
     </effects>
-    <description>Consume $1271974s1% of your Plagues around you and deal $1271974s2% of their remaining damage instantly, and gain a charge of Putrefy.</description>
+    <description>Consume $1271974s1% of your plagues around you and deal $1271974s2% of their remaining damage instantly.
+
+|cFFFFFFFFGrants $1271974s3 $lcharge:charges; of Putrefy.|r</description>
   </spell>
-  <spell id="1271974" name="Pestilence" passive="true" proc_chance="101">
+  <spell id="1271974" name="Blightfall" passive="true" proc_chance="101">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000010000000000000000000010000010000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="3">
       <effect number="1" id="1284994" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
       <effect number="2" id="1285178" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
-      <effect number="3" id="1293674" type="6" type_text="Apply Aura (6)" sub_type="42" sub_type_text="Proc Trigger Spell (42)" trigger_spell_name="Pestilence" base_value="0" scaled_value="0" trigger_spell_id="1271975" />
+      <effect number="3" id="1293674" type="6" type_text="Apply Aura (6)" sub_type="42" sub_type_text="Proc Trigger Spell (42)" trigger_spell_name="Blightfall" base_value="1" scaled_value="1" trigger_spell_id="1271975" />
     </effects>
-    <description>Dark Transformation upgrades your next Outbreak to Pestilence.
+    <description>Dark Transformation grants access to Blightfall.
 
 $@spellicon1271967$@spellname1271967
 $@spelldesc1271967</description>
   </spell>
-  <spell id="1271975" name="Pestilence" duration="-1" stacks_initial="1" stacks_max="1" proc_chance="101">
+  <spell id="1271975" name="Blightfall" duration="-1" stacks_initial="1" stacks_max="1" proc_chance="101">
     <class id="deathknight" name="Death Knight" />
-    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <attributes>0000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1284995" type="6" type_text="Apply Aura (6)" sub_type="332" sub_type_text="Override Action Spell (Misc w/ Base) (332)" base_value="1271967" scaled_value="1271967" misc_value="77575" />
+      <effect number="1" id="1284995" type="6" type_text="Apply Aura (6)" sub_type="332" sub_type_text="Override Action Spell (Misc w/ Base) (332)" base_value="1271967" scaled_value="1271967" misc_value="1233448" />
     </effects>
     <description>$@spelldesc1271974</description>
-    <tooltip>Pestilence is available.</tooltip>
+    <tooltip>Blightfall is available.</tooltip>
   </spell>
-  <spell id="1272116" name="Pestilence" range="100">
+  <spell id="1272116" name="Blightfall" range="100">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
@@ -10421,15 +10405,6 @@ Vampiric Strike grants maximum stacks of Clawing Shadows.][]</description>
     </effects>
     <description>A mindless servant of the Scourge, raised to obey its master's commands for $d.</description>
   </spell>
-  <spell id="1282565" name="Scythe of Decay" duration="30">
-    <class id="deathknight" name="Death Knight" />
-    <attributes>0000000010000000000000011011010000000100001000000000000000000000101000000000001000010010000010000000000001000000110010000000100000000001000000000000000100000000000100000000000001100000000000000000000001001000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="1">
-      <effect number="1" id="1296420" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
-    </effects>
-    <description>$@spelldesc1242561</description>
-    <tooltip>You may not benefit from the effects of Scythe of Decay.</tooltip>
-  </spell>
   <spell id="1282570" name="Forbidden Ritual" duration="-1" stacks_max="20" proc_chance="101">
     <class id="deathknight" name="Death Knight" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
@@ -10462,5 +10437,17 @@ Vampiric Strike grants maximum stacks of Clawing Shadows.][]</description>
     </effects>
     <description>Damage done increased by $s1%.
 </description>
+  </spell>
+  <spell id="1290864" name="Cycle of Death" passive="true" proc_chance="101">
+    <class id="deathknight" name="Death Knight" />
+    <attributes>0000001000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000010000010000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000100000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="3">
+      <effect number="1" id="1309983" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="1000" scaled_value="1000" />
+      <effect number="2" id="1309984" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="300" scaled_value="300" />
+      <effect number="3" id="1310224" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="3000" scaled_value="3000" />
+    </effects>
+    <description>Putrefy reduces the cooldown of Death and Decay by ${$s1/1000}.1 sec.
+
+Death and Decay reduces the cooldown of Putrefy by ${$s2/1000}.1 sec for each enemy it damages, up to ${$s3/1000}.1 sec.</description>
   </spell>
 </spell_query>

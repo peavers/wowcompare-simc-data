@@ -238,7 +238,9 @@ Stormstrike has a $s4% chance to generate $210853m2 $Lstack:stacks; of Maelstrom
       <effect number="1" id="11607" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
       <effect number="2" id="332743" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="30" scaled_value="30" />
     </effects>
-    <description>Allows you to resurrect yourself upon death with $21169s1% health and mana. This effect can occur only once every $s2 minutes.</description>
+    <description>Allows you to resurrect yourself upon death with $21169s1% health and mana. This effect can occur only once every $s2 minutes.$?a381689[
+
+While you are at full health, Reincarnation cools down $381689s2% faster.][]</description>
   </spell>
   <spell id="24499" name="Energized Shield" duration="20">
     <attributes>0000000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
@@ -1299,13 +1301,13 @@ Damage taken increased by $w2.][]</tooltip>
     <class id="shaman" name="Shaman" />
     <attributes>0000101110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="19">
-      <effect number="1" id="179723" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="3" scaled_value="3" />
-      <effect number="2" id="191046" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="3" scaled_value="3" misc_value="22" />
-      <effect number="3" id="191047" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="3" scaled_value="3" misc_value="24" misc_value_2="5683" />
-      <effect number="4" id="191048" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="0" scaled_value="90" points_per_level="1" />
-      <effect number="5" id="191049" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="0" scaled_value="90" points_per_level="1" misc_value="22" />
-      <effect number="6" id="260997" type="6" type_text="Apply Aura (6)" sub_type="429" sub_type_text="Modify Pet Damage Done% (429)" base_value="0" scaled_value="90" points_per_level="1" />
-      <effect number="7" id="260998" type="6" type_text="Apply Aura (6)" sub_type="531" sub_type_text="Modify Guardian Damage Done% (531)" base_value="0" scaled_value="90" points_per_level="1" />
+      <effect number="1" id="179723" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="11" scaled_value="11" />
+      <effect number="2" id="191046" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="11" scaled_value="11" misc_value="22" />
+      <effect number="3" id="191047" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="11" scaled_value="11" misc_value="24" misc_value_2="5683" />
+      <effect number="4" id="191048" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="30" scaled_value="120" points_per_level="1" />
+      <effect number="5" id="191049" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="30" scaled_value="120" points_per_level="1" misc_value="22" />
+      <effect number="6" id="260997" type="6" type_text="Apply Aura (6)" sub_type="429" sub_type_text="Modify Pet Damage Done% (429)" base_value="30" scaled_value="120" points_per_level="1" />
+      <effect number="7" id="260998" type="6" type_text="Apply Aura (6)" sub_type="531" sub_type_text="Modify Guardian Damage Done% (531)" base_value="30" scaled_value="120" points_per_level="1" />
       <effect number="8" id="260999" type="6" type_text="Apply Aura (6)" sub_type="379" sub_type_text="Modify Mana Regen% (379)" base_value="25" scaled_value="25" />
       <effect number="9" id="261000" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="11" modifier_text="Spell Cooldown (11)" base_value="18000" scaled_value="18000" misc_value="11" />
       <effect number="10" id="880173" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="65" scaled_value="65" />
@@ -1854,7 +1856,7 @@ Earthquake's cast time is reduced by $s2% per stack of Fulmination, and Earthqua
   </spell>
   <spell id="191634" name="Stormkeeper" cast_time_else="1.5" gcd="1.5" duration="15" cooldown="60" stacks_initial="1" stacks_max="4" proc_chance="100">
     <class id="shaman" name="Shaman" />
-    <attributes>0000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <attributes>0000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="5">
       <effect number="1" id="281103" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="10" modifier_text="Spell Cast Time (10)" base_value="-100" scaled_value="-100" misc_value="10" />
       <effect number="2" id="747303" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="150" scaled_value="150" />
@@ -1862,10 +1864,14 @@ Earthquake's cast time is reduced by $s2% per stack of Fulmination, and Earthqua
       <effect number="4" id="1285160" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="0" scaled_value="0" />
       <effect number="5" id="1299824" type="3" type_text="Dummy (3)" sub_type="0" base_value="2" scaled_value="2" />
     </effects>
-    <description>Charge yourself with lightning, causing your next $s5 Lightning Bolts to deal $s2% more damage, and also causes your next $s5 Lightning Bolts or Chain Lightings to be instant cast and trigger an Elemental Overload on every target.$?a1264762[
+    <description>Charge yourself with lightning, causing your next $s5 Lightning Bolts to deal $s2% more damage, and also causes your next $s5 Lightning Bolts or Chain Lightings to be instant cast and trigger an Elemental Overload on every target.$?a1264863[
+
+Additionally, increases Lightning Bolt and Chain Lightning damage by ${$1264863s2}.1%.][]$?a1264762[
 
 |cFFFFFFFFGenerates $1264762s2 Maelstrom.|r][]</description>
-    <tooltip>Your next Lightning Bolt will deal $s2% increased damage, and your next Lightning Bolt or Chain Lightning will be instant cast and cause an Elemental Overload to trigger on every target hit.</tooltip>
+    <tooltip>Your next Lightning Bolt will deal $s2% increased damage, and your next Lightning Bolt or Chain Lightning will be instant cast and cause an Elemental Overload to trigger on every target hit.$?a1264863[
+
+Additionally, increases Lightning Bolt and Chain Lightning damage by ${$W4}.1%.][]</tooltip>
   </spell>
   <spell id="191717" name="Fury of the Storms" passive="true" proc_chance="101">
     <class id="shaman" name="Shaman" />
@@ -4929,7 +4935,7 @@ $damage=${$SPN*0.5*$d/$t2*(1+$@versadmg)*(($137040s1+100)/100)*$&lt;mawPower&gt;
       <effect number="7" id="1247575" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="14" modifier_text="Spell Resource Cost 1 (14)" base_value="-100" scaled_value="-100" misc_value="14" />
     </effects>
     <description>Your next healing or damaging Nature spell $?a1246131[or Hex ][]is instant cast and costs no mana.</description>
-    <tooltip>Your next healing or damaging Nature spell is instant cast and costs no mana.</tooltip>
+    <tooltip>Your next healing or damaging Nature spell $?a1246131[or Hex ][]is instant cast and costs no mana.</tooltip>
   </spell>
   <spell id="378193" name="Primordial Fury" passive="true">
     <class id="shaman" name="Shaman" />
@@ -5583,18 +5589,21 @@ You can have Earth Shield on yourself and one ally at the same time.</descriptio
 
 ][]Heals for ${$w2*(1+$w1/100)} upon taking damage.</tooltip>
   </spell>
-  <spell id="384143" name="Raging Maelstrom" passive="true">
+  <spell id="384143" name="Overflowing Maelstrom" passive="true">
     <class id="shaman" name="Shaman" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="5">
       <effect number="1" id="1016544" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="37" modifier_text="Spell Max Stacks (37)" base_value="5" scaled_value="5" misc_value="37" />
       <effect number="2" id="1278869" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="50" scaled_value="50" />
+      <effect number="3" id="1310801" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="10" scaled_value="10" />
+      <effect number="4" id="1310802" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="10" scaled_value="10" />
+      <effect number="5" id="1310803" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="10" scaled_value="10" />
     </effects>
     <description>Maelstrom Weapon can now stack $s1 additional times.
 
-Consuming Maelstrom Weapon causes your next Healing Surge or Chain Heal to gain $s2% of the benefits of Maelstrom Weapon based on the stacks consumed.</description>
+Each Maelstrom Weapon stacks consumed grants Overflowing Maelstrom, reducing the cast time of your next Healing Surge or Chain Heal by $s3%, and increasing their healing by $s4% up to $s5 times. This effect can be accumulated up to $410681u times.</description>
   </spell>
-  <spell id="384149" name="Overflowing Maelstrom" passive="true">
+  <spell id="384149" name="Raging Maelstrom" passive="true">
     <class id="shaman" name="Shaman" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="3">
@@ -6080,9 +6089,9 @@ Critical damage dealt by Earthquake, Chain Lightning, and Lava Beam increased by
     </effects>
     <description>Maelstrom Weapon no longer benefits Healing Surge or Chain Heal. Instead, consuming Maelstrom Weapon on a damage spell causes your next Healing Surge or Chain Heal to gain $s1% of the benefits of Maelstrom Weapon based on the stacks consumed. </description>
   </spell>
-  <spell id="410681" name="Raging Maelstrom" duration="30" stacks_max="10" proc_chance="101">
+  <spell id="410681" name="Overflowing Maelstrom" duration="30" stacks_max="20" proc_chance="101">
     <class id="shaman" name="Shaman" />
-    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="4">
       <effect number="1" id="1076561" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="10" modifier_text="Spell Cast Time (10)" base_value="-10" scaled_value="-10" misc_value="10" />
       <effect number="2" id="1076562" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="0" scaled_value="0" />
@@ -6437,7 +6446,7 @@ Whenever you cast a healing or damaging spell, the Ancestor will cast a similar 
     <description>Your next healing or damaging spell$?a1246131[ or Hex][] is instant, costs no mana, and deals $s6% increased damage and healing.
 
 If you know Nature's Swiftness, it is replaced by Ancestral Swiftness and causes Ancestral Swiftness to call an Ancestor to your side for $445624d.</description>
-    <tooltip>Your next healing or damaging spell is instant, costs no mana, and deals $s6% increased damage and healing.</tooltip>
+    <tooltip>Your next healing or damaging spell $?a1246131[or Hex ][]is instant, costs no mana, and deals $s6% increased damage and healing.</tooltip>
   </spell>
   <spell id="444490" name="Hydrobubble" range="100" duration="15">
     <class id="shaman" name="Shaman" />
@@ -8638,8 +8647,8 @@ Enhances your weapons for $187878d, causing Stormstrike and Lava Lash to dischar
     <class id="shaman" name="Shaman" />
     <attributes>0000101110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="14">
-      <effect number="1" id="1264711" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="-14" scaled_value="-14" />
-      <effect number="2" id="1266430" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="-14" scaled_value="-14" misc_value="1" />
+      <effect number="1" id="1264711" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="-21" scaled_value="-21" />
+      <effect number="2" id="1266430" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="-21" scaled_value="-21" misc_value="1" />
       <effect number="3" id="1266431" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="0" scaled_value="0" />
       <effect number="4" id="1266432" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="0" scaled_value="0" misc_value="1" />
       <effect number="5" id="1266433" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="-2" scaled_value="-2" misc_value="3" misc_value_2="2672" />

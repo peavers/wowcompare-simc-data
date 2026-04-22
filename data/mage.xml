@@ -742,7 +742,7 @@ Other enemies hit by this explosion also become a Living Bomb, but this effect c
       <effect number="4" id="1248929" type="64" type_text="Trigger Spell (64)" trigger_spell_name="Flurry" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.1" misc_value="800" trigger_spell_id="228596" />
       <effect number="5" id="1289745" type="64" type_text="Trigger Spell (64)" trigger_spell_name="Flurry" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.1" misc_value="1200" trigger_spell_id="228596" />
     </effects>
-    <description>Unleash a flurry of ice, striking the target $s1 times for a total of ${$228354s1*$s1} Frost damage.
+    <description>Unleash a flurry of ice, striking the target $s1 times for a total of ${$228354s1*$s1} $?a1248002[Frostfire][Frost] damage.
 
 |CFFffffffApplies ${$1246769s2*$s1} $lstack:stacks; of Freezing.|R</description>
   </spell>
@@ -931,10 +931,11 @@ When the effect ends, all affected players are frozen in time for $356346d.][]</
     <class id="mage" name="Mage" />
     <resource type="0" cost="1" type_name="Base Mana (0)" cost_mana_flat="2500" cost_mana_flat_level="90" />
     <attributes>0000000000000000100000000000000000010001000000000000000000001000001000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="3">
+    <effects count="4">
       <effect number="1" id="85616" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
       <effect number="2" id="1179964" type="179" type_text="Create Area Trigger (179)" sub_type="0" base_value="40" scaled_value="40" misc_value="8661" />
       <effect number="3" id="1263823" type="179" type_text="Create Area Trigger (179)" sub_type="0" base_value="40" scaled_value="40" misc_value="34996" />
+      <effect number="4" id="1316259" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
     </effects>
     <description>Launches an orb of swirling ice in front of you, dealing up to ${20*$84721s1} Frost damage to all enemies it passes through over $d. After a short delay, Frozen Orb will pursue its target. Deals reduced damage beyond $84721s2 targets.
 
@@ -969,7 +970,7 @@ This effect cannot occur more than once every $87024d.</description>
     <attributes>0000000000000000000000000010000000000000001000000000000000000000000000000000000000000000000000000000000000000000100000000000010000000000000000000000000100000000000000000000000000000000000000000000001000000000000000000001010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="3">
       <effect number="1" id="88812" type="6" type_text="Apply Aura (6)" sub_type="89" sub_type_text="Periodic Max Health% Damage (89)" base_value="7" scaled_value="7" />
-      <effect number="2" id="88814" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" />
+      <effect number="2" id="88814" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
       <effect number="3" id="157298" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
     </effects>
     <description>$@spelldesc86949</description>
@@ -1046,7 +1047,7 @@ Arcane Blast's damage is increased by $36032s1% per Arcane Charge, and its mana 
     <effects count="1">
       <effect number="1" id="120062" type="2" type_text="School Damage (2)" school="fire" school_text="fire" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" sp_coefficient="0.98625" />
     </effects>
-    <description>Blasts the enemy, critically striking for ${$s1*2} Fire damage.
+    <description>Blasts the enemy, critically striking for ${$s1*2} $?a1248002[Frostfire][Fire] damage.
 
 Castable while casting other spells.</description>
   </spell>
@@ -2045,7 +2046,7 @@ $?a1280780[|CFFffffffShatters $1280780s1 $lstack:stacks; of Freezing.|R][|CFFfff
     </effects>
     <description>Burning enemies for $s1 Fire damage.</description>
   </spell>
-  <spell id="205473" name="Icicles" duration="-1" stacks_max="5" proc_chance="101">
+  <spell id="205473" name="Icicles" duration="60" stacks_max="5" proc_chance="101">
     <class id="mage" name="Mage" />
     <attributes>0000000000000000000000000000000100000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000</attributes>
     <effects count="1">
@@ -3033,7 +3034,7 @@ Maximum $269651u stacks.</description>
     </effects>
     <description>$@spelldesc205021</description>
   </spell>
-  <spell id="270232" name="Freezing Rain" duration="12" proc_chance="100">
+  <spell id="270232" name="Freezing Rain" duration="15" proc_chance="100">
     <class id="mage" name="Mage" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
@@ -4769,12 +4770,12 @@ Each cast of Pyroblast or Flamestrike during Hyperthermia increases the damage o
   </spell>
   <spell id="383874" name="Hyperthermia" duration="5" proc_chance="100">
     <class id="mage" name="Mage" />
-    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
       <effect number="1" id="1016061" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="10" modifier_text="Spell Cast Time (10)" base_value="-100" scaled_value="-100" misc_value="10" />
       <effect number="2" id="1016062" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="7" modifier_text="Spell Critical Chance (7)" base_value="100" scaled_value="100" misc_value="7" />
     </effects>
-    <description>$@spelldesc383860</description>
+    <description>Pyroblast and Flamestrike have no cast time, are guaranteed to critically strike, and increase the damage of Pyroblast and Flamestrike by $1242220s1%.</description>
     <tooltip>Pyroblast and Flamestrike have no cast time, are guaranteed to critically strike, and increase the damage of Pyroblast and Flamestrike by $1242220s1%.</tooltip>
   </spell>
   <spell id="383882" name="Sun King's Blessing" duration="30" stacks_max="10" proc_chance="101">
@@ -5692,7 +5693,7 @@ Comet Storm now also calls down a Meteor, dealing $351140s1 Fire damage to nearb
     <effects count="1">
       <effect number="1" id="1118636" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="4" scaled_value="4" />
     </effects>
-    <description>$?a137020[Ice Block and Ice Cold reset the cooldowns of your Fire spells]?a137019[Cauterize resets the cooldown of your Frost spells with a base cooldown shorter than $s1 minutes when it activates.][Ice Block and Ice Cold reset the cooldowns of your Fire spells.
+    <description>$?a137020[Ice Block and Ice Cold reset the cooldowns of your Fire spells.]?a137019[Cauterize resets the cooldown of your Frost spells with a base cooldown shorter than $s1 minutes when it activates.][Ice Block and Ice Cold reset the cooldowns of your Fire spells.
 
 Cauterize resets the cooldown of your Frost spells with a base cooldown shorter than $s1 minutes when it activates.]</description>
   </spell>
@@ -6659,7 +6660,7 @@ For the next $365362d, your Mana regeneration is increased by $365362s3% and spe
       <effect number="1" id="1158317" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="10" scaled_value="10" />
     </effects>
     <description>$@spelldesc453720</description>
-    <tooltip>The damage of Ice Lance is increased by $s1%.</tooltip>
+    <tooltip>All Shatter damage is increased by $s1%.</tooltip>
   </spell>
   <spell id="455134" name="Blessing of the Phoenix" duration="10">
     <class id="mage" name="Mage" />
@@ -7214,7 +7215,7 @@ Mana Regen increased by $w5%.]</tooltip>
     <description>$@spelldesc1246769</description>
     <tooltip>Frozen by $@auracaster. Can be Shattered by Ice Lance for bonus damage.</tooltip>
   </spell>
-  <spell id="1222865" name="Glacial Spike!" duration="-1" stacks_initial="1" stacks_max="1" proc_chance="101">
+  <spell id="1222865" name="Glacial Spike!" duration="60" stacks_initial="1" stacks_max="1" proc_chance="101">
     <class id="mage" name="Mage" />
     <attributes>0000000000000000000000001001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000001000000000000000000000000000100000000000001100000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000010100000000000000000000000000000001000000000000000000000000000000000001000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
@@ -7435,7 +7436,7 @@ Requires 5 Icicles to cast.
     <description>$@spelldesc199786</description>
     <tooltip>Frozen in place.</tooltip>
   </spell>
-  <spell id="1241462" name="Arcane Pulse" level="6" range="40" cast_time_else="1.75" gcd="1.5">
+  <spell id="1241462" name="Arcane Pulse" level="6" range="40" cast_time_else="2.25" gcd="1.5">
     <class id="mage" name="Mage" />
     <resource type="0" cost="4" type_name="Base Mana (0)" cost_mana_flat="10000" cost_mana_flat_level="90" />
     <attributes>0000000000000000100000000000000000010001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
@@ -7731,12 +7732,10 @@ Damage from Ice Lance shatters your enemies, consuming $s4 $Lstack:stacks; of Fr
       <effect number="1" id="1248613" type="6" type_text="Apply Aura (6)" sub_type="226" sub_type_text="Periodic Dummy (226)" period="6" base_value="0" scaled_value="0" />
       <effect number="2" id="1248734" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="5" scaled_value="5" />
     </effects>
-    <description>Frost crystallizes around you, generating an Icicle every ${$t1}.1 sec. Upon generating $s2 Icicles, $?s431044[Frostfire Bolt][Frostbolt] upgrades to Glacial Spike for its next cast.
+    <description>While in combat, Frost crystallizes around you, generating an Icicle every ${$t1}.1 sec. Upon generating $s2 Icicles, $?s431044[Frostfire Bolt][Frostbolt] upgrades to Glacial Spike for its next cast.
 
 $@spellicon199786 $@spellname199786
-$@spelldesc199786
-
-Icicles generate more rapidly out of combat.</description>
+$@spelldesc199786</description>
   </spell>
   <spell id="1246949" name="Shatter" range="100">
     <class id="mage" name="Mage" />
@@ -8350,7 +8349,7 @@ Arcane Missiles damage increased by $s3%.</description>
       <effect number="1" id="1266517" type="6" type_text="Apply Aura (6)" sub_type="226" sub_type_text="Periodic Dummy (226)" period="1" base_value="0" scaled_value="0" />
     </effects>
     <description>$@spelldesc1257950</description>
-    <tooltip>Suffering ${$w1*$1257950s2} Arcane damage every $t sec. Radiating $w1 Arcane damage to nearby enemies.</tooltip>
+    <tooltip>Suffering ${$w1*(1+$1257950s2/100)} Arcane damage every $t sec. Radiating $w1 Arcane damage to nearby enemies.</tooltip>
   </spell>
   <spell id="1260272" name="Ashes of Inspiration" passive="true">
     <class id="mage" name="Mage" />
@@ -8776,7 +8775,7 @@ $@spelldesc389713</description>
     <effects count="1">
       <effect number="1" id="1283986" type="2" type_text="School Damage (2)" school="fire" school_text="fire" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" />
     </effects>
-    <description>$@spelldesc1271171</description>
+    <description>$@spelldesc1271177</description>
   </spell>
   <spell id="1271907" name="Arcane Intellect Highlight" duration="8" stacks_initial="1" stacks_max="1" proc_chance="101">
     <class id="mage" name="Mage" />
@@ -8869,5 +8868,13 @@ $@spelldesc389713</description>
     </effects>
     <description>Damage done increased by $s1%.
 </description>
+  </spell>
+  <spell id="1286444" name="Cauterize" level="1">
+    <class id="mage" name="Mage" />
+    <attributes>0000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000100000000000010000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000001010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <effects count="1">
+      <effect number="1" id="1303295" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" />
+    </effects>
+    <description>$@spelldesc86949</description>
   </spell>
 </spell_query>

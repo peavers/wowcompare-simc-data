@@ -445,7 +445,7 @@ Clearcasting can accumulate up to ${$s135700u+$236068s1} charges.][] </descripti
   <spell id="16974" name="Predatory Swiftness" passive="true" level="30" stacks_max="1" proc_chance="101">
     <spec id="Feral Druid" name="feral" />
     <class id="druid" name="Druid" />
-    <attributes>0000001010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <attributes>0000001010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="3">
       <effect number="1" id="8658" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="50" scaled_value="50" sp_coefficient="0.25" />
       <effect number="2" id="8659" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="80" scaled_value="80" />
@@ -1813,10 +1813,10 @@ All attack and ability damage is increased by $s3%.</description>
       <effect number="4" id="170814" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="14" modifier_text="Spell Resource Cost 1 (14)" base_value="-100" scaled_value="-100" misc_value="14" />
       <effect number="5" id="1247560" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="10" modifier_text="Spell Cast Time (10)" base_value="-100" scaled_value="-100" misc_value="10" />
       <effect number="6" id="1247561" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="14" modifier_text="Spell Resource Cost 1 (14)" base_value="-100" scaled_value="-100" misc_value="14" />
-      <effect number="7" id="1247562" type="6" type_text="Apply Aura (6)" sub_type="275" sub_type_text="Modify Stance Mask (275)" base_value="-100" scaled_value="-100" />
+      <effect number="7" id="1303900" type="6" type_text="Apply Aura (6)" sub_type="275" sub_type_text="Modify Stance Mask (275)" base_value="-100" scaled_value="-100" misc_value="10" />
     </effects>
-    <description>Your next Regrowth, $?$a1246126[ Cyclone, ][]Rebirth, $?s473909[Ancient of Lore, ][]or Entangling Roots is instant, free, castable in all forms, and heals for an additional $s2%.</description>
-    <tooltip>Your next Regrowth, Rebirth, or Entangling Roots is instant, free, castable in all forms, and heals for an additional $w2%.</tooltip>
+    <description>Your next Regrowth, $?$a1246126[Cyclone, ][]Rebirth, $?s473909[Ancient of Lore, ][]or Entangling Roots is instant, free, castable in all forms, and heals for an additional $s2%.</description>
+    <tooltip>Your next Regrowth, $?$a1246126[Cyclone, ][]Rebirth, or Entangling Roots is instant, free, castable in all forms, and heals for an additional $w2%.</tooltip>
   </spell>
   <spell id="132213" name="Visual Effect: Tree of Life">
     <class id="druid" name="Druid" />
@@ -1930,10 +1930,10 @@ All attack and ability damage is increased by $s3%.</description>
       <effect number="7" id="260748" type="6" type_text="Apply Aura (6)" sub_type="379" sub_type_text="Modify Mana Regen% (379)" base_value="25" scaled_value="25" />
       <effect number="8" id="260749" type="6" type_text="Apply Aura (6)" sub_type="404" sub_type_text="Override Attack Power per Spell Power% (404)" base_value="104" scaled_value="104" />
       <effect number="9" id="872913" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="12" modifier_text="Spell Effect 2 (12)" base_value="-5" scaled_value="-5" misc_value="12" />
-      <effect number="10" id="876348" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="-20" scaled_value="-20" />
-      <effect number="11" id="876349" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="-20" scaled_value="-20" misc_value="22" />
-      <effect number="12" id="1032349" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="169" scaled_value="169" />
-      <effect number="13" id="1032350" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="68" scaled_value="68" />
+      <effect number="10" id="876348" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="0" scaled_value="0" />
+      <effect number="11" id="876349" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="0" scaled_value="0" misc_value="22" />
+      <effect number="12" id="1032349" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="277" scaled_value="277" />
+      <effect number="13" id="1032350" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="135" scaled_value="135" />
       <effect number="14" id="1039258" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="48" scaled_value="48" />
       <effect number="15" id="1039259" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="-5" scaled_value="-5" />
       <effect number="16" id="1039291" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="11" scaled_value="11" misc_value="22" />
@@ -1944,8 +1944,8 @@ All attack and ability damage is increased by $s3%.</description>
       <effect number="21" id="1081594" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="0" scaled_value="0" misc_value="22" />
       <effect number="22" id="1099906" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="44" scaled_value="44" misc_value="22" />
       <effect number="23" id="1099956" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="-10" scaled_value="-10" />
-      <effect number="24" id="1307595" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="30" scaled_value="30" misc_value="22" />
-      <effect number="25" id="1307596" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="30" scaled_value="30" />
+      <effect number="24" id="1307595" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="62" scaled_value="62" misc_value="22" />
+      <effect number="25" id="1307596" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="62" scaled_value="62" />
     </effects>
     <description>Restoration Druid core passive</description>
   </spell>
@@ -2880,9 +2880,10 @@ While Barkskin is active, the brambles also deal $213709s1 Nature damage to all 
   <spell id="203964" name="Galactic Guardian" passive="true" proc_chance="101">
     <class id="druid" name="Druid" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000001000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="3">
       <effect number="1" id="300976" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="5" scaled_value="5" />
       <effect number="2" id="1258340" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="1" scaled_value="1" />
+      <effect number="3" id="1313445" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="20" scaled_value="20" />
     </effects>
     <description>Your damage has a $s1% chance to trigger a free automatic Moonfire on that target.
 
@@ -2890,7 +2891,7 @@ $@spellicon8921 $@spellname8921:
 When this occurs, the next Moonfire you cast generates ${$213708m1/10} Rage, and deals $213708s3% increased direct damage.
 
 $@spellicon1252871 $@spellname1252871:
-When this occurs, you gain $s2 $Lcharge:charges; of Lunar Wrath. Spending Rage while Red Moon is active consumes a stack to deal $1253609s1 additional Arcane damage to its target and heal you for $1253609s2.</description>
+When this occurs, you gain $s2 $Lcharge:charges; of Lunar Wrath. Each $s3 Rage you spend while Red Moon is active consumes a stack to deal $1253609s1 additional Arcane damage to its target and heal you for $1253609s2.</description>
   </spell>
   <spell id="203965" name="Survival of the Fittest" passive="true">
     <class id="druid" name="Druid" />
@@ -2953,12 +2954,12 @@ Lunar Beam also increases your mastery by ${$s2*$mas}%, and heals you for ${$204
       <effect number="2" id="303839" type="64" type_text="Trigger Spell (64)" trigger_spell_name="Force of Nature" sub_type="0" base_value="0" scaled_value="0" misc_value="10" trigger_spell_id="248280" />
       <effect number="3" id="465061" type="64" type_text="Trigger Spell (64)" trigger_spell_name="Force of Nature" sub_type="0" base_value="0" scaled_value="0" misc_value="155" trigger_spell_id="248280" />
       <effect number="4" id="465062" type="64" type_text="Trigger Spell (64)" trigger_spell_name="Force of Nature" sub_type="0" base_value="0" scaled_value="0" misc_value="300" trigger_spell_id="248280" />
-      <effect number="5" id="736032" type="64" type_text="Trigger Spell (64)" trigger_spell_name="Force of Nature" sub_type="0" base_value="0" scaled_value="0" misc_value="445" trigger_spell_id="248280" />
-      <effect number="6" id="1293022" type="30" type_text="Energize Power (30)" sub_type="0" base_value="200" scaled_value="200" misc_value_energize="astral_power" />
+      <effect number="5" id="736032" type="30" type_text="Energize Power (30)" sub_type="0" base_value="200" scaled_value="200" misc_value_energize="astral_power" />
+      <effect number="6" id="1293022" type="64" type_text="Trigger Spell (64)" trigger_spell_name="Force of Nature" sub_type="0" base_value="0" scaled_value="0" misc_value="445" trigger_spell_id="248280" />
     </effects>
     <description>Summons a stand of $s1 Treants for $248280d which immediately taunt and attack enemies in the targeted area.
 
-|cFFFFFFFFGenerates ${$m6/10} Astral Power.|r</description>
+|cFFFFFFFFGenerates ${$m5/10} Astral Power.|r</description>
   </spell>
   <spell id="207271" name="The Dark Titan's Advice" passive="true">
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
@@ -4097,22 +4098,11 @@ While stealthed, Shred deals $5221s3% increased damage, and has double the chanc
     <tooltip>Swipe and Thrash damage increased by $m1%.</tooltip>
   </spell>
   <spell id="280161" name="Ursoc's Endurance" duration="-1" proc_chance="100">
-    <class id="druid" name="Druid" />
     <attributes>0000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
       <effect number="1" id="737503" type="6" type_text="Apply Aura (6)" sub_type="42" sub_type_text="Proc Trigger Spell (42)" trigger_spell_name="Ursoc's Endurance" base_value="0" scaled_value="0" trigger_spell_id="280165" />
     </effects>
     <description>$@spelldesc280013</description>
-  </spell>
-  <spell id="280165" name="Ursoc's Endurance" range="100" duration="8">
-    <class id="druid" name="Druid" />
-    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
-      <effect number="1" id="737511" type="6" type_text="Apply Aura (6)" sub_type="69" sub_type_text="Absorb Damage (69)" base_value="0" scaled_value="0" misc_value="127" />
-      <effect number="2" id="737512" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" trigger_spell_id="280013" />
-    </effects>
-    <description>$@spelldesc280013</description>
-    <tooltip>Absorbs $w1 damage.</tooltip>
   </spell>
   <spell id="281493" name="The Curse of Restlessness" passive="true">
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
@@ -5876,7 +5866,7 @@ For $d, both Eclipses are maintained and you gain $s1% haste.</description>
     <effects count="1">
       <effect number="1" id="1019276" type="6" type_text="Apply Aura (6)" sub_type="42" sub_type_text="Proc Trigger Spell (42)" trigger_spell_name="Matted Fur" base_value="1200" scaled_value="1200" trigger_spell_id="385787" />
     </effects>
-    <description>When you use Barkskin or Survival Instincts, absorb $&lt;shield&gt; damage for $280165d.</description>
+    <description>When you use Barkskin or Survival Instincts, absorb $&lt;shield&gt; damage for $385787d.</description>
     <variables>$shield=${$s1/100*1.25*$AP*(1+$@versadmg)}</variables>
   </spell>
   <spell id="385787" name="Matted Fur" duration="15">
@@ -7295,10 +7285,7 @@ While stealthed, Shred deals $5221s3% increased damage, and has double the chanc
     <effects count="1">
       <effect number="1" id="1095708" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="50" scaled_value="50" />
     </effects>
-    <description>When you spend extra Energy on Ferocious Bite, the extra damage is increased by $s1%.
-
-
-</description>
+    <description>When you spend extra Energy on Ferocious Bite, the extra damage is increased by $s1%.</description>
   </spell>
   <spell id="422090" name="Nourish" range="40" cast_time_else="2" gcd="0.5">
     <class id="druid" name="Druid" />
@@ -7762,11 +7749,15 @@ Wrath no longer changes your Eclipse ability's mode to Solar Eclipse.][Thrash no
   <spell id="429530" name="Lunar Insight" passive="true">
     <class id="druid" name="Druid" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
-      <effect number="1" id="1113829" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="20" scaled_value="20" />
-      <effect number="2" id="1117669" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="20" scaled_value="20" misc_value="22" />
+    <effects count="4">
+      <effect number="1" id="1113829" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="20" scaled_value="20" misc_value_2="6553" />
+      <effect number="2" id="1117669" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="20" scaled_value="20" misc_value="22" misc_value_2="6553" />
+      <effect number="3" id="1314401" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="30" scaled_value="30" misc_value_2="6552" />
+      <effect number="4" id="1314402" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="30" scaled_value="30" misc_value="22" misc_value_2="6552" />
     </effects>
-    <description>Moonfire deals $s1% additional damage.</description>
+    <description>Moonfire deals $s1% increased damage.$?a137010[
+
+Red Moon deals $s3% increased damage.][]</description>
   </spell>
   <spell id="429532" name="Atmospheric Exposure" passive="true" proc_chance="101">
     <class id="druid" name="Druid" />
@@ -9715,15 +9706,15 @@ Arcane spells deal $48518s1% additional damage and Starfire damage is increased 
     <class id="druid" name="Druid" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1239540" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="1" scaled_value="1" />
+      <effect number="1" id="1239540" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
     </effects>
-    <description>Every time Starfall deals damage, a meteorite falls on a target in its range, dealing $1240913s1 Astral damage.</description>
+    <description>Every time Starfall drops a wave of stars, a meteorite also falls on up to $s1 targets in its range, each dealing $1240913s1 Astral damage.</description>
   </spell>
   <spell id="1240913" name="Meteorites" range="50000" velocity="0.8">
     <class id="druid" name="Druid" />
     <attributes>0000000000000000000000001001000000000101001000000000000000000000001000000000001000010010000000000000000000000000000000100000001000001001000000010000000000000000000000000000000001100000001000000000000000001000000000000000000000000000000000000000000000000000000001000000000000000000000000000000100000010000000010000000000000000000000000000000001000000000000000000000000000000000001000000000000000000000000000000000000011000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1239547" type="2" type_text="School Damage (2)" school="astral" school_text="astral" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" sp_coefficient="0.3207" />
+      <effect number="1" id="1239547" type="2" type_text="School Damage (2)" school="astral" school_text="astral" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" sp_coefficient="0.2245" />
     </effects>
     <description>$@spelldesc1240907</description>
   </spell>
@@ -9826,15 +9817,16 @@ Chomp can only be used when you fall below ${$1244292s1+1}% Energy or for ${$124
   <spell id="1244331" name="Everbloom" passive="true" proc_chance="100">
     <class id="druid" name="Druid" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="3">
       <effect number="1" id="1245025" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
-      <effect number="2" id="1245026" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="15" scaled_value="15" />
+      <effect number="2" id="1245026" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="25" scaled_value="25" />
+      <effect number="3" id="1314559" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="6" scaled_value="6" />
     </effects>
-    <description>$s2% of Lifebloom's healing splashes to $s1 allies within $1244341a1 yds.</description>
+    <description>$s2% of Lifebloom's final bloom heals up to $s3 injured allies within $1244341a1 yds.</description>
   </spell>
   <spell id="1244341" name="Everbloom" range="100">
     <class id="druid" name="Druid" />
-    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
+    <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
       <effect number="1" id="1245045" type="10" type_text="Direct Heal (10)" sub_type="0" base_value="0" scaled_value="0" />
     </effects>
@@ -9858,7 +9850,7 @@ Chomp can only be used when you fall below ${$1244292s1+1}% Energy or for ${$124
     <class id="druid" name="Druid" />
     <attributes>0000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1245242" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="5" scaled_value="5" />
+      <effect number="1" id="1245242" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="3" scaled_value="3" />
     </effects>
     <description>Lifebloom bursts into a Blooming Frenzy when you consume Soul of the Forest, causing it to bloom $s1 times in rapid succession.</description>
   </spell>
@@ -9963,8 +9955,7 @@ Chomp can only be used when you fall below ${$1244292s1+1}% Energy or for ${$124
       <effect number="1" id="1255183" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="80" scaled_value="80" />
       <effect number="2" id="1255184" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="80" scaled_value="80" />
     </effects>
-    <description>Heal for ${$s1/100}.1% of your maximum health each time you spend $s2 Rage.
-</description>
+    <description>Heal each time you spend Rage, up to ${$s1/100}.1% of your maximum health for $s2 Rage spent.</description>
   </spell>
   <spell id="1250913" name="Memory of Ysera">
     <class id="druid" name="Druid" />
@@ -10027,7 +10018,7 @@ Armor increased by $w2%.</tooltip>
     <class id="druid" name="Druid" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
-      <effect number="1" id="1258287" type="6" type_text="Apply Aura (6)" sub_type="3" sub_type_text="Periodic Damage (3)" school="arcane" school_text="arcane" period="1" base_value="0" scaled_value="0" sp_coefficient="1.3" />
+      <effect number="1" id="1258287" type="6" type_text="Apply Aura (6)" sub_type="3" sub_type_text="Periodic Damage (3)" school="arcane" school_text="arcane" period="1" base_value="0" scaled_value="0" sp_coefficient="1" />
       <effect number="2" id="1258288" type="3" type_text="Dummy (3)" sub_type="0" base_value="1000" scaled_value="1000" />
     </effects>
     <description>Channel the power of the enraged moon to deal $o1 Arcane damage to your target over $d. Casting Mangle extends its duration by ${$s2/1000}.1 sec and generates ${$1253582s1/10} Rage.</description>
@@ -10268,7 +10259,7 @@ Entering Lunar Eclipse launches $s3 Lunar Bolts at enemies that deal $1263137s1 
 Empowered Wild Growth that heals up to $48438s2 injured allies within $48438A1 yards of the target for ${$48438o1*$s4/100} over $48438d.]$?c1[]?c2[][
 
 |cFFFFFFFFCat Form:|r
-Unleash an empowered Feral Frenzy on your enemy target, dealing ${$274838s1*$s2/100} Physical damage and an additional ${$s2/100*$274838s3*$274838d/$274838t3} Bleed damage over $274838d. Awards 5 combo points.
+Unleash an empowered Feral Frenzy, clawing your target $274837m2 times for ${$274837m2*$274838s1*$s2/100} Physical damage and an additional ${$274837m2*$s2/100*$274838s3*$274838d/$274838t3} Bleed damage over $274838d. Awards 5 combo points.
 
 |cFFFFFFFFMoonkin Form:|r
 Call down waves of empowered falling stars upon enemies within $50286A1 yds, dealing ${54*$191037s1} Astral damage over $191034d.]$?c3[][
@@ -10363,7 +10354,7 @@ Increase your maximum health by $1261872s1% for $1261872d.]</description>
       <effect number="1" id="1274459" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="15" scaled_value="15" />
       <effect number="2" id="1274912" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="30" scaled_value="30" />
     </effects>
-    <description>When you Ferocious Bite, you have a $s1% chance per combo point spent to flicker to an enemy within $s2 yds and deliver an Unseen Attack.
+    <description>When you Ferocious Bite, you have a $s1% chance per combo point spent to flicker to an enemy within $s2 yds and deliver an Unseen Attack. Unseen Attack damage is reduced if less than 5 combo points and ${$22568c+$22568s2} Energy are spent on Ferocious Bite.
 
 $@spellicon1263827 $@spellname1263827
 $@spelldesc1263827
@@ -10380,7 +10371,7 @@ $@spelldesc1263902
     <effects count="1">
       <effect number="1" id="1274460" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
     </effects>
-    <description>Unseen Attacks increase your damage done by $s1% for $1263939d. Additional applications extend this effect.</description>
+    <description>Unseen Attacks increase your damage done by $s1% for $1263939d per combo point spend to trigger it. Additional applications extend this effect.</description>
   </spell>
   <spell id="1263660" name="Unseen Predator" passive="true" proc_chance="101">
     <class id="druid" name="Druid" />
@@ -10391,7 +10382,7 @@ $@spelldesc1263902
       <effect number="3" id="1274465" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="30" scaled_value="30" misc_value="22" misc_value_2="5977" />
       <effect number="4" id="1274953" type="6" type_text="Apply Aura (6)" sub_type="42" sub_type_text="Proc Trigger Spell (42)" trigger_spell_name="Stalking Predator" base_value="0" scaled_value="0" trigger_spell_id="1263962" />
     </effects>
-    <description>Tiger's Fury causes you to perform an Unseen Attack after your next $1263962u combo point generating attacks. Rip and Unseen Attack damage increased by $s2%.</description>
+    <description>Tiger's Fury causes you to perform an Unseen Attack for maximum damage after your next $1263962u combo point generating attacks. Rip and Unseen Attack damage increased by $s2%.</description>
   </spell>
   <spell id="1263827" name="Unseen Slash" range="100" duration="6">
     <class id="druid" name="Druid" />
@@ -10437,7 +10428,7 @@ $@spelldesc1263902
     <class id="druid" name="Druid" />
     <attributes>0000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100100000000000000000000000000000000000000010000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1274833" type="2" type_text="School Damage (2)" school="physical" school_text="physical" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" ap_coefficient="0.5256" />
+      <effect number="1" id="1274833" type="2" type_text="School Damage (2)" school="physical" school_text="physical" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" ap_coefficient="0.657" />
     </effects>
     <description>$@spelldesc1263827</description>
   </spell>
@@ -10477,11 +10468,11 @@ $@spelldesc1263902
     <class id="druid" name="Druid" />
     <attributes>0000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="1">
-      <effect number="1" id="1274858" type="2" type_text="School Damage (2)" school="physical" school_text="physical" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" ap_coefficient="1.51" />
+      <effect number="1" id="1274858" type="2" type_text="School Damage (2)" school="physical" school_text="physical" sub_type="0" base_value="0" scaled_value="0" multiplier_delta="0.05" ap_coefficient="1.8875" />
     </effects>
     <description>$@spelldesc1263902</description>
   </spell>
-  <spell id="1263939" name="Unseen Predator's Craving" duration="5">
+  <spell id="1263939" name="Unseen Predator's Craving" duration="1">
     <class id="druid" name="Druid" />
     <attributes>0000000000000000001000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="3">
@@ -10519,7 +10510,7 @@ $mult=${$&lt;NSmult&gt;*$&lt;CCmult&gt;}</variables>
       <effect number="1" id="1276073" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="10" scaled_value="10" />
       <effect number="2" id="1276074" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="200" scaled_value="200" />
     </effects>
-    <description>$?c1[Entering an Eclipse summons a Dryad to assist you for $1264618d, casting Starsurge dealing $1264677s1 astral damage and Starfall at $s2% effectiveness.][Your periodic heals have a chance to empower your next Swiftmend to summon a Dryad to assist you, casting Tranquility at $s1% effectiveness and Regrowth to heal $1264664s1 damage onto your lowest health ally.]</description>
+    <description>$?c1[Entering an Eclipse summons a Dryad to assist you for $1264618d, casting Starsurge dealing $1264677s1 Astral damage and Starfall at $s2% effectiveness.][Your periodic heals have a chance to empower your next Swiftmend to summon a Dryad to assist you, casting Tranquility at $s1% effectiveness and Regrowth to heal $1264664s1 damage onto your lowest health ally.]</description>
   </spell>
   <spell id="1264618" name="Sylvan Beckoning" range="100" duration="8">
     <class id="druid" name="Druid" />
@@ -10754,23 +10745,25 @@ Spirits of the wild come to your aid, causing your next $s2 $Lcast:casts; of Iro
     <attributes>0000001000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="3">
       <effect number="1" id="1281550" type="6" type_text="Apply Aura (6)" sub_type="318" sub_type_text="Modify Mastery% (318)" base_value="3" scaled_value="3" trigger_spell_id="155783" />
-      <effect number="2" id="1281551" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="20" scaled_value="20" />
+      <effect number="2" id="1281551" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="1" scaled_value="1" />
       <effect number="3" id="1281609" type="6" type_text="Apply Aura (6)" sub_type="61" sub_type_text="Scale% (Stacking) (61)" base_value="10" scaled_value="10" />
     </effects>
-    <description>Mastery increased by $s1%. Maul is always empowered and deals $s2% additional Nature damage over $1270065d.</description>
+    <description>Mastery increased by $s1%. 
+
+When you cast Wild Guardian, you gain $s2 charges of $?a372119[Dream of Cenarius][Dream Guide].</description>
   </spell>
   <spell id="1269619" name="Wild Guardian" passive="true">
     <class id="druid" name="Druid" />
     <attributes>0000001000000000000000000000000000000000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="4">
-      <effect number="1" id="1281553" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
+      <effect number="1" id="1281553" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="40" scaled_value="40" />
       <effect number="2" id="1281973" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="250" scaled_value="250" misc_value="3" misc_value_2="6048" />
       <effect number="3" id="1282068" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="2" scaled_value="2" />
       <effect number="4" id="1291056" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="8000" scaled_value="8000" />
     </effects>
-    <description>When you cast Wild Guardian, you gain $s1 charges of $?a372119[Dream of Cenarius][Dream Guide]. 
+    <description>Wild Guardian's echoes are now cast at $?a1269619[$1269614s1][${$s2+$1269614s1}]% effectiveness, and each echo $s3 additional times over ${$s4/1000}.0 sec.
 
-Wild Guardian's echoes are now cast at $?a1269619[$1269614s1][${$s2+$1269614s1}]% effectiveness, and each echo $s3 additional times over ${$s4/1000}.0 sec.</description>
+Maul is always empowered and deals $s1% additional Nature damage over $1270065d.</description>
     <variables>$absorb=${($AP*4)*(1+$@versadmg)*(1+$155783s2/100)}
 </variables>
   </spell>
@@ -11011,8 +11004,8 @@ Starfall damage increased by $s2%.]?s400254[Raze][Maul] $?c3[damage increased by
     <class id="druid" name="Druid" />
     <attributes>0000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000001000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100100000000000000000000000000000000000000010000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="2">
-      <effect number="1" id="1284865" type="6" type_text="Apply Aura (6)" sub_type="3" sub_type_text="Periodic Damage (3)" school="physical" school_text="physical" period="2" base_value="0" scaled_value="0" ap_coefficient="0.368" />
-      <effect number="2" id="1284866" type="6" type_text="Apply Aura (6)" sub_type="3" sub_type_text="Periodic Damage (3)" school="physical" school_text="physical" period="2" base_value="0" scaled_value="0" ap_coefficient="0.368" />
+      <effect number="1" id="1284865" type="6" type_text="Apply Aura (6)" sub_type="3" sub_type_text="Periodic Damage (3)" school="physical" school_text="physical" period="2" base_value="0" scaled_value="0" ap_coefficient="0.46" />
+      <effect number="2" id="1284866" type="6" type_text="Apply Aura (6)" sub_type="3" sub_type_text="Periodic Damage (3)" school="physical" school_text="physical" period="2" base_value="0" scaled_value="0" ap_coefficient="0.46" />
     </effects>
     <description>$@spelldesc1263827</description>
     <tooltip>Bleeding for $w1 damage every $t sec.</tooltip>
@@ -11077,18 +11070,17 @@ Starfall damage increased by $s2%.]?s400254[Raze][Maul] $?c3[damage increased by
     </effects>
     <description>When you take non-periodic damage, you have a chance to gain a charge of Dream Guide. 
 
-When you or a nearby ally drops below $1278914s1% health, you consume a charge of Dream Guide to automatically cast Regrowth on them.</description>
+When you or a nearby ally drops below $1278914s1% health, you consume a charge of Dream Guide to automatically cast Regrowth on them. This Regrowth heals for an additional $1278914s2%.</description>
   </spell>
   <spell id="1278914" name="Dream Guide" duration="30" stacks_max="4" proc_chance="101">
     <class id="druid" name="Druid" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000101000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="3">
+    <effects count="2">
       <effect number="1" id="1291244" type="65" type_text="Apply Aura Raid (65)" sub_type="468" sub_type_text="Trigger Spell Based on Health% (468)" base_value="40" scaled_value="40" misc_value="1" misc_value_2="-100" trigger_spell_id="1292031" />
-      <effect number="2" id="1291245" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="0" scaled_value="0" />
-      <effect number="3" id="1291246" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="22" modifier_text="Spell Periodic Amount (22)" base_value="0" scaled_value="0" misc_value="22" />
+      <effect number="2" id="1291245" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="100" scaled_value="100" />
     </effects>
     <description>$@spelldesc1278886</description>
-    <tooltip>When you or a nearby ally drops below $s1% health, you consume a charge of Dream Guide to automatically cast Regrowth on them.</tooltip>
+    <tooltip>When you or a nearby ally drops below $s1% health, you consume a charge of Dream Guide to automatically cast Regrowth on them at ${100+$s2}% effectiveness.</tooltip>
   </spell>
   <spell id="1278969" name="Frantic Frenzy">
     <class id="druid" name="Druid" />
@@ -11205,6 +11197,5 @@ When you or a nearby ally drops below $1278914s1% health, you consume a charge o
       <effect number="1" id="1311790" type="3" type_text="Dummy (3)" sub_type="0" base_value="0" scaled_value="0" />
     </effects>
     <description>$@spelldesc1278886</description>
-    <tooltip>When you or a nearby ally drops below $s1% health, you consume a charge of Dream Guide to automatically cast Regrowth on them.</tooltip>
   </spell>
 </spell_query>
