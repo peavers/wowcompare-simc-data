@@ -8699,10 +8699,10 @@ During Takedown, your attack speed is increased by $s3%.</description>
     <class id="hunter" name="Hunter" />
     <attributes>0000101110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="4">
-      <effect number="1" id="1264705" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="0" scaled_value="0" />
-      <effect number="2" id="1266351" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="0" scaled_value="0" misc_value="1" />
-      <effect number="3" id="1315650" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="15" scaled_value="15" />
-      <effect number="4" id="1315651" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="15" scaled_value="15" misc_value="1" />
+      <effect number="1" id="1264705" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="-10" scaled_value="-10" />
+      <effect number="2" id="1266351" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="-10" scaled_value="-10" misc_value="1" />
+      <effect number="3" id="1315650" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="-10" scaled_value="-10" />
+      <effect number="4" id="1315651" type="6" type_text="Apply Aura (6)" sub_type="647" sub_type_text="Modify Percent PVP Multiplier (647)" base_value="-10" scaled_value="-10" misc_value="1" />
     </effects>
   </spell>
   <spell id="1256941" name="Survival Hunter" passive="true">
