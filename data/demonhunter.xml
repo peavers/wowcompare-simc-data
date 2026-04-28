@@ -7644,7 +7644,7 @@ $?c2[Fel Devastation][Fully channeling Void Ray] generates $?c2[$s4 Soul Fragmen
       <effect number="2" id="1275182" type="6" type_text="Apply Aura (6)" sub_type="219" sub_type_text="Apply Flat Modifier w/ Label (219)" base_value="2" scaled_value="2" misc_value="3" misc_value_2="5813" />
       <effect number="3" id="1275183" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="25" scaled_value="25" />
       <effect number="4" id="1275184" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="15" scaled_value="15" />
-      <effect number="5" id="1275185" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="32" modifier_text="Spell Effect 4 (32)" base_value="5" scaled_value="5" misc_value="32" />
+      <effect number="5" id="1275185" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="32" modifier_text="Spell Effect 4 (32)" base_value="3" scaled_value="3" misc_value="32" />
     </effects>
     <description>$?s263642[Fracture]?a212613[Shear][Consume] generates $?a212613[$s1][$s2] additional Fury and deals $?a212613[$s3%][$s4%] increased damage.</description>
   </spell>
@@ -7807,11 +7807,11 @@ Movement speed increased by $s4%.][]</tooltip>
     <class id="demonhunter" name="Demon Hunter" />
     <attributes>0000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="5">
-      <effect number="1" id="1263777" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="12" modifier_text="Spell Effect 2 (12)" base_value="5" scaled_value="5" misc_value="12" />
+      <effect number="1" id="1263777" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="12" modifier_text="Spell Effect 2 (12)" base_value="3" scaled_value="3" misc_value="12" />
       <effect number="2" id="1263778" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="12" modifier_text="Spell Effect 2 (12)" base_value="5" scaled_value="5" misc_value="12" />
       <effect number="3" id="1263779" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="25" scaled_value="25" />
       <effect number="4" id="1263780" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="25" scaled_value="25" />
-      <effect number="5" id="1263781" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="32" modifier_text="Spell Effect 4 (32)" base_value="5" scaled_value="5" misc_value="32" />
+      <effect number="5" id="1263781" type="6" type_text="Apply Aura (6)" sub_type="107" sub_type_text="Add Flat Modifier (107)" modifier="32" modifier_text="Spell Effect 4 (32)" base_value="3" scaled_value="3" misc_value="32" />
     </effects>
     <description>$@spelldesc1253415</description>
     <tooltip>$?s263642[Fracture]?a212613[Shear][Consume] generates additional Fury and deals increased damage.</tooltip>
@@ -8316,7 +8316,7 @@ $fragmentAbsorb=${3*$AP}</variables>
     <effects count="1">
       <effect number="1" id="1282474" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="10" scaled_value="10" />
     </effects>
-    <description>Soul Cleave and Spirit Bomb have a chance per soul fragment consumed to grant Untethered Rage, allowing Metamorphosis to be cast without incurring its cooldown and lasting $1270476d.</description>
+    <description>Soul Cleave and Spirit Bomb have a chance per soul fragment consumed to grant Untethered Rage, allowing Metamorphosis to be cast without incurring its cooldown and lasting $s1 sec.</description>
   </spell>
   <spell id="1270448" name="Untethered Rage" passive="true">
     <class id="demonhunter" name="Demon Hunter" />
