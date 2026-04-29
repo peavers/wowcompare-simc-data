@@ -6453,7 +6453,7 @@ Damage is reduced beyond $s2 targets.]</description>
   <spell id="440040" name="Xalan's Cruelty" passive="true">
     <class id="warlock" name="Warlock" />
     <attributes>0000001100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="8">
+    <effects count="9">
       <effect number="1" id="1133699" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="7" modifier_text="Spell Critical Chance (7)" base_value="10" scaled_value="10" misc_value="7" />
       <effect number="2" id="1137484" type="6" type_text="Apply Aura (6)" sub_type="531" sub_type_text="Modify Guardian Damage Done% (531)" base_value="6" scaled_value="6" />
       <effect number="3" id="1166858" type="6" type_text="Apply Aura (6)" sub_type="108" sub_type_text="Add Percent Modifier (108)" modifier="0" modifier_text="Spell Direct Amount (0)" base_value="6" scaled_value="6" />
@@ -6462,6 +6462,7 @@ Damage is reduced beyond $s2 targets.]</description>
       <effect number="6" id="1190450" type="174" type_text="Apply Aura Pet (174)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="10" scaled_value="10" misc_value="7" misc_value_2="3844" />
       <effect number="7" id="1313805" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="6" scaled_value="6" misc_value_2="6542" />
       <effect number="8" id="1313880" type="6" type_text="Apply Aura (6)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="10" scaled_value="10" misc_value="7" misc_value_2="6542" />
+      <effect number="9" id="1322330" type="174" type_text="Apply Aura Pet (174)" sub_type="218" sub_type_text="Apply Percent Modifier w/ Label (218)" base_value="10" scaled_value="10" misc_value="7" misc_value_2="6704" />
     </effects>
     <description>Shadow damage dealt by your spells and abilities is increased by $s3% and your Shadow spells gain $s1% more critical strike chance from all sources.</description>
   </spell>
@@ -8219,7 +8220,7 @@ If dispelled, causes ${(($w2*$s1/100)*(1+($w3-$w4)/100))*$w4/$w3} damage to the 
     </effects>
     <description>Damage dealt by $?s388667[Drain Soul][Shadow Bolt] has a $?s198590[$s1][$s2]% chance to make your next Unstable Affliction cost no Soul Shards and cast instantly.</description>
   </spell>
-  <spell id="1260269" name="Shard Instability" duration="30" stacks_initial="1" stacks_max="3" proc_chance="101">
+  <spell id="1260269" name="Shard Instability" duration="30" stacks_max="3" proc_chance="101">
     <class id="warlock" name="Warlock" />
     <attributes>0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000000000000000000001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
     <effects count="3">

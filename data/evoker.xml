@@ -3797,9 +3797,8 @@ Affects the nearest ally within $s2 yds, preferring damage dealers with their co
   <spell id="409560" name="Temporal Wound" range="100" duration="10" proc_chance="100">
     <class id="evoker" name="Evoker" />
     <attributes>0000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010001000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010000000001000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000001010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="1">
       <effect number="1" id="1074514" type="6" type_text="Apply Aura (6)" sub_type="226" sub_type_text="Periodic Dummy (226)" period="1" base_value="15" scaled_value="15" />
-      <effect number="2" id="1075735" type="6" type_text="Apply Aura (6)" sub_type="285" sub_type_text="Cast Linked Spell w/ Value (285)" base_value="0" scaled_value="0" trigger_spell_id="409990" />
     </effects>
     <description>$@spelldesc403631</description>
     <tooltip>Accumulating $w1% damage from $@auracaster's allies who are affected by Ebon Might.</tooltip>
@@ -3833,9 +3832,8 @@ Affects the nearest ally within $s2 yds, preferring damage dealers with their co
   <spell id="409722" name="Temporal Wound" range="100" duration="10">
     <class id="evoker" name="Evoker" />
     <attributes>0000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010001000000000000000000000000000000000000000000000000000000000000000000000000000000000000010010000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="1">
       <effect number="1" id="1074767" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
-      <effect number="2" id="1075264" type="6" type_text="Apply Aura (6)" sub_type="285" sub_type_text="Cast Linked Spell w/ Value (285)" base_value="0" scaled_value="0" trigger_spell_id="409990" />
     </effects>
     <description>$@spelldesc403631</description>
     <tooltip>Accumulating damage done, and will critically strike for $w1 Arcane damage upon expiration.</tooltip>
@@ -3907,9 +3905,8 @@ Affects the nearest ally within $s2 yds, preferring damage dealers with their co
   <spell id="409992" name="Temporal Wound" range="100" duration="10">
     <class id="evoker" name="Evoker" />
     <attributes>0000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010001000000000000000000000000000000000000000000000000000000000000000000000000000000000000010010000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="1">
       <effect number="1" id="1075265" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
-      <effect number="2" id="1075266" type="6" type_text="Apply Aura (6)" sub_type="285" sub_type_text="Cast Linked Spell w/ Value (285)" base_value="0" scaled_value="0" trigger_spell_id="409990" />
     </effects>
     <description>$@spelldesc403631</description>
     <tooltip>Accumulating damage done, and will critically strike for $w1 Arcane damage upon expiration.</tooltip>
@@ -3917,9 +3914,8 @@ Affects the nearest ally within $s2 yds, preferring damage dealers with their co
   <spell id="409993" name="Temporal Wound" range="100" duration="10">
     <class id="evoker" name="Evoker" />
     <attributes>0000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010001000000000000000000000000000000000000000000000000000000000000000000000000000000000000010010000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="1">
       <effect number="1" id="1075267" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
-      <effect number="2" id="1075268" type="6" type_text="Apply Aura (6)" sub_type="285" sub_type_text="Cast Linked Spell w/ Value (285)" base_value="0" scaled_value="0" trigger_spell_id="409990" />
     </effects>
     <description>$@spelldesc403631</description>
     <tooltip>Accumulating damage done, and will critically strike for $w1 Arcane damage upon expiration.</tooltip>
@@ -3927,9 +3923,8 @@ Affects the nearest ally within $s2 yds, preferring damage dealers with their co
   <spell id="409994" name="Temporal Wound" range="100" duration="10">
     <class id="evoker" name="Evoker" />
     <attributes>0000000000000000000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000010001000000000000000000000000000000000000000000000000000000000000000000000000000000000000010010000000000000000000000000000000000000000000000000000100000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000110000000000010000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000</attributes>
-    <effects count="2">
+    <effects count="1">
       <effect number="1" id="1075269" type="6" type_text="Apply Aura (6)" sub_type="4" sub_type_text="Dummy (4)" base_value="0" scaled_value="0" />
-      <effect number="2" id="1075270" type="6" type_text="Apply Aura (6)" sub_type="285" sub_type_text="Cast Linked Spell w/ Value (285)" base_value="0" scaled_value="0" trigger_spell_id="409990" />
     </effects>
     <description>$@spelldesc403631</description>
     <tooltip>Accumulating damage done, and will critically strike for $w1 Arcane damage upon expiration.</tooltip>
